@@ -1,47 +1,52 @@
-library ieee;
-use ieee.std_logic_1164.all;
-use ieee.numeric_std.all;
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity ULA is
     Port (
-        A, B : in std_logic_vector(31 downto 0);
-        F : in std_logic_vector(2 downto 0);
-        Y : out std_logic_vector(31 downto 0)
+        SrcA      : in  STD_LOGIC_VECTOR(31 downto 0);  -- Entrada A
+        SrcB      : in  STD_LOGIC_VECTOR(31 downto 0);  -- Entrada B
+        ALUControl: in  STD_LOGIC_VECTOR(2 downto 0);    -- Controle da ALU (F = F2F1F0)
+        ALUResult : out STD_LOGIC_VECTOR(31 downto 0);   -- Resultado da ALU
+        Zero      : out STD_LOGIC                        -- Sinal de zero (0 se ALUResult = 0, 1 caso contrário)
     );
 end ULA;
 
-architecture gate_level of ULA is
-    signal BB : std_logic_vector(31 downto 0);
-    signal S : std_logic_vector(31 downto 0);
+architecture Behavioral of ULA is
+    signal BB    : STD_LOGIC_VECTOR(31 downto 0);
+    signal S     : STD_LOGIC_VECTOR(31 downto 0);
+    signal tempY : STD_LOGIC_VECTOR(31 downto 0);
 begin
+    -- BB recebe NOT SrcB se ALUControl(2) = '1', senão recebe SrcB
+    BB <= not SrcB when ALUControl(2) = '1' else SrcB;
 
-    process(A, B, F)
+    -- Soma: SrcA + BB + ALUControl(2) como carry-in (bit menos significativo)
+    S <= SrcA + BB + ("0000000000000000000000000000000" & ALUControl(2));
+
+    process (SrcA, BB, S, ALUControl)
     begin
-        if F(2) = '1' then
-            BB <= B;
-        else
-            BB <= not B;
-        end if;
-
-        case F(1 downto 0) is
+        case ALUControl(1 downto 0) is
             when "00" =>
-                Y <= A and B;
+                tempY <= SrcA and BB;
             when "01" =>
-                Y <= A or B;
-            when "11" =>
-                S <= std_logic_vector(unsigned(A) + unsigned(not B) + 1);
-                if F(0) = '1' then
-                    if S(31) = '1' then
-                        Y <= x"00000001";
-                    else
-                        Y <= x"00000000";
-                    end if;
-                else
-                    Y <= S;
-                end if;
-            when others =>
-                Y <= (others => '0');
+                tempY <= SrcA or BB;
+            when "10" =>
+                tempY <= S;
+				when "11" =>
+                tempY <= (31 downto 1 => '0') & S(31);
         end case;
     end process;
 
-end gate_level;
+    -- Atribuição da saída ALUResult
+    ALUResult <= tempY;
+
+    -- Zero = '1' se ALUResult for zero, caso contrário '0'
+    process(tempY)
+		begin
+			if tempY = X"00000000" then
+				Zero <= '1';
+			else
+				Zero <= '0';
+			end if;
+	end process;
+end Behavioral;
