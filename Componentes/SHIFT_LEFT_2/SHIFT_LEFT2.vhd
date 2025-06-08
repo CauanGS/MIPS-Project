@@ -14,5 +14,5 @@ end SHIFT_LEFT_2;
 
 architecture Behavioral of SHIFT_LEFT_2 is
 begin
-  output <= std_logic_vector(unsigned(input) sll 2);
+  output <= input & "00";
 end Behavioral;

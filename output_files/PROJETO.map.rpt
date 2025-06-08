@@ -1,5 +1,5 @@
 Analysis & Synthesis report for PROJETO
-Sun Jun 08 16:17:59 2025
+Sun Jun 08 18:20:16 2025
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Sun Jun 08 16:17:59 2025          ;
+; Analysis & Synthesis Status        ; Failed - Sun Jun 08 18:20:16 2025          ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; PROJETO                                    ;
 ; Top-level Entity Name              ; PROJETO                                    ;
@@ -146,7 +146,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 6      ;
+; Number detected on machine ; 12     ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
@@ -157,22 +157,39 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Sun Jun 08 16:17:59 2025
+    Info: Processing started: Sun Jun 08 18:20:15 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off PROJETO -c PROJETO
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Warning (12019): Can't analyze file -- file ../ULA/ULA/ULA.vhd is missing
-Warning (12019): Can't analyze file -- file ../SIGN_EXTEND/SIGN_EXTEND/SIGN_EXTEND.vhd is missing
-Warning (12019): Can't analyze file -- file ../SHIFT_LEFT_2/SHIFT_LEFT_2/SHIFT_LEFT2.vhd is missing
-Warning (12019): Can't analyze file -- file ../REG_FILE/REG_FILE/REG_FILE.vhd is missing
-Warning (12019): Can't analyze file -- file ../PC/PC/PC.vhd is missing
-Warning (12019): Can't analyze file -- file ../MULTIPLEX/MULTIPLEX/MULTIPLEX.vhd is missing
-Warning (12019): Can't analyze file -- file ../INST_MEM/INST_MEM/INST_MEM.vhd is missing
-Warning (12019): Can't analyze file -- file ../DATA_MEM/DATA_MEM/DATA_MEM.vhd is missing
-Warning (12019): Can't analyze file -- file ../CONTROL_UNIT/CONTROL_UNIT/CONTROL_UNIT.vhd is missing
+Info (12021): Found 2 design units, including 1 entities, in source file componentes/ula/ula.vhd
+    Info (12022): Found design unit 1: ALU-Behavioral
+    Info (12023): Found entity 1: ALU
+Info (12021): Found 2 design units, including 1 entities, in source file componentes/sign_extend/sign_extend.vhd
+    Info (12022): Found design unit 1: SIGN_EXTEND-Behavioral
+    Info (12023): Found entity 1: SIGN_EXTEND
+Info (12021): Found 2 design units, including 1 entities, in source file componentes/shift_left_2/shift_left2.vhd
+    Info (12022): Found design unit 1: SHIFT_LEFT_2-Behavioral
+    Info (12023): Found entity 1: SHIFT_LEFT_2
+Info (12021): Found 2 design units, including 1 entities, in source file componentes/reg_file/reg_file.vhd
+    Info (12022): Found design unit 1: REG_FILE-behavior
+    Info (12023): Found entity 1: REG_FILE
+Info (12021): Found 2 design units, including 1 entities, in source file componentes/pc/pc.vhd
+    Info (12022): Found design unit 1: PC-behavioral
+    Info (12023): Found entity 1: PC
+Info (12021): Found 2 design units, including 1 entities, in source file componentes/multiplex/multiplex.vhd
+    Info (12022): Found design unit 1: MULTIPLEX-Behavioral
+    Info (12023): Found entity 1: MULTIPLEX
+Info (12021): Found 2 design units, including 1 entities, in source file componentes/data_mem/data_mem.vhd
+    Info (12022): Found design unit 1: DATA_MEM-Behavioral
+    Info (12023): Found entity 1: DATA_MEM
+Info (12021): Found 2 design units, including 1 entities, in source file componentes/inst_mem/inst_mem.vhd
+    Info (12022): Found design unit 1: INST_MEM-comportamento
+    Info (12023): Found entity 1: INST_MEM
+Info (12021): Found 2 design units, including 1 entities, in source file componentes/control_unit/control_unit.vhd
+    Info (12022): Found design unit 1: CONTROL_UNIT-Behavioral
+    Info (12023): Found entity 1: CONTROL_UNIT
 Info (12021): Found 1 design units, including 1 entities, in source file projeto.bdf
     Info (12023): Found entity 1: PROJETO
 Info (12127): Elaborating entity "PROJETO" for the top level hierarchy
-Warning (275011): Block or symbol "ULA" of instance "inst12" overlaps another block or symbol
 Warning (275080): Converted elements in bus name "instruction" using legacy naming rules. Make any assignments on the new names, not on the original names.
     Warning (275081): Converted element name(s) from "instruction[20..16]" to "instruction20..16"
     Warning (275081): Converted element name(s) from "instruction[20..16]" to "instruction20..16"
@@ -182,12 +199,13 @@ Warning (275080): Converted elements in bus name "instruction" using legacy nami
 Warning (275080): Converted elements in bus name "instrunction" using legacy naming rules. Make any assignments on the new names, not on the original names.
     Warning (275081): Converted element name(s) from "instrunction[25..21]" to "instrunction25..21"
     Warning (275081): Converted element name(s) from "instrunction[31..00]" to "instrunction31..00"
-Error (275024): Width mismatch in port "ALUControl[2..0]" of instance "inst18" and type ALU -- source is ""ALUOp[3..0]" (ID CONTROL_UNIT:inst8)"
+Error (275024): Width mismatch in port "SrcA[31..0]" of instance "inst8" and type ALU -- source is ""output[27..0]" (ID SHIFT_LEFT_2:inst13)"
+Error (275024): Width mismatch in port "input[25..0]" of instance "inst13" and type SHIFT_LEFT_2 -- source is ""output[31..0]" (ID SIGN_EXTEND:inst4)"
 Error (12153): Can't elaborate top-level user hierarchy
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 2 errors, 20 warnings
-    Error: Peak virtual memory: 4597 megabytes
-    Error: Processing ended: Sun Jun 08 16:17:59 2025
-    Error: Elapsed time: 00:00:00
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 3 errors, 10 warnings
+    Error: Peak virtual memory: 4646 megabytes
+    Error: Processing ended: Sun Jun 08 18:20:16 2025
+    Error: Elapsed time: 00:00:01
     Error: Total CPU time (on all processors): 00:00:01
 
 

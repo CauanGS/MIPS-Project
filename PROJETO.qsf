@@ -42,15 +42,6 @@ set_global_assignment -name TOP_LEVEL_ENTITY PROJETO
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "20:52:06  JUNE 03, 2025"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
-set_global_assignment -name VHDL_FILE ../ULA/ULA/ULA.vhd
-set_global_assignment -name VHDL_FILE ../SIGN_EXTEND/SIGN_EXTEND/SIGN_EXTEND.vhd
-set_global_assignment -name VHDL_FILE ../SHIFT_LEFT_2/SHIFT_LEFT_2/SHIFT_LEFT2.vhd
-set_global_assignment -name VHDL_FILE ../REG_FILE/REG_FILE/REG_FILE.vhd
-set_global_assignment -name VHDL_FILE ../PC/PC/PC.vhd
-set_global_assignment -name VHDL_FILE ../MULTIPLEX/MULTIPLEX/MULTIPLEX.vhd
-set_global_assignment -name VHDL_FILE ../INST_MEM/INST_MEM/INST_MEM.vhd
-set_global_assignment -name VHDL_FILE ../DATA_MEM/DATA_MEM/DATA_MEM.vhd
-set_global_assignment -name VHDL_FILE ../CONTROL_UNIT/CONTROL_UNIT/CONTROL_UNIT.vhd
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
@@ -59,5 +50,16 @@ set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VHDL_FILE Componentes/ULA/ULA.vhd
+set_global_assignment -name VHDL_FILE Componentes/SIGN_EXTEND/SIGN_EXTEND.vhd
+set_global_assignment -name VHDL_FILE Componentes/SHIFT_LEFT_2/SHIFT_LEFT2.vhd
+set_global_assignment -name VHDL_FILE Componentes/REG_FILE/REG_FILE.vhd
+set_global_assignment -name VHDL_FILE Componentes/PC/PC.vhd
+set_global_assignment -name VHDL_FILE Componentes/MULTIPLEX/MULTIPLEX.vhd
+set_global_assignment -name VHDL_FILE Componentes/DATA_MEM/DATA_MEM.vhd
+set_global_assignment -name VHDL_FILE Componentes/INST_MEM/INST_MEM.vhd
+set_global_assignment -name VHDL_FILE Componentes/CONTROL_UNIT/CONTROL_UNIT.vhd
 set_global_assignment -name BDF_FILE PROJETO.bdf
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

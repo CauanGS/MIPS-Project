@@ -2,7 +2,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
-entity ULA is
+entity ALU is
     Port (
         SrcA      : in  STD_LOGIC_VECTOR(31 downto 0);  -- Entrada A
         SrcB      : in  STD_LOGIC_VECTOR(31 downto 0);  -- Entrada B
@@ -10,9 +10,9 @@ entity ULA is
         ALUResult : out STD_LOGIC_VECTOR(31 downto 0);   -- Resultado da ALU
         Zero      : out STD_LOGIC                        -- Sinal de zero (0 se ALUResult = 0, 1 caso contrário)
     );
-end ULA;
+end ALU;
 
-architecture Behavioral of ULA is
+architecture Behavioral of ALU is
     signal BB    : STD_LOGIC_VECTOR(31 downto 0);
     signal S     : STD_LOGIC_VECTOR(31 downto 0);
     signal tempY : STD_LOGIC_VECTOR(31 downto 0);
