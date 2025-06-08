@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\aluno\Desktop\LABORATORIO_NOTURNO\CONTROL_UNIT\simulation\qsim
+vCONTROL_UNIT
+Z1 !s100 PB@oVi?4`_`]cGWM?UezU3
+Z2 IciM^:mQGol@FV^@jD^K=S1
+Z3 Vj83NN?@?@aIG>YBBBWh7e0
+Z4 dC:\Users\aluno\Desktop\LABORATORIO_NOTURNO\CONTROL_UNIT\simulation\qsim
+Z5 w1747788873
+Z6 8CONTROL_UNIT.vo
+Z7 FCONTROL_UNIT.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|CONTROL_UNIT.vo|
+Z10 o-work work -O0
+Z11 n@c@o@n@t@r@o@l_@u@n@i@t
+!i10b 1
+!s85 0
+Z12 !s108 1747788873.871000
+Z13 !s107 CONTROL_UNIT.vo|
+!s101 -O0
+vCONTROL_UNIT_vlg_check_tst
+!i10b 1
+Z14 !s100 RZoiD1UTO8?;3JXzGGDPS1
+Z15 Ieb:J7o67UeG64_;ngV[6W3
+Z16 VB040C2c;A7g=@eL`i;Z@O3
+R4
+R5
+Z17 8CONTROL_UNIT.vt
+Z18 FCONTROL_UNIT.vt
+L0 59
+R8
+r1
+!s85 0
+31
+Z19 !s108 1747788873.924000
+Z20 !s107 CONTROL_UNIT.vt|
+Z21 !s90 -work|work|CONTROL_UNIT.vt|
+!s101 -O0
+R10
+Z22 n@c@o@n@t@r@o@l_@u@n@i@t_vlg_check_tst
+vCONTROL_UNIT_vlg_sample_tst
+!i10b 1
+Z23 !s100 i2Kb>]a_UNYYLj`TPeU9T0
+Z24 IIJN[cH6fggb?UXfZB`1ZF1
+Z25 VUHDPZ_XdA1_AVD:0IkA[f0
+R4
+R5
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+Z26 n@c@o@n@t@r@o@l_@u@n@i@t_vlg_sample_tst
+vCONTROL_UNIT_vlg_vec_tst
+!i10b 1
+!s100 1cXi51c?DemmjiBmFVzdL2
+IEYC14hR?Jf[71[H;A`F2J3
+Z27 V]hc;h1HjBALGH6ka2n:B51
+R4
+R5
+R17
+R18
+Z28 L0 423
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+Z29 n@c@o@n@t@r@o@l_@u@n@i@t_vlg_vec_tst

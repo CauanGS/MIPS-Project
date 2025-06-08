@@ -1,0 +1,262 @@
+$comment
+	File created using the following command:
+		vcd file CONTROL_UNIT.msim.vcd -direction
+$end
+$date
+	Tue May 20 21:54:34 2025
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module CONTROL_UNIT_vlg_vec_tst $end
+$var reg 32 ! instruction [31:0] $end
+$var reg 1 " ZeroCarry $end
+$var wire 1 # ALUOp [3] $end
+$var wire 1 $ ALUOp [2] $end
+$var wire 1 % ALUOp [1] $end
+$var wire 1 & ALUOp [0] $end
+$var wire 1 ' ALUSrc $end
+$var wire 1 ( Branch $end
+$var wire 1 ) Jump $end
+$var wire 1 * MemRead $end
+$var wire 1 + MemToReg $end
+$var wire 1 , MemWrite $end
+$var wire 1 - RegDst $end
+$var wire 1 . RegWrite $end
+$var wire 1 / sampler $end
+$scope module i1 $end
+$var wire 1 0 gnd $end
+$var wire 1 1 vcc $end
+$var wire 1 2 unknown $end
+$var tri1 1 3 devclrn $end
+$var tri1 1 4 devpor $end
+$var tri1 1 5 devoe $end
+$var wire 1 6 data~7_combout $end
+$var wire 1 7 data~10_combout $end
+$var wire 1 8 data~13_combout $end
+$var wire 1 9 data[9]~47_combout $end
+$var wire 1 : instruction[11]~input_o $end
+$var wire 1 ; instruction[12]~input_o $end
+$var wire 1 < instruction[13]~input_o $end
+$var wire 1 = instruction[14]~input_o $end
+$var wire 1 > instruction[15]~input_o $end
+$var wire 1 ? instruction[16]~input_o $end
+$var wire 1 @ instruction[17]~input_o $end
+$var wire 1 A instruction[18]~input_o $end
+$var wire 1 B instruction[19]~input_o $end
+$var wire 1 C instruction[20]~input_o $end
+$var wire 1 D instruction[21]~input_o $end
+$var wire 1 E instruction[22]~input_o $end
+$var wire 1 F instruction[23]~input_o $end
+$var wire 1 G instruction[24]~input_o $end
+$var wire 1 H instruction[25]~input_o $end
+$var wire 1 I instruction[30]~input_o $end
+$var wire 1 J instruction[6]~input_o $end
+$var wire 1 K instruction[7]~input_o $end
+$var wire 1 L instruction[8]~input_o $end
+$var wire 1 M instruction[9]~input_o $end
+$var wire 1 N RegDst~output_o $end
+$var wire 1 O Jump~output_o $end
+$var wire 1 P Branch~output_o $end
+$var wire 1 Q MemRead~output_o $end
+$var wire 1 R MemToReg~output_o $end
+$var wire 1 S ALUOp[0]~output_o $end
+$var wire 1 T ALUOp[1]~output_o $end
+$var wire 1 U ALUOp[2]~output_o $end
+$var wire 1 V ALUOp[3]~output_o $end
+$var wire 1 W MemWrite~output_o $end
+$var wire 1 X ALUSrc~output_o $end
+$var wire 1 Y RegWrite~output_o $end
+$var wire 1 Z instruction[27]~input_o $end
+$var wire 1 [ instruction[26]~input_o $end
+$var wire 1 \ instruction[28]~input_o $end
+$var wire 1 ] instruction[31]~input_o $end
+$var wire 1 ^ Equal1~0_combout $end
+$var wire 1 _ instruction[4]~input_o $end
+$var wire 1 ` data~6_combout $end
+$var wire 1 a instruction[0]~input_o $end
+$var wire 1 b instruction[2]~input_o $end
+$var wire 1 c instruction[3]~input_o $end
+$var wire 1 d data~9_combout $end
+$var wire 1 e instruction[1]~input_o $end
+$var wire 1 f data~19_combout $end
+$var wire 1 g data~18_combout $end
+$var wire 1 h data~17_combout $end
+$var wire 1 i data~20_combout $end
+$var wire 1 j instruction[10]~input_o $end
+$var wire 1 k instruction[5]~input_o $end
+$var wire 1 l data~8_combout $end
+$var wire 1 m data~11_combout $end
+$var wire 1 n data~12_combout $end
+$var wire 1 o data~21_combout $end
+$var wire 1 p data~14_combout $end
+$var wire 1 q data~15_combout $end
+$var wire 1 r data~16_combout $end
+$var wire 1 s data~22_combout $end
+$var wire 1 t instruction[29]~input_o $end
+$var wire 1 u data~23_combout $end
+$var wire 1 v Equal3~0_combout $end
+$var wire 1 w Branch~4_combout $end
+$var wire 1 x Equal8~0_combout $end
+$var wire 1 y Branch~3_combout $end
+$var wire 1 z data[9]~48_combout $end
+$var wire 1 { Branch~6_combout $end
+$var wire 1 | ZeroCarry~input_o $end
+$var wire 1 } Branch~2_combout $end
+$var wire 1 ~ Branch~5_combout $end
+$var wire 1 !! Equal6~0_combout $end
+$var wire 1 "! data~24_combout $end
+$var wire 1 #! Equal1~1_combout $end
+$var wire 1 $! data~29_combout $end
+$var wire 1 %! data~44_combout $end
+$var wire 1 &! data~25_combout $end
+$var wire 1 '! data~26_combout $end
+$var wire 1 (! data~27_combout $end
+$var wire 1 )! data~28_combout $end
+$var wire 1 *! data~30_combout $end
+$var wire 1 +! data~45_combout $end
+$var wire 1 ,! data~31_combout $end
+$var wire 1 -! data~32_combout $end
+$var wire 1 .! data~33_combout $end
+$var wire 1 /! data~34_combout $end
+$var wire 1 0! data~35_combout $end
+$var wire 1 1! data~36_combout $end
+$var wire 1 2! data~46_combout $end
+$var wire 1 3! data~37_combout $end
+$var wire 1 4! Equal6~1_combout $end
+$var wire 1 5! data~38_combout $end
+$var wire 1 6! data~40_combout $end
+$var wire 1 7! data~41_combout $end
+$var wire 1 8! data~39_combout $end
+$var wire 1 9! data~42_combout $end
+$var wire 1 :! data~43_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b10000000000 !
+0"
+1&
+1%
+1$
+0#
+1'
+0(
+0)
+0*
+0+
+0,
+1-
+1.
+x/
+00
+11
+x2
+13
+14
+15
+16
+07
+08
+09
+0:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+1N
+0O
+0P
+0Q
+0R
+1S
+1T
+1U
+0V
+0W
+1X
+1Y
+0Z
+0[
+0\
+0]
+1^
+0_
+1`
+0a
+0b
+0c
+1d
+0e
+1f
+0g
+0h
+0i
+1j
+0k
+0l
+0m
+1n
+0o
+0p
+0q
+1r
+0s
+0t
+0u
+0v
+0w
+0x
+1y
+1z
+0{
+0|
+0}
+0~
+0!!
+0"!
+0#!
+0$!
+1%!
+0&!
+0'!
+1(!
+1)!
+1*!
+1+!
+0,!
+1-!
+1.!
+1/!
+10!
+11!
+02!
+03!
+04!
+05!
+06!
+07!
+18!
+19!
+1:!
+$end
+#1000000
