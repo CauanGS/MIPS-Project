@@ -415,48 +415,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 880 552 1088 664)
-	(text "MULTIPLEX" (rect 5 0 62 12)(font "Arial" ))
-	(text "inst9" (rect 8 96 31 108)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "input_1[n-1..0]" (rect 0 0 70 12)(font "Arial" ))
-		(text "input_1[n-1..0]" (rect 21 27 91 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "input_2[n-1..0]" (rect 0 0 70 12)(font "Arial" ))
-		(text "input_2[n-1..0]" (rect 21 43 91 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "sinal_controle" (rect 0 0 67 12)(font "Arial" ))
-		(text "sinal_controle" (rect 21 59 88 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64))
-	)
-	(port
-		(pt 208 32)
-		(output)
-		(text "output[n-1..0]" (rect 0 0 66 12)(font "Arial" ))
-		(text "output[n-1..0]" (rect 132 27 198 39)(font "Arial" ))
-		(line (pt 208 32)(pt 192 32)(line_width 3))
-	)
-	(parameter
-		"n"
-		"32"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(drawing
-		(rectangle (rect 16 16 192 96))
-	)
-	(annotation_block (parameter)(rect 896 512 1080 544))
-)
-(symbol
 	(rect 1872 304 2080 416)
 	(text "MULTIPLEX" (rect 5 0 62 12)(font "Arial" ))
 	(text "inst11" (rect 8 96 37 108)(font "Arial" ))
@@ -571,70 +529,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1576 -64 1784 48)
-	(text "MULTIPLEX" (rect 5 0 62 12)(font "Arial" ))
-	(text "inst10" (rect 8 96 37 108)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "input_1[n-1..0]" (rect 0 0 70 12)(font "Arial" ))
-		(text "input_1[n-1..0]" (rect 21 27 91 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "input_2[n-1..0]" (rect 0 0 70 12)(font "Arial" ))
-		(text "input_2[n-1..0]" (rect 21 43 91 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "sinal_controle" (rect 0 0 67 12)(font "Arial" ))
-		(text "sinal_controle" (rect 21 59 88 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64))
-	)
-	(port
-		(pt 208 32)
-		(output)
-		(text "output[n-1..0]" (rect 0 0 66 12)(font "Arial" ))
-		(text "output[n-1..0]" (rect 132 27 198 39)(font "Arial" ))
-		(line (pt 208 32)(pt 192 32)(line_width 3))
-	)
-	(parameter
-		"n"
-		"32"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(drawing
-		(rectangle (rect 16 16 192 96))
-	)
-	(annotation_block (parameter)(rect 1592 -104 1776 -72))
-)
-(symbol
-	(rect 904 -200 1096 -120)
-	(text "SHIFT_LEFT_2" (rect 5 0 80 12)(font "Arial" ))
-	(text "inst14" (rect 8 64 37 76)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "input[31..0]" (rect 0 0 55 12)(font "Arial" ))
-		(text "input[31..0]" (rect 21 27 76 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 192 32)
-		(output)
-		(text "output[31..0]" (rect 0 0 62 12)(font "Arial" ))
-		(text "output[31..0]" (rect 119 27 181 39)(font "Arial" ))
-		(line (pt 192 32)(pt 176 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 176 64))
-	)
-)
-(symbol
 	(rect 1832 -80 2040 32)
 	(text "MULTIPLEX" (rect 5 0 62 12)(font "Arial" ))
 	(text "inst15" (rect 8 96 37 108)(font "Arial" ))
@@ -710,6 +604,112 @@ applicable agreement for further details.
 	)
 	(drawing
 		(rectangle (rect 16 16 144 96))
+	)
+)
+(symbol
+	(rect 880 552 1088 664)
+	(text "MULTIPLEX" (rect 5 0 62 12)(font "Arial" ))
+	(text "inst9" (rect 8 96 31 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "input_1[n-1..0]" (rect 0 0 70 12)(font "Arial" ))
+		(text "input_1[n-1..0]" (rect 21 27 91 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "input_2[n-1..0]" (rect 0 0 70 12)(font "Arial" ))
+		(text "input_2[n-1..0]" (rect 21 43 91 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "sinal_controle" (rect 0 0 67 12)(font "Arial" ))
+		(text "sinal_controle" (rect 21 59 88 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 208 32)
+		(output)
+		(text "output[n-1..0]" (rect 0 0 66 12)(font "Arial" ))
+		(text "output[n-1..0]" (rect 132 27 198 39)(font "Arial" ))
+		(line (pt 208 32)(pt 192 32)(line_width 3))
+	)
+	(parameter
+		"n"
+		"5"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 192 96))
+	)
+	(annotation_block (parameter)(rect 896 512 1078 540))
+)
+(symbol
+	(rect 1576 -64 1784 48)
+	(text "MULTIPLEX" (rect 5 0 62 12)(font "Arial" ))
+	(text "inst10" (rect 8 96 37 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "input_1[n-1..0]" (rect 0 0 70 12)(font "Arial" ))
+		(text "input_1[n-1..0]" (rect 21 27 91 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "input_2[n-1..0]" (rect 0 0 70 12)(font "Arial" ))
+		(text "input_2[n-1..0]" (rect 21 43 91 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "sinal_controle" (rect 0 0 67 12)(font "Arial" ))
+		(text "sinal_controle" (rect 21 59 88 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 208 32)
+		(output)
+		(text "output[n-1..0]" (rect 0 0 66 12)(font "Arial" ))
+		(text "output[n-1..0]" (rect 132 27 198 39)(font "Arial" ))
+		(line (pt 208 32)(pt 192 32)(line_width 3))
+	)
+	(parameter
+		"n"
+		"32"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 192 96))
+	)
+	(annotation_block (parameter)(rect 1592 -104 1774 -76))
+)
+(symbol
+	(rect 904 -200 1096 -120)
+	(text "SHIFT_LEFT_2" (rect 5 0 80 12)(font "Arial" ))
+	(text "inst14" (rect 8 64 37 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "input[25..0]" (rect 0 0 55 12)(font "Arial" ))
+		(text "input[25..0]" (rect 21 27 76 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 192 32)
+		(output)
+		(text "output[27..0]" (rect 0 0 62 12)(font "Arial" ))
+		(text "output[27..0]" (rect 119 27 181 39)(font "Arial" ))
+		(line (pt 192 32)(pt 176 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 176 64))
 	)
 )
 (connector
@@ -943,16 +943,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 760 368)
-	(pt 776 368)
-	(bus)
-)
-(connector
-	(pt 776 368)
-	(pt 824 368)
-	(bus)
-)
-(connector
 	(pt 776 296)
 	(pt 592 296)
 	(bus)
@@ -1004,18 +994,8 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1552 -32)
-	(pt 1576 -32)
-	(bus)
-)
-(connector
 	(pt 1784 -32)
 	(pt 1832 -32)
-	(bus)
-)
-(connector
-	(pt 1800 -48)
-	(pt 1832 -48)
 	(bus)
 )
 (connector
@@ -1089,26 +1069,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1040 -64)
-	(pt 1040 -112)
-	(bus)
-)
-(connector
-	(pt 752 -64)
-	(pt 1040 -64)
-	(bus)
-)
-(connector
-	(pt 1040 -64)
-	(pt 1552 -64)
-	(bus)
-)
-(connector
-	(pt 1096 -168)
-	(pt 1256 -168)
-	(bus)
-)
-(connector
 	(pt 848 104)
 	(pt 1816 104)
 )
@@ -1128,11 +1088,6 @@ applicable agreement for further details.
 (connector
 	(pt 1576 312)
 	(pt 1600 312)
-	(bus)
-)
-(connector
-	(pt 1040 -112)
-	(pt 1256 -112)
 	(bus)
 )
 (connector
@@ -1191,7 +1146,18 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "instruction[31..26]" (rect 592 72 680 84)(font "Arial" ))
+	(pt 760 368)
+	(pt 776 368)
+	(bus)
+)
+(connector
+	(text "instrunction[31..00]" (rect 768 352 862 364)(font "Arial" ))
+	(pt 776 368)
+	(pt 824 368)
+	(bus)
+)
+(connector
+	(text "instruction[31..00]" (rect 560 88 648 100)(font "Arial" ))
 	(pt 592 88)
 	(pt 632 88)
 	(bus)
@@ -1203,15 +1169,54 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "jumpAddress[31..0]" (rect 1266 -184 1361 -172)(font "Arial" ))
+	(text "<<__$DEF_ALIAS218>>" (rect 1238 -171 1250 -53)(font "Arial" )(vertical)(invisible))
+	(pt 1256 -112)
+	(pt 1256 -168)
+	(bus)
+)
+(connector
+	(pt 1048 -112)
+	(pt 1256 -112)
+	(bus)
+)
+(connector
+	(text "PCplusFour[31..28]" (rect 1032 -147 1044 -52)(font "Arial" )(vertical))
+	(pt 1048 -112)
+	(pt 1048 -64)
+	(bus)
+)
+(connector
+	(pt 752 -64)
+	(pt 1048 -64)
+	(bus)
+)
+(connector
+	(pt 1048 -64)
+	(pt 1552 -64)
+	(bus)
+)
+(connector
+	(text "<<__$DEF_ALIAS261>>" (rect 1808 -144 1926 -132)(font "Arial" )(invisible))
+	(pt 1800 -48)
+	(pt 1832 -48)
+	(bus)
+)
+(connector
+	(text "input[31..0]" (rect 1266 -184 1321 -172)(font "Arial" ))
 	(pt 1256 -168)
 	(pt 1800 -168)
 	(bus)
 )
 (connector
-	(text "PCplusFour[31..28]" (rect 1240 -169 1252 -74)(font "Arial" )(vertical))
-	(pt 1256 -112)
+	(text "jumpAddress[27..0]" (rect 1106 -184 1201 -172)(font "Arial" ))
+	(pt 1096 -168)
 	(pt 1256 -168)
+	(bus)
+)
+(connector
+	(text "input[31..0]" (rect 1552 -48 1607 -36)(font "Arial" ))
+	(pt 1552 -32)
+	(pt 1576 -32)
 	(bus)
 )
 (junction (pt 824 424))
@@ -1224,6 +1229,6 @@ applicable agreement for further details.
 (junction (pt 776 368))
 (junction (pt 568 368))
 (junction (pt 592 88))
-(junction (pt 1040 -64))
 (junction (pt 1256 -168))
 (junction (pt 1576 312))
+(junction (pt 1048 -64))

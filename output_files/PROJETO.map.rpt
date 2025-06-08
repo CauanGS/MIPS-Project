@@ -1,5 +1,5 @@
 Analysis & Synthesis report for PROJETO
-Sun Jun 08 14:44:55 2025
+Sun Jun 08 15:25:36 2025
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Sun Jun 08 14:44:55 2025          ;
+; Analysis & Synthesis Status        ; Failed - Sun Jun 08 15:25:36 2025          ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; PROJETO                                    ;
 ; Top-level Entity Name              ; PROJETO                                    ;
@@ -146,7 +146,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 6      ;
+; Number detected on machine ; 12     ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
@@ -157,7 +157,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Sun Jun 08 14:44:54 2025
+    Info: Processing started: Sun Jun 08 15:25:35 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off PROJETO -c PROJETO
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Warning (12019): Can't analyze file -- file ../ULA/ULA/ULA.vhd is missing
@@ -173,19 +173,21 @@ Info (12021): Found 1 design units, including 1 entities, in source file projeto
     Info (12023): Found entity 1: PROJETO
 Info (12127): Elaborating entity "PROJETO" for the top level hierarchy
 Warning (275011): Block or symbol "ULA" of instance "inst3" overlaps another block or symbol
-Warning (275089): Not all bits in bus "instruction[31..0]" are used
 Warning (275080): Converted elements in bus name "instruction" using legacy naming rules. Make any assignments on the new names, not on the original names.
     Warning (275081): Converted element name(s) from "instruction[20..16]" to "instruction20..16"
     Warning (275081): Converted element name(s) from "instruction[20..16]" to "instruction20..16"
     Warning (275081): Converted element name(s) from "instruction[15..11]" to "instruction15..11"
     Warning (275081): Converted element name(s) from "instruction[15..0]" to "instruction15..0"
-    Warning (275081): Converted element name(s) from "instruction[31..26]" to "instruction31..26"
-Error (275033): Can't find name for bus
+    Warning (275081): Converted element name(s) from "instruction[31..00]" to "instruction31..00"
+Warning (275080): Converted elements in bus name "instrunction" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "instrunction[25..21]" to "instrunction25..21"
+    Warning (275081): Converted element name(s) from "instrunction[31..00]" to "instrunction31..00"
+Error (275024): Width mismatch in port "F[2..0]" of instance "inst3" and type ULA -- source is ""ALUOp[3..0]" (ID CONTROL_UNIT:inst8)"
 Error (12153): Can't elaborate top-level user hierarchy
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 2 errors, 18 warnings
-    Error: Peak virtual memory: 4597 megabytes
-    Error: Processing ended: Sun Jun 08 14:44:55 2025
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 2 errors, 20 warnings
+    Error: Peak virtual memory: 4598 megabytes
+    Error: Processing ended: Sun Jun 08 15:25:36 2025
     Error: Elapsed time: 00:00:01
-    Error: Total CPU time (on all processors): 00:00:01
+    Error: Total CPU time (on all processors): 00:00:00
 
 
