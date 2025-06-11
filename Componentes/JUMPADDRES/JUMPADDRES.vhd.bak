@@ -1,0 +1,16 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+
+ENTITY jump_addr_assembler IS
+    PORT (
+        pc_plus_four_bits : IN  STD_LOGIC_VECTOR(31 DOWNTO 28);
+        jump_address_bits : IN  STD_LOGIC_VECTOR(27 DOWNTO 0);
+        full_jump_address : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
+    );
+END jump_addr_assembler;
+
+ARCHITECTURE Behavioral OF jump_addr_assembler IS
+BEGIN
+    full_jump_address <= pc_plus_four_bits & jump_address_bits;
+END Behavioral;
