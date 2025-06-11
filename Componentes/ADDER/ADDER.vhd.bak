@@ -1,0 +1,20 @@
+library ieee;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity ADDER is
+	Generic(n : integer := 32);
+	port 
+	( 
+		operando1 : in STD_LOGIC_VECTOR(n-1 downto 0);
+		operando2 : in STD_LOGIC_VECTOR(n-1 downto 0);
+		
+		resultado : out STD_LOGIC_VECTOR(n-1 downto 0);
+	
+	);
+end ADDER;
+
+architecture Behaviorial of ADDER is 
+begin
+	C <=  std_logic_vector(unsigned(operando1) + unsigned(operando2));
+end Behaviorial;

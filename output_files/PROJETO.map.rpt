@@ -1,6 +1,6 @@
 Analysis & Synthesis report for PROJETO
-Sun Jun 08 18:20:16 2025
-Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Tue Jun 10 21:47:56 2025
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -10,7 +10,20 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Parameter Settings for User Entity Instance: PC:inst
+ 10. Parameter Settings for User Entity Instance: MULTIPLEX:inst15
+ 11. Parameter Settings for User Entity Instance: MULTIPLEX:inst10
+ 12. Parameter Settings for User Entity Instance: REG_FILE:inst2
+ 13. Parameter Settings for User Entity Instance: MULTIPLEX:inst11
+ 14. Parameter Settings for User Entity Instance: MULTIPLEX:inst9
+ 15. Parameter Settings for User Entity Instance: MULTIPLEX:inst6
+ 16. Parameter Settings for User Entity Instance: ADDER:inst28
+ 17. Elapsed Time Per Partition
+ 18. Analysis & Synthesis Messages
 
 
 
@@ -33,24 +46,24 @@ applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                    ;
-+------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Sun Jun 08 18:20:16 2025          ;
-; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
-; Revision Name                      ; PROJETO                                    ;
-; Top-level Entity Name              ; PROJETO                                    ;
-; Family                             ; Cyclone IV E                               ;
-; Total logic elements               ; N/A until Partition Merge                  ;
-;     Total combinational functions  ; N/A until Partition Merge                  ;
-;     Dedicated logic registers      ; N/A until Partition Merge                  ;
-; Total registers                    ; N/A until Partition Merge                  ;
-; Total pins                         ; N/A until Partition Merge                  ;
-; Total virtual pins                 ; N/A until Partition Merge                  ;
-; Total memory bits                  ; N/A until Partition Merge                  ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                  ;
-; Total PLLs                         ; N/A until Partition Merge                  ;
-+------------------------------------+--------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Jun 10 21:47:56 2025           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; PROJETO                                         ;
+; Top-level Entity Name              ; PROJETO                                         ;
+; Family                             ; Cyclone IV E                                    ;
+; Total logic elements               ; 0                                               ;
+;     Total combinational functions  ; 0                                               ;
+;     Dedicated logic registers      ; 0                                               ;
+; Total registers                    ; 0                                               ;
+; Total pins                         ; 1                                               ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -151,24 +164,194 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                             ;
++-------------------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path          ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                          ; Library ;
++-------------------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------+---------+
+; Componentes/PC4/PC4.vhd                   ; yes             ; User VHDL File                     ; C:/Users/aluno/Documents/PINTO/MIPS-Project/Componentes/PC4/PC4.vhd                   ;         ;
+; Componentes/ADDER/ADDER.vhd               ; yes             ; User VHDL File                     ; C:/Users/aluno/Documents/PINTO/MIPS-Project/Componentes/ADDER/ADDER.vhd               ;         ;
+; Componentes/SHIFT_LEFT_2/SHIFT_LEFT2.vhd  ; yes             ; User VHDL File                     ; C:/Users/aluno/Documents/PINTO/MIPS-Project/Componentes/SHIFT_LEFT_2/SHIFT_LEFT2.vhd  ;         ;
+; Componentes/ULA/ULA.vhd                   ; yes             ; User VHDL File                     ; C:/Users/aluno/Documents/PINTO/MIPS-Project/Componentes/ULA/ULA.vhd                   ;         ;
+; Componentes/SIGN_EXTEND/SIGN_EXTEND.vhd   ; yes             ; User VHDL File                     ; C:/Users/aluno/Documents/PINTO/MIPS-Project/Componentes/SIGN_EXTEND/SIGN_EXTEND.vhd   ;         ;
+; Componentes/REG_FILE/REG_FILE.vhd         ; yes             ; User VHDL File                     ; C:/Users/aluno/Documents/PINTO/MIPS-Project/Componentes/REG_FILE/REG_FILE.vhd         ;         ;
+; Componentes/PC/PC.vhd                     ; yes             ; User VHDL File                     ; C:/Users/aluno/Documents/PINTO/MIPS-Project/Componentes/PC/PC.vhd                     ;         ;
+; Componentes/MULTIPLEX/MULTIPLEX.vhd       ; yes             ; User VHDL File                     ; C:/Users/aluno/Documents/PINTO/MIPS-Project/Componentes/MULTIPLEX/MULTIPLEX.vhd       ;         ;
+; Componentes/DATA_MEM/DATA_MEM.vhd         ; yes             ; User VHDL File                     ; C:/Users/aluno/Documents/PINTO/MIPS-Project/Componentes/DATA_MEM/DATA_MEM.vhd         ;         ;
+; Componentes/INST_MEM/INST_MEM.vhd         ; yes             ; User VHDL File                     ; C:/Users/aluno/Documents/PINTO/MIPS-Project/Componentes/INST_MEM/INST_MEM.vhd         ;         ;
+; Componentes/CONTROL_UNIT/CONTROL_UNIT.vhd ; yes             ; User VHDL File                     ; C:/Users/aluno/Documents/PINTO/MIPS-Project/Componentes/CONTROL_UNIT/CONTROL_UNIT.vhd ;         ;
+; PROJETO.bdf                               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/PINTO/MIPS-Project/PROJETO.bdf                               ;         ;
++-------------------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+;                                             ;       ;
+; Total combinational functions               ; 0     ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- <=2 input functions                  ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 0     ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+;     -- Dedicated logic registers            ; 0     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 1     ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out node                        ; Clock ;
+; Maximum fan-out                             ; 1     ;
+; Total fan-out                               ; 1     ;
+; Average fan-out                             ; 0.50  ;
++---------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; |PROJETO                   ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 1    ; 0            ; |PROJETO            ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------+
+; Parameter Settings for User Entity Instance: PC:inst ;
++----------------+-------+-----------------------------+
+; Parameter Name ; Value ; Type                        ;
++----------------+-------+-----------------------------+
+; n              ; 32    ; Signed Integer              ;
++----------------+-------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MULTIPLEX:inst15 ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; n              ; 32    ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MULTIPLEX:inst10 ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; n              ; 32    ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REG_FILE:inst2 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; n              ; 5     ; Signed Integer                     ;
+; m              ; 32    ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MULTIPLEX:inst11 ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; n              ; 32    ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MULTIPLEX:inst9 ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; n              ; 5     ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MULTIPLEX:inst6 ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; n              ; 32    ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ADDER:inst28 ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; n              ; 32    ; Signed Integer                   ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
-    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Sun Jun 08 18:20:15 2025
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Jun 10 21:47:55 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off PROJETO -c PROJETO
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file componentes/pc4/pc4.vhd
+    Info (12022): Found design unit 1: PC4-behavior
+    Info (12023): Found entity 1: PC4
+Info (12021): Found 2 design units, including 1 entities, in source file componentes/adder/adder.vhd
+    Info (12022): Found design unit 1: ADDER-Behavioral
+    Info (12023): Found entity 1: ADDER
+Info (12021): Found 2 design units, including 1 entities, in source file componentes/shift_left_2/shift_left2.vhd
+    Info (12022): Found design unit 1: SHIFT_LEFT_2-Behavioral
+    Info (12023): Found entity 1: SHIFT_LEFT_2
 Info (12021): Found 2 design units, including 1 entities, in source file componentes/ula/ula.vhd
     Info (12022): Found design unit 1: ALU-Behavioral
     Info (12023): Found entity 1: ALU
 Info (12021): Found 2 design units, including 1 entities, in source file componentes/sign_extend/sign_extend.vhd
     Info (12022): Found design unit 1: SIGN_EXTEND-Behavioral
     Info (12023): Found entity 1: SIGN_EXTEND
-Info (12021): Found 2 design units, including 1 entities, in source file componentes/shift_left_2/shift_left2.vhd
-    Info (12022): Found design unit 1: SHIFT_LEFT_2-Behavioral
-    Info (12023): Found entity 1: SHIFT_LEFT_2
 Info (12021): Found 2 design units, including 1 entities, in source file componentes/reg_file/reg_file.vhd
     Info (12022): Found design unit 1: REG_FILE-behavior
     Info (12023): Found entity 1: REG_FILE
@@ -179,10 +362,10 @@ Info (12021): Found 2 design units, including 1 entities, in source file compone
     Info (12022): Found design unit 1: MULTIPLEX-Behavioral
     Info (12023): Found entity 1: MULTIPLEX
 Info (12021): Found 2 design units, including 1 entities, in source file componentes/data_mem/data_mem.vhd
-    Info (12022): Found design unit 1: DATA_MEM-Behavioral
-    Info (12023): Found entity 1: DATA_MEM
+    Info (12022): Found design unit 1: DATA_MEMORY-Behavioral
+    Info (12023): Found entity 1: DATA_MEMORY
 Info (12021): Found 2 design units, including 1 entities, in source file componentes/inst_mem/inst_mem.vhd
-    Info (12022): Found design unit 1: INST_MEM-comportamento
+    Info (12022): Found design unit 1: INST_MEM-Behavioral
     Info (12023): Found entity 1: INST_MEM
 Info (12021): Found 2 design units, including 1 entities, in source file componentes/control_unit/control_unit.vhd
     Info (12022): Found design unit 1: CONTROL_UNIT-Behavioral
@@ -190,6 +373,8 @@ Info (12021): Found 2 design units, including 1 entities, in source file compone
 Info (12021): Found 1 design units, including 1 entities, in source file projeto.bdf
     Info (12023): Found entity 1: PROJETO
 Info (12127): Elaborating entity "PROJETO" for the top level hierarchy
+Warning (275080): Converted elements in bus name "AdderResult" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "AdderResult[31..00]" to "AdderResult31..00"
 Warning (275080): Converted elements in bus name "instruction" using legacy naming rules. Make any assignments on the new names, not on the original names.
     Warning (275081): Converted element name(s) from "instruction[20..16]" to "instruction20..16"
     Warning (275081): Converted element name(s) from "instruction[20..16]" to "instruction20..16"
@@ -199,13 +384,32 @@ Warning (275080): Converted elements in bus name "instruction" using legacy nami
 Warning (275080): Converted elements in bus name "instrunction" using legacy naming rules. Make any assignments on the new names, not on the original names.
     Warning (275081): Converted element name(s) from "instrunction[25..21]" to "instrunction25..21"
     Warning (275081): Converted element name(s) from "instrunction[31..00]" to "instrunction31..00"
-Error (275024): Width mismatch in port "SrcA[31..0]" of instance "inst8" and type ALU -- source is ""output[27..0]" (ID SHIFT_LEFT_2:inst13)"
-Error (275024): Width mismatch in port "input[25..0]" of instance "inst13" and type SHIFT_LEFT_2 -- source is ""output[31..0]" (ID SIGN_EXTEND:inst4)"
-Error (12153): Can't elaborate top-level user hierarchy
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 3 errors, 10 warnings
-    Error: Peak virtual memory: 4646 megabytes
-    Error: Processing ended: Sun Jun 08 18:20:16 2025
-    Error: Elapsed time: 00:00:01
-    Error: Total CPU time (on all processors): 00:00:01
+Warning (275002): No superset bus at connection
+Info (12128): Elaborating entity "PC" for hierarchy "PC:inst"
+Warning (10492): VHDL Process Statement warning at PC.vhd(20): signal "reset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "MULTIPLEX" for hierarchy "MULTIPLEX:inst15"
+Info (12128): Elaborating entity "CONTROL_UNIT" for hierarchy "CONTROL_UNIT:inst3"
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:inst18"
+Info (12128): Elaborating entity "REG_FILE" for hierarchy "REG_FILE:inst2"
+Info (12128): Elaborating entity "INST_MEM" for hierarchy "INST_MEM:inst29"
+Warning (10540): VHDL Signal Declaration warning at INST_MEM.vhd(17): used explicit default value for signal "instr_memory" because signal was never assigned a value
+Info (12128): Elaborating entity "DATA_MEMORY" for hierarchy "DATA_MEMORY:inst25"
+Info (12128): Elaborating entity "MULTIPLEX" for hierarchy "MULTIPLEX:inst9"
+Info (12128): Elaborating entity "SIGN_EXTEND" for hierarchy "SIGN_EXTEND:inst4"
+Info (12128): Elaborating entity "ADDER" for hierarchy "ADDER:inst28"
+Info (12128): Elaborating entity "SHIFT_LEFT_2" for hierarchy "SHIFT_LEFT_2:inst23"
+Info (12128): Elaborating entity "PC4" for hierarchy "PC4:inst31"
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "Clock"
+Info (21057): Implemented 1 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 1 input pins
+    Info (21059): Implemented 0 output pins
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 17 warnings
+    Info: Peak virtual memory: 4637 megabytes
+    Info: Processing ended: Tue Jun 10 21:47:56 2025
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 
