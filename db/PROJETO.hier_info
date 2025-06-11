@@ -1,7 +1,6 @@
 |PROJETO
-Clock => PC:inst.clk
-Clock => REG_FILE:inst2.clk
-Clock => DATA_MEMORY:inst25.clk
+Clock => inst5.IN0
+Reset => inst1.IN0
 
 
 |PROJETO|PC:inst
