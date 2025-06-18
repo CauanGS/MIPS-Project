@@ -14,6 +14,8 @@ entity PC is
 end PC;
 
 architecture behavioral of PC is
+	
+
 begin
 	process (clk)
 	begin

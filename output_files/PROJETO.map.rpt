@@ -1,6 +1,6 @@
 Analysis & Synthesis report for PROJETO
-Wed Jun 11 19:04:52 2025
-Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Wed Jun 18 16:52:14 2025
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -17,14 +17,14 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
   9. Removed Registers Triggering Further Register Optimizations
  10. General Register Statistics
  11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Parameter Settings for User Entity Instance: MULTIPLEX:inst11
- 13. Parameter Settings for User Entity Instance: PC:inst
- 14. Parameter Settings for User Entity Instance: MULTIPLEX:inst15
- 15. Parameter Settings for User Entity Instance: MULTIPLEX:inst10
+ 12. Parameter Settings for User Entity Instance: PC:inst
+ 13. Parameter Settings for User Entity Instance: MULTIPLEX:inst15
+ 14. Parameter Settings for User Entity Instance: MULTIPLEX:inst10
+ 15. Parameter Settings for User Entity Instance: ADDER:inst28
  16. Parameter Settings for User Entity Instance: REG_FILE:inst2
- 17. Parameter Settings for User Entity Instance: MULTIPLEX:inst9
- 18. Parameter Settings for User Entity Instance: MULTIPLEX:inst6
- 19. Parameter Settings for User Entity Instance: ADDER:inst28
+ 17. Parameter Settings for User Entity Instance: MULTIPLEX:inst11
+ 18. Parameter Settings for User Entity Instance: MULTIPLEX:inst9
+ 19. Parameter Settings for User Entity Instance: MULTIPLEX:inst6
  20. Parameter Settings for Inferred Entity Instance: bin32_to_7seg:inst13|lpm_divide:Mod0
  21. Parameter Settings for Inferred Entity Instance: bin32_to_7seg:inst13|lpm_divide:Div0
  22. Parameter Settings for Inferred Entity Instance: bin32_to_7seg:inst13|lpm_divide:Mod1
@@ -64,24 +64,24 @@ applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                    ;
-+------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Jun 11 19:04:52 2025      ;
-; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
-; Revision Name                      ; PROJETO                                    ;
-; Top-level Entity Name              ; PROJETO                                    ;
-; Family                             ; Cyclone IV E                               ;
-; Total logic elements               ; 11,541                                     ;
-;     Total combinational functions  ; 11,445                                     ;
-;     Dedicated logic registers      ; 131                                        ;
-; Total registers                    ; 131                                        ;
-; Total pins                         ; 58                                         ;
-; Total virtual pins                 ; 0                                          ;
-; Total memory bits                  ; 0                                          ;
-; Embedded Multiplier 9-bit elements ; 0                                          ;
-; Total PLLs                         ; 0                                          ;
-+------------------------------------+--------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Wed Jun 18 16:52:13 2025           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; PROJETO                                         ;
+; Top-level Entity Name              ; PROJETO                                         ;
+; Family                             ; Cyclone IV E                                    ;
+; Total logic elements               ; 11,575                                          ;
+;     Total combinational functions  ; 11,474                                          ;
+;     Dedicated logic registers      ; 141                                             ;
+; Total registers                    ; 141                                             ;
+; Total pins                         ; 186                                             ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -182,39 +182,39 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                      ;
-+--------------------------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path                 ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                            ; Library ;
-+--------------------------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------+---------+
-; Componentes/DISPLAY/hex7seg.vhd                  ; yes             ; User VHDL File                     ; C:/Users/cauan/Documents/Laboratorio Proj/MIPS-Project/Componentes/DISPLAY/hex7seg.vhd                  ;         ;
-; Componentes/SHIFT_LEFT_2_JUMP/SHIFTLEFT2JUMP.vhd ; yes             ; User VHDL File                     ; C:/Users/cauan/Documents/Laboratorio Proj/MIPS-Project/Componentes/SHIFT_LEFT_2_JUMP/SHIFTLEFT2JUMP.vhd ;         ;
-; Componentes/JUMPADDRES/JUMPADDRES.vhd            ; yes             ; User VHDL File                     ; C:/Users/cauan/Documents/Laboratorio Proj/MIPS-Project/Componentes/JUMPADDRES/JUMPADDRES.vhd            ;         ;
-; Componentes/PC4/PC4.vhd                          ; yes             ; User VHDL File                     ; C:/Users/cauan/Documents/Laboratorio Proj/MIPS-Project/Componentes/PC4/PC4.vhd                          ;         ;
-; Componentes/ADDER/ADDER.vhd                      ; yes             ; User VHDL File                     ; C:/Users/cauan/Documents/Laboratorio Proj/MIPS-Project/Componentes/ADDER/ADDER.vhd                      ;         ;
-; Componentes/SHIFT_LEFT_2/SHIFT_LEFT2.vhd         ; yes             ; User VHDL File                     ; C:/Users/cauan/Documents/Laboratorio Proj/MIPS-Project/Componentes/SHIFT_LEFT_2/SHIFT_LEFT2.vhd         ;         ;
-; Componentes/ULA/ULA.vhd                          ; yes             ; User VHDL File                     ; C:/Users/cauan/Documents/Laboratorio Proj/MIPS-Project/Componentes/ULA/ULA.vhd                          ;         ;
-; Componentes/SIGN_EXTEND/SIGN_EXTEND.vhd          ; yes             ; User VHDL File                     ; C:/Users/cauan/Documents/Laboratorio Proj/MIPS-Project/Componentes/SIGN_EXTEND/SIGN_EXTEND.vhd          ;         ;
-; Componentes/REG_FILE/REG_FILE.vhd                ; yes             ; User VHDL File                     ; C:/Users/cauan/Documents/Laboratorio Proj/MIPS-Project/Componentes/REG_FILE/REG_FILE.vhd                ;         ;
-; Componentes/PC/PC.vhd                            ; yes             ; User VHDL File                     ; C:/Users/cauan/Documents/Laboratorio Proj/MIPS-Project/Componentes/PC/PC.vhd                            ;         ;
-; Componentes/MULTIPLEX/MULTIPLEX.vhd              ; yes             ; User VHDL File                     ; C:/Users/cauan/Documents/Laboratorio Proj/MIPS-Project/Componentes/MULTIPLEX/MULTIPLEX.vhd              ;         ;
-; Componentes/DATA_MEM/DATA_MEM.vhd                ; yes             ; User VHDL File                     ; C:/Users/cauan/Documents/Laboratorio Proj/MIPS-Project/Componentes/DATA_MEM/DATA_MEM.vhd                ;         ;
-; Componentes/INST_MEM/INST_MEM.vhd                ; yes             ; User VHDL File                     ; C:/Users/cauan/Documents/Laboratorio Proj/MIPS-Project/Componentes/INST_MEM/INST_MEM.vhd                ;         ;
-; Componentes/CONTROL_UNIT/CONTROL_UNIT.vhd        ; yes             ; User VHDL File                     ; C:/Users/cauan/Documents/Laboratorio Proj/MIPS-Project/Componentes/CONTROL_UNIT/CONTROL_UNIT.vhd        ;         ;
-; PROJETO.bdf                                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/cauan/Documents/Laboratorio Proj/MIPS-Project/PROJETO.bdf                                      ;         ;
-; lpm_divide.tdf                                   ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/lpm_divide.tdf                                           ;         ;
-; abs_divider.inc                                  ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/abs_divider.inc                                          ;         ;
-; sign_div_unsign.inc                              ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/sign_div_unsign.inc                                      ;         ;
-; aglobal131.inc                                   ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/aglobal131.inc                                           ;         ;
-; db/lpm_divide_kcm.tdf                            ; yes             ; Auto-Generated Megafunction        ; C:/Users/cauan/Documents/Laboratorio Proj/MIPS-Project/db/lpm_divide_kcm.tdf                            ;         ;
-; db/sign_div_unsign_9nh.tdf                       ; yes             ; Auto-Generated Megafunction        ; C:/Users/cauan/Documents/Laboratorio Proj/MIPS-Project/db/sign_div_unsign_9nh.tdf                       ;         ;
-; db/alt_u_div_6af.tdf                             ; yes             ; Auto-Generated Megafunction        ; C:/Users/cauan/Documents/Laboratorio Proj/MIPS-Project/db/alt_u_div_6af.tdf                             ;         ;
-; db/add_sub_7pc.tdf                               ; yes             ; Auto-Generated Megafunction        ; C:/Users/cauan/Documents/Laboratorio Proj/MIPS-Project/db/add_sub_7pc.tdf                               ;         ;
-; db/add_sub_8pc.tdf                               ; yes             ; Auto-Generated Megafunction        ; C:/Users/cauan/Documents/Laboratorio Proj/MIPS-Project/db/add_sub_8pc.tdf                               ;         ;
-; db/lpm_divide_0jm.tdf                            ; yes             ; Auto-Generated Megafunction        ; C:/Users/cauan/Documents/Laboratorio Proj/MIPS-Project/db/lpm_divide_0jm.tdf                            ;         ;
-; db/sign_div_unsign_olh.tdf                       ; yes             ; Auto-Generated Megafunction        ; C:/Users/cauan/Documents/Laboratorio Proj/MIPS-Project/db/sign_div_unsign_olh.tdf                       ;         ;
-; db/alt_u_div_47f.tdf                             ; yes             ; Auto-Generated Megafunction        ; C:/Users/cauan/Documents/Laboratorio Proj/MIPS-Project/db/alt_u_div_47f.tdf                             ;         ;
-+--------------------------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                           ;
++--------------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                 ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                 ; Library ;
++--------------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------+---------+
+; Componentes/DISPLAY/hex7seg.vhd                  ; yes             ; User VHDL File                     ; C:/Users/aluno/Documents/PINTO/MIPS-Project/Componentes/DISPLAY/hex7seg.vhd                  ;         ;
+; Componentes/SHIFT_LEFT_2_JUMP/SHIFTLEFT2JUMP.vhd ; yes             ; User VHDL File                     ; C:/Users/aluno/Documents/PINTO/MIPS-Project/Componentes/SHIFT_LEFT_2_JUMP/SHIFTLEFT2JUMP.vhd ;         ;
+; Componentes/JUMPADDRES/JUMPADDRES.vhd            ; yes             ; User VHDL File                     ; C:/Users/aluno/Documents/PINTO/MIPS-Project/Componentes/JUMPADDRES/JUMPADDRES.vhd            ;         ;
+; Componentes/PC4/PC4.vhd                          ; yes             ; User VHDL File                     ; C:/Users/aluno/Documents/PINTO/MIPS-Project/Componentes/PC4/PC4.vhd                          ;         ;
+; Componentes/ADDER/ADDER.vhd                      ; yes             ; User VHDL File                     ; C:/Users/aluno/Documents/PINTO/MIPS-Project/Componentes/ADDER/ADDER.vhd                      ;         ;
+; Componentes/SHIFT_LEFT_2/SHIFT_LEFT2.vhd         ; yes             ; User VHDL File                     ; C:/Users/aluno/Documents/PINTO/MIPS-Project/Componentes/SHIFT_LEFT_2/SHIFT_LEFT2.vhd         ;         ;
+; Componentes/ULA/ULA.vhd                          ; yes             ; User VHDL File                     ; C:/Users/aluno/Documents/PINTO/MIPS-Project/Componentes/ULA/ULA.vhd                          ;         ;
+; Componentes/SIGN_EXTEND/SIGN_EXTEND.vhd          ; yes             ; User VHDL File                     ; C:/Users/aluno/Documents/PINTO/MIPS-Project/Componentes/SIGN_EXTEND/SIGN_EXTEND.vhd          ;         ;
+; Componentes/REG_FILE/REG_FILE.vhd                ; yes             ; User VHDL File                     ; C:/Users/aluno/Documents/PINTO/MIPS-Project/Componentes/REG_FILE/REG_FILE.vhd                ;         ;
+; Componentes/PC/PC.vhd                            ; yes             ; User VHDL File                     ; C:/Users/aluno/Documents/PINTO/MIPS-Project/Componentes/PC/PC.vhd                            ;         ;
+; Componentes/MULTIPLEX/MULTIPLEX.vhd              ; yes             ; User VHDL File                     ; C:/Users/aluno/Documents/PINTO/MIPS-Project/Componentes/MULTIPLEX/MULTIPLEX.vhd              ;         ;
+; Componentes/DATA_MEM/DATA_MEM.vhd                ; yes             ; User VHDL File                     ; C:/Users/aluno/Documents/PINTO/MIPS-Project/Componentes/DATA_MEM/DATA_MEM.vhd                ;         ;
+; Componentes/INST_MEM/INST_MEM.vhd                ; yes             ; User VHDL File                     ; C:/Users/aluno/Documents/PINTO/MIPS-Project/Componentes/INST_MEM/INST_MEM.vhd                ;         ;
+; Componentes/CONTROL_UNIT/CONTROL_UNIT.vhd        ; yes             ; User VHDL File                     ; C:/Users/aluno/Documents/PINTO/MIPS-Project/Componentes/CONTROL_UNIT/CONTROL_UNIT.vhd        ;         ;
+; PROJETO.bdf                                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/PINTO/MIPS-Project/PROJETO.bdf                                      ;         ;
+; lpm_divide.tdf                                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_divide.tdf                             ;         ;
+; abs_divider.inc                                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/abs_divider.inc                            ;         ;
+; sign_div_unsign.inc                              ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/sign_div_unsign.inc                        ;         ;
+; aglobal130.inc                                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                             ;         ;
+; db/lpm_divide_kcm.tdf                            ; yes             ; Auto-Generated Megafunction        ; C:/Users/aluno/Documents/PINTO/MIPS-Project/db/lpm_divide_kcm.tdf                            ;         ;
+; db/sign_div_unsign_9nh.tdf                       ; yes             ; Auto-Generated Megafunction        ; C:/Users/aluno/Documents/PINTO/MIPS-Project/db/sign_div_unsign_9nh.tdf                       ;         ;
+; db/alt_u_div_6af.tdf                             ; yes             ; Auto-Generated Megafunction        ; C:/Users/aluno/Documents/PINTO/MIPS-Project/db/alt_u_div_6af.tdf                             ;         ;
+; db/add_sub_7pc.tdf                               ; yes             ; Auto-Generated Megafunction        ; C:/Users/aluno/Documents/PINTO/MIPS-Project/db/add_sub_7pc.tdf                               ;         ;
+; db/add_sub_8pc.tdf                               ; yes             ; Auto-Generated Megafunction        ; C:/Users/aluno/Documents/PINTO/MIPS-Project/db/add_sub_8pc.tdf                               ;         ;
+; db/lpm_divide_0jm.tdf                            ; yes             ; Auto-Generated Megafunction        ; C:/Users/aluno/Documents/PINTO/MIPS-Project/db/lpm_divide_0jm.tdf                            ;         ;
+; db/sign_div_unsign_olh.tdf                       ; yes             ; Auto-Generated Megafunction        ; C:/Users/aluno/Documents/PINTO/MIPS-Project/db/sign_div_unsign_olh.tdf                       ;         ;
+; db/alt_u_div_47f.tdf                             ; yes             ; Auto-Generated Megafunction        ; C:/Users/aluno/Documents/PINTO/MIPS-Project/db/alt_u_div_47f.tdf                             ;         ;
++--------------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -222,28 +222,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 11,541      ;
+; Estimated Total logic elements              ; 11,575      ;
 ;                                             ;             ;
-; Total combinational functions               ; 11445       ;
+; Total combinational functions               ; 11474       ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 3224        ;
-;     -- 3 input functions                    ; 3586        ;
-;     -- <=2 input functions                  ; 4635        ;
+;     -- 4 input functions                    ; 3259        ;
+;     -- 3 input functions                    ; 3579        ;
+;     -- <=2 input functions                  ; 4636        ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 7750        ;
+;     -- normal mode                          ; 7779        ;
 ;     -- arithmetic mode                      ; 3695        ;
 ;                                             ;             ;
-; Total registers                             ; 131         ;
-;     -- Dedicated logic registers            ; 131         ;
+; Total registers                             ; 141         ;
+;     -- Dedicated logic registers            ; 141         ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
-; I/O pins                                    ; 58          ;
+; I/O pins                                    ; 186         ;
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ; Maximum fan-out node                        ; Clock~input ;
-; Maximum fan-out                             ; 131         ;
-; Total fan-out                               ; 32541       ;
-; Average fan-out                             ; 2.78        ;
+; Maximum fan-out                             ; 141         ;
+; Total fan-out                               ; 32929       ;
+; Average fan-out                             ; 2.75        ;
 +---------------------------------------------+-------------+
 
 
@@ -252,12 +252,11 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                           ; Library Name ;
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |PROJETO                                  ; 11445 (0)         ; 131 (0)      ; 0           ; 0            ; 0       ; 0         ; 58   ; 0            ; |PROJETO                                                                                                                      ; work         ;
+; |PROJETO                                  ; 11474 (0)         ; 141 (0)      ; 0           ; 0            ; 0       ; 0         ; 186  ; 0            ; |PROJETO                                                                                                                      ; work         ;
 ;    |ALU:inst18|                           ; 97 (97)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO|ALU:inst18                                                                                                           ; work         ;
-;    |CONTROL_UNIT:inst3|                   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO|CONTROL_UNIT:inst3                                                                                                   ; work         ;
-;    |INST_MEM:inst29|                      ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO|INST_MEM:inst29                                                                                                      ; work         ;
-;    |PC:inst|                              ; 0 (0)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO|PC:inst                                                                                                              ; work         ;
-;    |REG_FILE:inst2|                       ; 104 (104)         ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO|REG_FILE:inst2                                                                                                       ; work         ;
+;    |INST_MEM:inst29|                      ; 10 (10)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO|INST_MEM:inst29                                                                                                      ; work         ;
+;    |PC:inst|                              ; 0 (0)             ; 13 (13)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO|PC:inst                                                                                                              ; work         ;
+;    |REG_FILE:inst2|                       ; 133 (133)         ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO|REG_FILE:inst2                                                                                                       ; work         ;
 ;    |bin32_to_7seg:inst13|                 ; 11234 (56)        ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO|bin32_to_7seg:inst13                                                                                                 ; work         ;
 ;       |lpm_divide:Div0|                   ; 368 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO|bin32_to_7seg:inst13|lpm_divide:Div0                                                                                 ; work         ;
 ;          |lpm_divide_0jm:auto_generated|  ; 368 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO|bin32_to_7seg:inst13|lpm_divide:Div0|lpm_divide_0jm:auto_generated                                                   ; work         ;
@@ -330,7 +329,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------+---------------------------------------------+
 ; PC:inst|end_atual[0]                                    ; Merged with PC:inst|end_atual[1]            ;
 ; PC:inst|end_atual[1,5,6,8..12,15,16,20,21,25,26,28..31] ; Stuck at GND due to stuck port data_in      ;
-; PC:inst|end_atual[7,13,14,17..19,22..24,27]             ; Lost fanout                                 ;
 ; REG_FILE:inst2|registers~166                            ; Lost fanout                                 ;
 ; REG_FILE:inst2|registers~167                            ; Lost fanout                                 ;
 ; REG_FILE:inst2|registers~168                            ; Lost fanout                                 ;
@@ -1099,22 +1097,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; REG_FILE:inst2|registers~1059                           ; Lost fanout                                 ;
 ; REG_FILE:inst2|registers~1060                           ; Lost fanout                                 ;
 ; REG_FILE:inst2|registers~1061                           ; Lost fanout                                 ;
-; REG_FILE:inst2|registers~38                             ; Stuck at GND due to stuck port clock_enable ;
-; REG_FILE:inst2|registers~134                            ; Stuck at GND due to stuck port clock_enable ;
-; REG_FILE:inst2|registers~102                            ; Stuck at GND due to stuck port clock_enable ;
-; REG_FILE:inst2|registers~70                             ; Stuck at GND due to stuck port clock_enable ;
-; REG_FILE:inst2|registers~39                             ; Stuck at GND due to stuck port clock_enable ;
-; REG_FILE:inst2|registers~135                            ; Stuck at GND due to stuck port clock_enable ;
-; REG_FILE:inst2|registers~103                            ; Stuck at GND due to stuck port clock_enable ;
-; REG_FILE:inst2|registers~71                             ; Stuck at GND due to stuck port clock_enable ;
-; REG_FILE:inst2|registers~40                             ; Stuck at GND due to stuck port clock_enable ;
-; REG_FILE:inst2|registers~136                            ; Stuck at GND due to stuck port clock_enable ;
-; REG_FILE:inst2|registers~104                            ; Stuck at GND due to stuck port clock_enable ;
-; REG_FILE:inst2|registers~72                             ; Stuck at GND due to stuck port clock_enable ;
-; REG_FILE:inst2|registers~41                             ; Stuck at GND due to stuck port clock_enable ;
-; REG_FILE:inst2|registers~137                            ; Stuck at GND due to stuck port clock_enable ;
-; REG_FILE:inst2|registers~105                            ; Stuck at GND due to stuck port clock_enable ;
-; REG_FILE:inst2|registers~73                             ; Stuck at GND due to stuck port clock_enable ;
 ; REG_FILE:inst2|registers~69                             ; Stuck at GND due to stuck port clock_enable ;
 ; REG_FILE:inst2|registers~165                            ; Stuck at GND due to stuck port clock_enable ;
 ; REG_FILE:inst2|registers~133                            ; Stuck at GND due to stuck port clock_enable ;
@@ -1227,7 +1209,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; REG_FILE:inst2|registers~138                            ; Stuck at GND due to stuck port clock_enable ;
 ; REG_FILE:inst2|registers~106                            ; Stuck at GND due to stuck port clock_enable ;
 ; REG_FILE:inst2|registers~74                             ; Stuck at GND due to stuck port clock_enable ;
-; Total Number of Removed Registers = 925                 ;                                             ;
+; REG_FILE:inst2|registers~41                             ; Stuck at GND due to stuck port clock_enable ;
+; REG_FILE:inst2|registers~137                            ; Stuck at GND due to stuck port clock_enable ;
+; REG_FILE:inst2|registers~105                            ; Stuck at GND due to stuck port clock_enable ;
+; REG_FILE:inst2|registers~73                             ; Stuck at GND due to stuck port clock_enable ;
+; REG_FILE:inst2|registers~40                             ; Stuck at GND due to stuck port clock_enable ;
+; REG_FILE:inst2|registers~136                            ; Stuck at GND due to stuck port clock_enable ;
+; REG_FILE:inst2|registers~104                            ; Stuck at GND due to stuck port clock_enable ;
+; REG_FILE:inst2|registers~72                             ; Stuck at GND due to stuck port clock_enable ;
+; REG_FILE:inst2|registers~39                             ; Stuck at GND due to stuck port clock_enable ;
+; REG_FILE:inst2|registers~135                            ; Stuck at GND due to stuck port clock_enable ;
+; REG_FILE:inst2|registers~103                            ; Stuck at GND due to stuck port clock_enable ;
+; REG_FILE:inst2|registers~71                             ; Stuck at GND due to stuck port clock_enable ;
+; REG_FILE:inst2|registers~38                             ; Stuck at GND due to stuck port clock_enable ;
+; REG_FILE:inst2|registers~134                            ; Stuck at GND due to stuck port clock_enable ;
+; REG_FILE:inst2|registers~102                            ; Stuck at GND due to stuck port clock_enable ;
+; REG_FILE:inst2|registers~70                             ; Stuck at GND due to stuck port clock_enable ;
+; Total Number of Removed Registers = 915                 ;                                             ;
 +---------------------------------------------------------+---------------------------------------------+
 
 
@@ -1248,10 +1246,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 131   ;
+; Total registers                              ; 141   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 3     ;
+; Number of registers using Asynchronous Clear ; 13    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 128   ;
 ; Number of registers using Preset             ; 0     ;
@@ -1266,16 +1264,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 4:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |PROJETO|ALU:inst18|BB[4]  ;
 ; 4:1                ; 23 bits   ; 46 LEs        ; 46 LEs               ; 0 LEs                  ; No         ; |PROJETO|ALU:inst18|BB[5]  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-
-
-+---------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MULTIPLEX:inst11 ;
-+----------------+-------+--------------------------------------+
-; Parameter Name ; Value ; Type                                 ;
-+----------------+-------+--------------------------------------+
-; n              ; 32    ; Signed Integer                       ;
-+----------------+-------+--------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +------------------------------------------------------+
@@ -1308,6 +1296,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ADDER:inst28 ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; n              ; 32    ; Signed Integer                   ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: REG_FILE:inst2 ;
 +----------------+-------+------------------------------------+
@@ -1316,6 +1314,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; n              ; 5     ; Signed Integer                     ;
 ; m              ; 32    ; Signed Integer                     ;
 +----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MULTIPLEX:inst11 ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; n              ; 32    ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1336,16 +1344,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-------------------------------------+
 ; n              ; 32    ; Signed Integer                      ;
 +----------------+-------+-------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ADDER:inst28 ;
-+----------------+-------+----------------------------------+
-; Parameter Name ; Value ; Type                             ;
-+----------------+-------+----------------------------------+
-; n              ; 32    ; Signed Integer                   ;
-+----------------+-------+----------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1699,7 +1697,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:09     ;
+; Top            ; 00:00:06     ;
 +----------------+--------------+
 
 
@@ -1708,8 +1706,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
-    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Wed Jun 11 19:04:40 2025
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Jun 18 16:52:05 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off PROJETO -c PROJETO
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file componentes/display/hex7seg.vhd
@@ -1760,23 +1758,23 @@ Info (12021): Found 2 design units, including 1 entities, in source file compone
 Info (12021): Found 1 design units, including 1 entities, in source file projeto.bdf
     Info (12023): Found entity 1: PROJETO
 Info (12127): Elaborating entity "PROJETO" for the top level hierarchy
-Info (12128): Elaborating entity "bin32_to_7seg" for hierarchy "bin32_to_7seg:inst13"
-Info (12128): Elaborating entity "MULTIPLEX" for hierarchy "MULTIPLEX:inst11"
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:inst18"
 Info (12128): Elaborating entity "CONTROL_UNIT" for hierarchy "CONTROL_UNIT:inst3"
 Info (12128): Elaborating entity "INST_MEM" for hierarchy "INST_MEM:inst29"
 Warning (10540): VHDL Signal Declaration warning at INST_MEM.vhd(17): used explicit default value for signal "instr_memory" because signal was never assigned a value
 Info (12128): Elaborating entity "PC" for hierarchy "PC:inst"
-Warning (10492): VHDL Process Statement warning at PC.vhd(20): signal "reset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at PC.vhd(22): signal "reset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "MULTIPLEX" for hierarchy "MULTIPLEX:inst15"
 Info (12128): Elaborating entity "JUMPADDRES" for hierarchy "JUMPADDRES:inst12"
 Info (12128): Elaborating entity "SHIFTLEFT2JUMP" for hierarchy "SHIFTLEFT2JUMP:inst8"
 Info (12128): Elaborating entity "PC4" for hierarchy "PC4:inst31"
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:inst18"
-Info (12128): Elaborating entity "REG_FILE" for hierarchy "REG_FILE:inst2"
-Info (12128): Elaborating entity "MULTIPLEX" for hierarchy "MULTIPLEX:inst9"
-Info (12128): Elaborating entity "SIGN_EXTEND" for hierarchy "SIGN_EXTEND:inst4"
 Info (12128): Elaborating entity "ADDER" for hierarchy "ADDER:inst28"
 Info (12128): Elaborating entity "SHIFT_LEFT_2" for hierarchy "SHIFT_LEFT_2:inst23"
+Info (12128): Elaborating entity "SIGN_EXTEND" for hierarchy "SIGN_EXTEND:inst4"
+Info (12128): Elaborating entity "REG_FILE" for hierarchy "REG_FILE:inst2"
 Info (12128): Elaborating entity "DATA_MEMORY" for hierarchy "DATA_MEMORY:inst25"
+Info (12128): Elaborating entity "MULTIPLEX" for hierarchy "MULTIPLEX:inst9"
+Info (12128): Elaborating entity "bin32_to_7seg" for hierarchy "bin32_to_7seg:inst13"
 Info (276014): Found 1 instances of uninferred RAM logic
     Info (276007): RAM logic "REG_FILE:inst2|registers" is uninferred due to asynchronous read logic
 Info (278001): Inferred 15 megafunctions from design logic
@@ -1807,8 +1805,10 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/sign
     Info (12023): Found entity 1: sign_div_unsign_9nh
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_6af.tdf
     Info (12023): Found entity 1: alt_u_div_6af
+Warning (12136): Clear box output file C:/Users/aluno/Documents/PINTO/MIPS-Project/db/add_sub_7pc.tdf is not compatible with the current compile. Used regenerated output file C:/Users/aluno/Documents/PINTO/MIPS-Project/db/add_sub_7pc.tdf for elaboration
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_7pc.tdf
     Info (12023): Found entity 1: add_sub_7pc
+Warning (12136): Clear box output file C:/Users/aluno/Documents/PINTO/MIPS-Project/db/add_sub_8pc.tdf is not compatible with the current compile. Used regenerated output file C:/Users/aluno/Documents/PINTO/MIPS-Project/db/add_sub_8pc.tdf for elaboration
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_8pc.tdf
     Info (12023): Found entity 1: add_sub_8pc
 Info (12130): Elaborated megafunction instantiation "bin32_to_7seg:inst13|lpm_divide:Div0"
@@ -1823,8 +1823,28 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/sign
     Info (12023): Found entity 1: sign_div_unsign_olh
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_47f.tdf
     Info (12023): Found entity 1: alt_u_div_47f
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "PC[31]" is stuck at GND
+    Warning (13410): Pin "PC[30]" is stuck at GND
+    Warning (13410): Pin "PC[29]" is stuck at GND
+    Warning (13410): Pin "PC[28]" is stuck at GND
+    Warning (13410): Pin "PC[26]" is stuck at GND
+    Warning (13410): Pin "PC[25]" is stuck at GND
+    Warning (13410): Pin "PC[21]" is stuck at GND
+    Warning (13410): Pin "PC[20]" is stuck at GND
+    Warning (13410): Pin "PC[16]" is stuck at GND
+    Warning (13410): Pin "PC[15]" is stuck at GND
+    Warning (13410): Pin "PC[12]" is stuck at GND
+    Warning (13410): Pin "PC[11]" is stuck at GND
+    Warning (13410): Pin "PC[10]" is stuck at GND
+    Warning (13410): Pin "PC[9]" is stuck at GND
+    Warning (13410): Pin "PC[8]" is stuck at GND
+    Warning (13410): Pin "PC[6]" is stuck at GND
+    Warning (13410): Pin "PC[5]" is stuck at GND
+    Warning (13410): Pin "PC[1]" is stuck at GND
+    Warning (13410): Pin "PC[0]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 778 registers lost all their fanouts during netlist optimizations.
+Info (17049): 768 registers lost all their fanouts during netlist optimizations.
 Info (17016): Found the following redundant logic cells in design
     Info (17048): Logic cell "bin32_to_7seg:inst13|lpm_divide:Mod1|lpm_divide_kcm:auto_generated|sign_div_unsign_9nh:divider|alt_u_div_6af:divider|add_sub_31_result_int[0]~0"
     Info (17048): Logic cell "bin32_to_7seg:inst13|lpm_divide:Mod1|lpm_divide_kcm:auto_generated|sign_div_unsign_9nh:divider|alt_u_div_6af:divider|add_sub_6_result_int[0]~14"
@@ -2052,14 +2072,14 @@ Info (17016): Found the following redundant logic cells in design
     Info (17048): Logic cell "bin32_to_7seg:inst13|lpm_divide:Mod7|lpm_divide_kcm:auto_generated|sign_div_unsign_9nh:divider|alt_u_div_6af:divider|add_sub_30_result_int[0]~62"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 11631 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 11798 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 56 output pins
-    Info (21061): Implemented 11573 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4705 megabytes
-    Info: Processing ended: Wed Jun 11 19:04:52 2025
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:11
+    Info (21059): Implemented 184 output pins
+    Info (21061): Implemented 11612 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 25 warnings
+    Info: Peak virtual memory: 4715 megabytes
+    Info: Processing ended: Wed Jun 18 16:52:14 2025
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:08
 
 
