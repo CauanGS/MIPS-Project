@@ -1,52 +1,52 @@
 library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.STD_LOGIC_UNSIGNED.ALL;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
 
-entity ALU is
-    Port (
-        SrcA      : in  STD_LOGIC_VECTOR(31 downto 0);  -- Entrada A
-        SrcB      : in  STD_LOGIC_VECTOR(31 downto 0);  -- Entrada B
-        ALUControl: in  STD_LOGIC_VECTOR(2 downto 0);    -- Controle da ALU (F = F2F1F0)
-        ALUResult : out STD_LOGIC_VECTOR(31 downto 0);   -- Resultado da ALU
-        Zero      : out STD_LOGIC                        -- Sinal de zero (0 se ALUResult = 0, 1 caso contrário)
-    );
-end ALU;
+entity ULA is
+	GENERIC(n : integer := 32);
+	port(
+			-- Inputs
+			operand_1 : in std_logic_vector(n - 1 downto 0);
+			operand_2 : in std_logic_vector(n - 1 downto 0);
+			ALU_control: in std_logic_vector(3 downto 0); -- 9 Operations
 
-architecture Behavioral of ALU is
-    signal BB    : STD_LOGIC_VECTOR(31 downto 0);
-    signal S     : STD_LOGIC_VECTOR(31 downto 0);
-    signal tempY : STD_LOGIC_VECTOR(31 downto 0);
+			-- Outputs
+			result : out std_logic_vector(n - 1 downto 0);
+			zero : out std_logic
+		);
+end ULA;
+
+architecture Behavioral of ULA is
+	signal temp : std_logic_vector(n - 1 downto 0);
+	signal is_zero : std_logic;
 begin
-    -- BB recebe NOT SrcB se ALUControl(2) = '1', senão recebe SrcB
-    BB <= not SrcB when ALUControl(2) = '1' else SrcB;
+	-- ALU Operations
+	with ALU_control select
+		temp <= std_logic_vector(unsigned(operand_1) + unsigned(operand_2)) when "0000",
+				std_logic_vector(unsigned(operand_1) - unsigned(operand_2)) when "0001",
+				operand_1 AND operand_2 when "0010",
+        		operand_1 OR operand_2 when "0011",
+        		operand_1 NOR operand_2 when "0100",
+        		operand_1 NAND operand_2 when "0101",
+        		operand_1 XOR operand_2 when "0110",
+				std_logic_vector(shift_left(unsigned(operand_1), to_integer(unsigned(operand_2)))) when "0111",
+        		std_logic_vector(shift_right(unsigned(operand_1), to_integer(unsigned(operand_2)))) when "1000",
+        		(others => '0') when others;
 
-    -- Soma: SrcA + BB + ALUControl(2) como carry-in (bit menos significativo)
-    S <= SrcA + BB + ("0000000000000000000000000000000" & ALUControl(2));
-
-    process (SrcA, BB, S, ALUControl)
-    begin
-        case ALUControl(1 downto 0) is
-            when "00" =>
-                tempY <= SrcA and BB;
-            when "01" =>
-                tempY <= SrcA or BB;
-            when "10" =>
-                tempY <= S;
-				when "11" =>
-                tempY <= (31 downto 1 => '0') & S(31);
-        end case;
-    end process;
-
-    -- Atribuição da saída ALUResult
-    ALUResult <= tempY;
-
-    -- Zero = '1' se ALUResult for zero, caso contrário '0'
-    process(tempY)
-		begin
-			if tempY = X"00000000" then
-				Zero <= '1';
-			else
-				Zero <= '0';
+    -- Zero Detection
+	process(temp)
+	begin
+		is_zero <= '1';
+		for i in 0 to n - 1 loop
+			if temp(i) /= '0' then
+				is_zero <= '0';
+				exit;
 			end if;
+		end loop;	
 	end process;
+	
+	zero <= is_zero;
+
+	-- Output Result
+	result <= temp;
 end Behavioral;

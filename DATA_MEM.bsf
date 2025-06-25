@@ -20,9 +20,9 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 200 128)
+	(rect 16 16 280 160)
 	(text "DATA_MEM" (rect 5 0 64 12)(font "Arial" ))
-	(text "inst" (rect 8 96 20 108)(font "Arial" ))
+	(text "inst" (rect 8 128 20 140)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -33,30 +33,44 @@ applicable agreement for further details.
 	(port
 		(pt 0 48)
 		(input)
-		(text "WD[n-1..0]" (rect 0 0 43 12)(font "Arial" ))
-		(text "WD[n-1..0]" (rect 21 43 64 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
+		(text "reset_neg" (rect 0 0 40 12)(font "Arial" ))
+		(text "reset_neg" (rect 21 43 61 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
 	)
 	(port
 		(pt 0 64)
 		(input)
-		(text "WE" (rect 0 0 17 12)(font "Arial" ))
-		(text "WE" (rect 21 59 38 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64)(line_width 1))
+		(text "memory_address[n-1..0]" (rect 0 0 99 12)(font "Arial" ))
+		(text "memory_address[n-1..0]" (rect 21 59 120 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
 	)
 	(port
 		(pt 0 80)
 		(input)
-		(text "A[n-1..0]" (rect 0 0 34 12)(font "Arial" ))
-		(text "A[n-1..0]" (rect 21 75 55 87)(font "Arial" ))
-		(line (pt 0 80)(pt 16 80)(line_width 3))
+		(text "MemWrite" (rect 0 0 43 12)(font "Arial" ))
+		(text "MemWrite" (rect 21 75 64 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 1))
 	)
 	(port
-		(pt 184 32)
+		(pt 0 96)
+		(input)
+		(text "MemRead" (rect 0 0 43 12)(font "Arial" ))
+		(text "MemRead" (rect 21 91 64 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "data_in[n-1..0]" (rect 0 0 54 12)(font "Arial" ))
+		(text "data_in[n-1..0]" (rect 21 107 75 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 264 32)
 		(output)
-		(text "RD[n-1..0]" (rect 0 0 41 12)(font "Arial" ))
-		(text "RD[n-1..0]" (rect 122 27 163 39)(font "Arial" ))
-		(line (pt 184 32)(pt 168 32)(line_width 3))
+		(text "data_out[n-1..0]" (rect 0 0 60 12)(font "Arial" ))
+		(text "data_out[n-1..0]" (rect 183 27 243 39)(font "Arial" ))
+		(line (pt 264 32)(pt 248 32)(line_width 3))
 	)
 	(parameter
 		"n"
@@ -64,7 +78,7 @@ applicable agreement for further details.
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing
-		(rectangle (rect 16 16 168 96)(line_width 1))
+		(rectangle (rect 16 16 248 128)(line_width 1))
 	)
-	(annotation_block (parameter)(rect 200 -64 300 16))
+	(annotation_block (parameter)(rect 280 -64 380 16))
 )

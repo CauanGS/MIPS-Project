@@ -4,11 +4,11 @@ K3
 cModel Technology
 Z0 dC:\Users\aluno\Documents\PINTO\MIPS-Project\simulation\qsim
 vPROJETO
-Z1 !s100 W]C:@=<SiRDe1`ZOknXcf1
-Z2 IN2>X_][]P3PldY1z;X`N=1
-Z3 V5UZA3MeZM5Y0ZgHj5W<0B2
+Z1 !s100 gR:@0Njcg1zH_RZ[8kP2H1
+Z2 IU;MMBMW@6i:2iZB>FilcK3
+Z3 VjE?0DQ9T1mMRIXdVkUQ:i2
 Z4 dC:\Users\aluno\Documents\PINTO\MIPS-Project\simulation\qsim
-Z5 w1750276800
+Z5 w1750895660
 Z6 8PROJETO.vo
 Z7 FPROJETO.vo
 L0 31
@@ -20,16 +20,16 @@ Z10 o-work work -O0
 Z11 n@p@r@o@j@e@t@o
 !i10b 1
 !s85 0
-Z12 !s108 1750276801.352000
+Z12 !s108 1750895660.951000
 Z13 !s107 PROJETO.vo|
 !s101 -O0
 vPROJETO_vlg_check_tst
 !i10b 1
-Z14 !s100 QA84`bZWWR<z:i68f]=623
-Z15 I]nzEI1:Q:6gk=7]a4I8Vf1
-Z16 VgknNzDN<nLDQZ;Wzc3F=_1
+Z14 !s100 @=ie]0Lo_0nGS?Z[e]7IT1
+Z15 I<jUJ5h7j7cP;LkN[MkaVn2
+Z16 VN0NgKbPTa=jlP;YnHQF^^3
 R4
-Z17 w1750276799
+Z17 w1750895659
 Z18 8PROJETO.vt
 Z19 FPROJETO.vt
 L0 59
@@ -37,7 +37,7 @@ R8
 r1
 !s85 0
 31
-Z20 !s108 1750276802.078000
+Z20 !s108 1750895661.676000
 Z21 !s107 PROJETO.vt|
 Z22 !s90 -work|work|PROJETO.vt|
 !s101 -O0
@@ -65,14 +65,14 @@ R10
 Z27 n@p@r@o@j@e@t@o_vlg_sample_tst
 vPROJETO_vlg_vec_tst
 !i10b 1
-!s100 W@JK;ezfaZoLDRL_eAY0^1
-IAjNX3FeEbg1=f7AeE`41d3
+!s100 bhgK[UUUXJVL0[E<dFKl=0
+Ie<n<4O>GH6A>K=OLaJ9]<3
 Z28 VK^A7`1a=lKR]VLfiXoNBR2
 R4
 R17
 R18
 R19
-Z29 L0 3535
+Z29 L0 6383
 R8
 r1
 !s85 0

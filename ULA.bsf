@@ -20,45 +20,51 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 256 128)
+	(rect 16 16 240 128)
 	(text "ULA" (rect 5 0 26 12)(font "Arial" ))
 	(text "inst" (rect 8 96 20 108)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
-		(text "SrcA[31..0]" (rect 0 0 46 12)(font "Arial" ))
-		(text "SrcA[31..0]" (rect 21 27 67 39)(font "Arial" ))
+		(text "operand_1[n-1..0]" (rect 0 0 67 12)(font "Arial" ))
+		(text "operand_1[n-1..0]" (rect 21 27 88 39)(font "Arial" ))
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
 		(pt 0 48)
 		(input)
-		(text "SrcB[31..0]" (rect 0 0 43 12)(font "Arial" ))
-		(text "SrcB[31..0]" (rect 21 43 64 55)(font "Arial" ))
+		(text "operand_2[n-1..0]" (rect 0 0 68 12)(font "Arial" ))
+		(text "operand_2[n-1..0]" (rect 21 43 89 55)(font "Arial" ))
 		(line (pt 0 48)(pt 16 48)(line_width 3))
 	)
 	(port
 		(pt 0 64)
 		(input)
-		(text "ALUControl[2..0]" (rect 0 0 69 12)(font "Arial" ))
-		(text "ALUControl[2..0]" (rect 21 59 90 71)(font "Arial" ))
+		(text "ALU_control[3..0]" (rect 0 0 73 12)(font "Arial" ))
+		(text "ALU_control[3..0]" (rect 21 59 94 71)(font "Arial" ))
 		(line (pt 0 64)(pt 16 64)(line_width 3))
 	)
 	(port
-		(pt 240 32)
+		(pt 224 32)
 		(output)
-		(text "ALUResult[31..0]" (rect 0 0 70 12)(font "Arial" ))
-		(text "ALUResult[31..0]" (rect 149 27 219 39)(font "Arial" ))
-		(line (pt 240 32)(pt 224 32)(line_width 3))
+		(text "result[n-1..0]" (rect 0 0 47 12)(font "Arial" ))
+		(text "result[n-1..0]" (rect 156 27 203 39)(font "Arial" ))
+		(line (pt 224 32)(pt 208 32)(line_width 3))
 	)
 	(port
-		(pt 240 48)
+		(pt 224 48)
 		(output)
-		(text "Zero" (rect 0 0 20 12)(font "Arial" ))
-		(text "Zero" (rect 199 43 219 55)(font "Arial" ))
-		(line (pt 240 48)(pt 224 48)(line_width 1))
+		(text "zero" (rect 0 0 16 12)(font "Arial" ))
+		(text "zero" (rect 187 43 203 55)(font "Arial" ))
+		(line (pt 224 48)(pt 208 48)(line_width 1))
 	)
+	(parameter
+		"n"
+		"32"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing
-		(rectangle (rect 16 16 224 96)(line_width 1))
+		(rectangle (rect 16 16 208 96)(line_width 1))
 	)
+	(annotation_block (parameter)(rect 240 -64 340 16))
 )

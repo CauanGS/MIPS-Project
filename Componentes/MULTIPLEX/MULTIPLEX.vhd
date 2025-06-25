@@ -1,20 +1,20 @@
 library IEEE;
-use IEEE.std_logic_1164.all;
-use IEEE.numeric_std.all;
+use IEEE.STD_LOGIC_1164.all;
 
 entity MULTIPLEX is
-  GENERIC(n : integer := 32);
-  port( 
-        input_1    : in std_logic_vector(n - 1 downto 0);
-        input_2    : in std_logic_vector(n - 1 downto 0);
-        sinal_controle : in std_logic; 
-		  
-        output     : out std_logic_vector(n - 1 downto 0) 
-	   );
+	port(e1, e2 : in STD_LOGIC_VECTOR(31 downto 0);
+			sinal : in STD_LOGIC;
+			s : out STD_LOGIC_VECTOR (31 downto 0));
 end MULTIPLEX;
 
-architecture Behavioral of MULTIPLEX is
-begin
-with sinal_controle select
-  output <= input_1 when '0', input_2 when others;
-end Behavioral;
+architecture behavior of MULTIPLEX is
+begin 
+	process(e1, e2, sinal)
+	begin
+		if (sinal = '0') then s <= e1;
+		elsif (sinal = '1') then s <= e2;
+		end if;
+	end process;
+	
+end behavior;
+	
