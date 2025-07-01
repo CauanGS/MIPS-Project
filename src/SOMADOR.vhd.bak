@@ -1,0 +1,23 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity SOMADOR is 
+	port( A : in STD_LOGIC_VECTOR(31 downto 0);
+			B : in STD_LOGIC_VECTOR(31 downto 0);
+			R : out STD_LOGIC_VECTOR(31 downto 0));
+end;
+
+architecture behave of SOMADOR is
+	signal A_int, B_int, R_int : SIGNED(31 downto 0);
+	begin
+		process (A, B)
+		begin 
+			
+			A_int <= SIGNED(A);
+			B_int <= SIGNED(B);
+			R_int <= A_int + B_int;
+		end process;
+	R <= STD_LOGIC_VECTOR(R_int);
+	
+end behave;

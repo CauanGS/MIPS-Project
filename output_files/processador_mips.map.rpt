@@ -1,5 +1,5 @@
 Analysis & Synthesis report for processador_mips
-Tue Jul 01 10:55:17 2025
+Tue Jul 01 18:38:57 2025
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Jul 01 10:55:17 2025      ;
+; Analysis & Synthesis Status        ; Successful - Tue Jul 01 18:38:57 2025      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; processador_mips                           ;
 ; Top-level Entity Name              ; processador_mips                           ;
@@ -151,18 +151,18 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 6      ;
+; Number detected on machine ; 12     ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                      ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                                            ; Library ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------+
-; src/processador_mips.bdf         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/backupSSD/AreaDeTrabalhoAntiga/Unesp/5°semestre/LaboratorioCircuitosDigitais/Projeto/ProjetoGit/src/processador_mips.bdf ;         ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                     ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                           ; Library ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------+---------+
+; src/processador_mips.bdf         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/cauan/Documents/Projeto/MIPS-Project/src/processador_mips.bdf ;         ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------------+
@@ -234,14 +234,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Tue Jul 01 10:55:16 2025
+    Info: Processing started: Tue Jul 01 18:38:56 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off processador_mips -c processador_mips
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 1 design units, including 1 entities, in source file src/processador_mips.bdf
-    Info (12023): Found entity 1: processador_mips
 Info (12021): Found 2 design units, including 1 entities, in source file src/extensor_de_sinal.vhd
     Info (12022): Found design unit 1: EXTENSOR_DE_SINAL-behave
     Info (12023): Found entity 1: EXTENSOR_DE_SINAL
+Info (12021): Found 2 design units, including 1 entities, in source file src/somador.vhd
+    Info (12022): Found design unit 1: SOMADOR-behave
+    Info (12023): Found entity 1: SOMADOR
+Info (12021): Found 1 design units, including 1 entities, in source file src/processador_mips.bdf
+    Info (12023): Found entity 1: processador_mips
+Info (12021): Found 2 design units, including 1 entities, in source file src/somador_mais_quatro.vhd
+    Info (12022): Found design unit 1: SOMADOR_MAIS_QUATRO-behave
+    Info (12023): Found entity 1: SOMADOR_MAIS_QUATRO
+Info (12021): Found 2 design units, including 1 entities, in source file src/multiplexador_dois.vhd
+    Info (12022): Found design unit 1: MULTIPLEXADOR_DOIS-behave
+    Info (12023): Found entity 1: MULTIPLEXADOR_DOIS
+Info (12021): Found 2 design units, including 1 entities, in source file src/multiplexador_cinco.vhd
+    Info (12022): Found design unit 1: MULTIPLEXADOR_CINCO-behave
+    Info (12023): Found entity 1: MULTIPLEXADOR_CINCO
 Info (12127): Elaborating entity "processador_mips" for the top level hierarchy
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -249,8 +261,8 @@ Info (21057): Implemented 2 device resources after synthesis - the final resourc
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 1 output pins
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4646 megabytes
-    Info: Processing ended: Tue Jul 01 10:55:17 2025
+    Info: Peak virtual memory: 4655 megabytes
+    Info: Processing ended: Tue Jul 01 18:38:57 2025
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
