@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for processador_mips
-Tue Jul 01 21:05:17 2025
+Tue Jul 01 18:38:07 2025
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -91,7 +91,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 12     ;
+; Number detected on machine ; 6      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
@@ -791,7 +791,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Tue Jul 01 21:05:16 2025
+    Info: Processing started: Tue Jul 01 18:38:05 2025
 Info: Command: quartus_sta processador_mips -c processador_mips
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -839,9 +839,9 @@ Info (332140): No Minimum Pulse Width paths to report
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4698 megabytes
-    Info: Processing ended: Tue Jul 01 21:05:17 2025
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 4691 megabytes
+    Info: Processing ended: Tue Jul 01 18:38:07 2025
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
 
