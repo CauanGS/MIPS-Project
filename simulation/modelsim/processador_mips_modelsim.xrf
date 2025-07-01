@@ -5,6 +5,7 @@ source_file = 1, C:/Users/cauan/Documents/Projeto/MIPS-Project/src/processador_m
 source_file = 1, C:/Users/cauan/Documents/Projeto/MIPS-Project/src/SOMADOR_MAIS_QUATRO.vhd
 source_file = 1, C:/Users/cauan/Documents/Projeto/MIPS-Project/src/MULTIPLEXADOR_DOIS.vhd
 source_file = 1, C:/Users/cauan/Documents/Projeto/MIPS-Project/src/MULTIPLEXADOR_CINCO.vhd
+source_file = 1, C:/Users/cauan/Documents/Projeto/MIPS-Project/src/ULA_DECODIFICADOR.vhd
 source_file = 1, C:/Users/cauan/Documents/Projeto/MIPS-Project/db/processador_mips.cbx.xml
 source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd

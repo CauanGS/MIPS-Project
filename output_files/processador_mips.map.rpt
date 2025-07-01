@@ -1,5 +1,5 @@
 Analysis & Synthesis report for processador_mips
-Tue Jul 01 18:38:57 2025
+Tue Jul 01 19:09:59 2025
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Jul 01 18:38:57 2025      ;
+; Analysis & Synthesis Status        ; Successful - Tue Jul 01 19:09:59 2025      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; processador_mips                           ;
 ; Top-level Entity Name              ; processador_mips                           ;
@@ -66,6 +66,8 @@ applicable agreement for further details.
 ; Device                                                                     ; EP4CE115F29C7      ;                    ;
 ; Top-level entity name                                                      ; processador_mips   ; processador_mips   ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
+; VHDL Show LMF Mapping Messages                                             ; Off                ;                    ;
+; VHDL Version                                                               ; VHDL_2008          ; VHDL_1993          ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
 ; Enable compact report table                                                ; Off                ; Off                ;
@@ -74,7 +76,6 @@ applicable agreement for further details.
 ; Preserve fewer node names                                                  ; On                 ; On                 ;
 ; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
 ; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
-; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
 ; State Machine Processing                                                   ; Auto               ; Auto               ;
 ; Safe State Machine                                                         ; Off                ; Off                ;
 ; Extract Verilog State Machines                                             ; On                 ; On                 ;
@@ -234,7 +235,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Tue Jul 01 18:38:56 2025
+    Info: Processing started: Tue Jul 01 19:09:58 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off processador_mips -c processador_mips
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file src/extensor_de_sinal.vhd
@@ -254,6 +255,9 @@ Info (12021): Found 2 design units, including 1 entities, in source file src/mul
 Info (12021): Found 2 design units, including 1 entities, in source file src/multiplexador_cinco.vhd
     Info (12022): Found design unit 1: MULTIPLEXADOR_CINCO-behave
     Info (12023): Found entity 1: MULTIPLEXADOR_CINCO
+Info (12021): Found 2 design units, including 1 entities, in source file src/ula_decodificador.vhd
+    Info (12022): Found design unit 1: ULA_DECODIFICADOR-behave
+    Info (12023): Found entity 1: ULA_DECODIFICADOR
 Info (12127): Elaborating entity "processador_mips" for the top level hierarchy
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -262,7 +266,7 @@ Info (21057): Implemented 2 device resources after synthesis - the final resourc
     Info (21059): Implemented 1 output pins
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4655 megabytes
-    Info: Processing ended: Tue Jul 01 18:38:57 2025
+    Info: Processing ended: Tue Jul 01 19:09:59 2025
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

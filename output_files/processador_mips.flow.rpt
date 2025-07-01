@@ -1,5 +1,5 @@
 Flow report for processador_mips
-Tue Jul 01 18:39:14 2025
+Tue Jul 01 19:10:16 2025
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Tue Jul 01 18:39:14 2025      ;
+; Flow Status                        ; Successful - Tue Jul 01 19:10:16 2025      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; processador_mips                           ;
 ; Top-level Entity Name              ; processador_mips                           ;
@@ -64,34 +64,38 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/01/2025 18:38:56 ;
+; Start date & time ; 07/01/2025 19:09:58 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; processador_mips    ;
 +-------------------+---------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                      ;
-+--------------------------------------+---------------------------------+---------------+-------------+----------------+
-; Assignment Name                      ; Value                           ; Default Value ; Entity Name ; Section Id     ;
-+--------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 127913738744564.175140593604736 ; --            ; --          ; --             ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                              ; --            ; --          ; TB_EXTENSOR    ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; TB_EXTENSOR                     ; --            ; --          ; eda_simulation ;
-; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                            ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (VHDL)          ; <None>        ; --          ; --             ;
-; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                 ; --            ; --          ; eda_simulation ;
-; EDA_TEST_BENCH_FILE                  ; sim/EXTENSOR_DE_SINAL_TB.vhd    ; --            ; --          ; TB_EXTENSOR    ;
-; EDA_TEST_BENCH_MODULE_NAME           ; EXTENSOR_DE_SINAL_TB            ; --            ; --          ; TB_EXTENSOR    ;
-; EDA_TEST_BENCH_NAME                  ; TB_EXTENSOR                     ; --            ; --          ; eda_simulation ;
-; MAX_CORE_JUNCTION_TEMP               ; 85                              ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP               ; 0                               ; --            ; --          ; --             ;
-; NOMINAL_CORE_SUPPLY_VOLTAGE          ; 1.2V                            ; --            ; --          ; --             ;
-; PARTITION_COLOR                      ; 16764057                        ; --            ; --          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING           ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE               ; SOURCE                          ; --            ; --          ; Top            ;
-; PROJECT_OUTPUT_DIRECTORY             ; output_files                    ; --            ; --          ; --             ;
-+--------------------------------------+---------------------------------+---------------+-------------+----------------+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                            ;
++--------------------------------------+---------------------------------------+---------------+-------------+----------------+
+; Assignment Name                      ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
++--------------------------------------+---------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID                ; 127913738744564.175140779807812       ; --            ; --          ; --             ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; TB_EXTENSOR    ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; TB_EXTENSOR                           ; --            ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                  ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (VHDL)                ; <None>        ; --          ; --             ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                       ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_FILE                  ; sim/EXTENSOR_DE_SINAL_TB.vhd          ; --            ; --          ; TB_EXTENSOR    ;
+; EDA_TEST_BENCH_MODULE_NAME           ; EXTENSOR_DE_SINAL_TB                  ; --            ; --          ; TB_EXTENSOR    ;
+; EDA_TEST_BENCH_NAME                  ; TB_EXTENSOR                           ; --            ; --          ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                    ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                     ; --            ; --          ; --             ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE          ; 1.2V                                  ; --            ; --          ; --             ;
+; PARTITION_COLOR                      ; 16764057                              ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                 ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE               ; SOURCE                                ; --            ; --          ; Top            ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                   ; --            ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                          ; --            ; --          ; --             ;
+; VHDL_INPUT_VERSION                   ; VHDL_2008                             ; VHDL_1993     ; --          ; --             ;
+; VHDL_SHOW_LMF_MAPPING_MESSAGES       ; Off                                   ; --            ; --          ; --             ;
++--------------------------------------+---------------------------------------+---------------+-------------+----------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -99,12 +103,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:00     ; 1.0                     ; 4655 MB             ; 00:00:01                           ;
+; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4655 MB             ; 00:00:01                           ;
 ; Fitter                    ; 00:00:09     ; 1.0                     ; 5129 MB             ; 00:00:09                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 4583 MB             ; 00:00:03                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4681 MB             ; 00:00:01                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 4583 MB             ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4681 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4548 MB             ; 00:00:00                           ;
-; Total                     ; 00:00:13     ; --                      ; --                  ; 00:00:14                           ;
+; Total                     ; 00:00:14     ; --                      ; --                  ; 00:00:14                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
