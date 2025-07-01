@@ -1,0 +1,13 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity EXTENSOR_DE_SINAL is
+	port(entrada: in std_logic_vector(15 downto 0);
+			saida: out std_logic_vector(31 downto 0););
+end;
+
+architecture behave of EXTENSOR_DE_SINAL is
+begin
+	saida <= X"ffff" & entrada when entrada(15) else X"0000" & entrada; 
+	-- X"a" converte "a" para hexadecimal
+end behave;			
