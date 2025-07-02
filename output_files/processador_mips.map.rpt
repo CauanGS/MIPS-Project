@@ -1,5 +1,5 @@
 Analysis & Synthesis report for processador_mips
-Tue Jul 01 19:09:59 2025
+Tue Jul 01 21:05:01 2025
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Jul 01 19:09:59 2025      ;
+; Analysis & Synthesis Status        ; Successful - Tue Jul 01 21:05:01 2025      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; processador_mips                           ;
 ; Top-level Entity Name              ; processador_mips                           ;
@@ -50,7 +50,7 @@ applicable agreement for further details.
 ;     Total combinational functions  ; 0                                          ;
 ;     Dedicated logic registers      ; 0                                          ;
 ; Total registers                    ; 0                                          ;
-; Total pins                         ; 2                                          ;
+; Total pins                         ; 48                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -157,42 +157,43 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                     ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                           ; Library ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------+---------+
-; src/processador_mips.bdf         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/cauan/Documents/Projeto/MIPS-Project/src/processador_mips.bdf ;         ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                      ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                            ; Library ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------+---------+
+; src/EXTENSOR_DE_SINAL.vhd        ; yes             ; User VHDL File                     ; C:/Users/cauan/Documents/Projeto/MIPS-Project/src/EXTENSOR_DE_SINAL.vhd ;         ;
+; src/processador_mips.bdf         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/cauan/Documents/Projeto/MIPS-Project/src/processador_mips.bdf  ;         ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------+---------+
 
 
-+----------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                    ;
-+---------------------------------------------+------------------+
-; Resource                                    ; Usage            ;
-+---------------------------------------------+------------------+
-;                                             ;                  ;
-; Total combinational functions               ; 0                ;
-; Logic element usage by number of LUT inputs ;                  ;
-;     -- 4 input functions                    ; 0                ;
-;     -- 3 input functions                    ; 0                ;
-;     -- <=2 input functions                  ; 0                ;
-;                                             ;                  ;
-; Logic elements by mode                      ;                  ;
-;     -- normal mode                          ; 0                ;
-;     -- arithmetic mode                      ; 0                ;
-;                                             ;                  ;
-; Total registers                             ; 0                ;
-;     -- Dedicated logic registers            ; 0                ;
-;     -- I/O registers                        ; 0                ;
-;                                             ;                  ;
-; I/O pins                                    ; 2                ;
-; Embedded Multiplier 9-bit elements          ; 0                ;
-; Maximum fan-out node                        ; pin_name2~output ;
-; Maximum fan-out                             ; 1                ;
-; Total fan-out                               ; 3                ;
-; Average fan-out                             ; 0.75             ;
-+---------------------------------------------+------------------+
++-----------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                     ;
++---------------------------------------------+-------------------+
+; Resource                                    ; Usage             ;
++---------------------------------------------+-------------------+
+;                                             ;                   ;
+; Total combinational functions               ; 0                 ;
+; Logic element usage by number of LUT inputs ;                   ;
+;     -- 4 input functions                    ; 0                 ;
+;     -- 3 input functions                    ; 0                 ;
+;     -- <=2 input functions                  ; 0                 ;
+;                                             ;                   ;
+; Logic elements by mode                      ;                   ;
+;     -- normal mode                          ; 0                 ;
+;     -- arithmetic mode                      ; 0                 ;
+;                                             ;                   ;
+; Total registers                             ; 0                 ;
+;     -- Dedicated logic registers            ; 0                 ;
+;     -- I/O registers                        ; 0                 ;
+;                                             ;                   ;
+; I/O pins                                    ; 48                ;
+; Embedded Multiplier 9-bit elements          ; 0                 ;
+; Maximum fan-out node                        ; entrada[15]~input ;
+; Maximum fan-out                             ; 17                ;
+; Total fan-out                               ; 80                ;
+; Average fan-out                             ; 0.83              ;
++---------------------------------------------+-------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -200,7 +201,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |processador_mips          ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 2    ; 0            ; |processador_mips   ; work         ;
+; |processador_mips          ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 48   ; 0            ; |processador_mips   ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -235,7 +236,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Tue Jul 01 19:09:58 2025
+    Info: Processing started: Tue Jul 01 21:05:00 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off processador_mips -c processador_mips
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file src/extensor_de_sinal.vhd
@@ -258,15 +259,43 @@ Info (12021): Found 2 design units, including 1 entities, in source file src/mul
 Info (12021): Found 2 design units, including 1 entities, in source file src/ula_decodificador.vhd
     Info (12022): Found design unit 1: ULA_DECODIFICADOR-behave
     Info (12023): Found entity 1: ULA_DECODIFICADOR
+Info (12021): Found 2 design units, including 1 entities, in source file src/concatenar_entradas.vhd
+    Info (12022): Found design unit 1: CONCATENAR_ENTRADAS-behave
+    Info (12023): Found entity 1: CONCATENAR_ENTRADAS
+Info (12021): Found 2 design units, including 1 entities, in source file src/memoria_de_dados.vhd
+    Info (12022): Found design unit 1: MEMORIA_DE_DADOS-behave
+    Info (12023): Found entity 1: MEMORIA_DE_DADOS
+Info (12021): Found 2 design units, including 1 entities, in source file src/display_sete_segmentos.vhd
+    Info (12022): Found design unit 1: DISPLAY_SETE_SEGMENTOS-behave
+    Info (12023): Found entity 1: DISPLAY_SETE_SEGMENTOS
+Info (12021): Found 2 design units, including 1 entities, in source file src/memoria_de_instrucoes.vhd
+    Info (12022): Found design unit 1: MEMORIA_DE_INSTRUCAO-behave
+    Info (12023): Found entity 1: MEMORIA_DE_INSTRUCAO
+Info (12021): Found 2 design units, including 1 entities, in source file src/decodificador_principal.vhd
+    Info (12022): Found design unit 1: DECODIFICADOR_PRINCIPAL-behave
+    Info (12023): Found entity 1: DECODIFICADOR_PRINCIPAL
+Info (12021): Found 2 design units, including 1 entities, in source file src/resete_contador_programa.vhd
+    Info (12022): Found design unit 1: RESETE_CONTADOR_PROGRAMA-behave
+    Info (12023): Found entity 1: RESETE_CONTADOR_PROGRAMA
+Info (12021): Found 2 design units, including 1 entities, in source file src/shift_esquerda.vhd
+    Info (12022): Found design unit 1: SHIFT_ESQUERDA-behave
+    Info (12023): Found entity 1: SHIFT_ESQUERDA
+Info (12021): Found 2 design units, including 1 entities, in source file src/memoria_de_registradores.vhd
+    Info (12022): Found design unit 1: MEMORIA_DE_REGISTRADORES-behave
+    Info (12023): Found entity 1: MEMORIA_DE_REGISTRADORES
+Info (12021): Found 2 design units, including 1 entities, in source file src/ula.vhd
+    Info (12022): Found design unit 1: ULA-behave
+    Info (12023): Found entity 1: ULA
 Info (12127): Elaborating entity "processador_mips" for the top level hierarchy
+Info (12128): Elaborating entity "EXTENSOR_DE_SINAL" for hierarchy "EXTENSOR_DE_SINAL:inst"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 1 output pins
+Info (21057): Implemented 48 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 16 input pins
+    Info (21059): Implemented 32 output pins
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4655 megabytes
-    Info: Processing ended: Tue Jul 01 19:09:59 2025
+    Info: Peak virtual memory: 4676 megabytes
+    Info: Processing ended: Tue Jul 01 21:05:01 2025
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

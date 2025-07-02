@@ -1,0 +1,33 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.NUMERIC_STD.all;
+
+entity MEMORIA_DE_DADOS is
+    port(
+        CLK   : in STD_LOGIC;
+        WE    : in STD_LOGIC;
+        A     : in STD_LOGIC_VECTOR(31 downto 0);
+        WD    : in STD_LOGIC_VECTOR(31 downto 0);
+        RD    : out STD_LOGIC_VECTOR(31 downto 0);
+		  RESET : in STD_LOGIC
+    );
+end MEMORIA_DE_DADOS;
+
+architecture behave of MEMORIA_DE_DADOS is
+    type TIPORAM is array(63 downto 0) of STD_LOGIC_VECTOR(31 downto 0);
+    signal MEMORIA: TIPORAM := (others => (others => '0')); -- Inicializa com zeros
+begin
+    process(CLK)
+    begin
+        if rising_edge(CLK) then
+            if RESET = '1' then
+                MEMORIA <= (others => (others => '0'));
+            elsif WE = '1' then
+                MEMORIA(to_integer(unsigned(A(7 downto 2)))) <= WD;
+            end if;
+        end if;
+    end process;
+
+    -- Leitura fora do clock (combinacional)
+    RD <= MEMORIA(to_integer(unsigned(A(7 downto 2))));
+end behave;

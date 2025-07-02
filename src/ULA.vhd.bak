@@ -1,0 +1,57 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity ULA is
+    Port(
+        ENTRADA_A     : in STD_LOGIC_VECTOR (31 downto 0);
+        ENTRADA_B     : in STD_LOGIC_VECTOR (31 downto 0);
+        OPERACAO    : in STD_LOGIC_VECTOR(2 downto 0);
+        RESULTADO : out STD_LOGIC_VECTOR(31 downto 0);
+        ZERO  : out STD_LOGIC
+    );
+end ULA;
+
+architecture behave of ULA is
+    signal INTEIRO_A, INTEIRO_B : signed(31 downto 0);  -- Mantemos como signed para lidar com sinais
+    signal RESULTADO_TEMPORARIO  : signed(31 downto 0);   -- Resultado também é signed
+begin
+
+    -- Convertendo as entradas de std_logic_vector para signed
+    INTEIRO_A <= signed(ENTRADA_A);
+    INTEIRO_B <= signed(ENTRADA_B);
+
+    process(A_int, INTEIRO_B, OPERACAO)
+    variable TEMPORARIO : signed(31 downto 0);
+begin
+    case OPERACAO is
+        when "000" =>
+            TEMPORARIO := INTEIRO_A and INTEIRO_B;
+        when "001" =>
+            TEMPORARIO := INTEIRO_A or INTEIRO_B;
+        when "010" =>
+            TEMPORARIO := INTEIRO_A + INTEIRO_B;
+        when "100" =>
+            TEMPORARIO := INTEIRO_A and (not INTEIRO_B);
+        when "101" =>
+            TEMPORARIO := INTEIRO_A or (not INTEIRO_B);
+        when "110" =>
+            TEMPORARIO := INTEIRO_A - INTEIRO_B;
+        when "111" =>
+            if INTEIRO_A < INTEIRO_B then
+                TEMPORARIO := (others => '0');
+                TEMPORARIO(0) := '1';
+            else
+                TEMPORARIO := (others => '0');
+            end if;
+        when others =>
+            TEMPORARIO := (others => '0');
+    end case;
+    RESULTADO_TEMPORARIO <= TEMPORARIO;
+end process;
+    -- Atribuindo o resultado
+    RESULTADO <= std_logic_vector(RESULTADO_TEMPORARIO);
+
+    -- Sinalizando Zero, se o resultado for zero
+    ZERO <= '1' when RESULTADO_TEMPORARIO = 0 else '0';
+end behave;

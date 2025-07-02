@@ -1,0 +1,40 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.NUMERIC_STD.all;
+
+entity MEMORIA_DE_INSTRUCAO is
+    port(
+        ENTRADA_A    : in STD_LOGIC_VECTOR(31 downto 0);  -- Endereço de 32 bits
+        INSTRUCAO : out STD_LOGIC_VECTOR(31 downto 0)  -- Instrução de 32 bits
+    );
+end MEMORIA_DE_INSTRUCAO;
+
+architecture behave of MEMORIA_DE_INSTRUCAO is
+    type ramtype is array(63 downto 0) of STD_LOGIC_VECTOR(31 downto 0);
+    signal MEMORIA : ramtype := (
+      0 => x"2010000A",  -- addi $16, $0, 10     ; $s0 = 10
+		1 => x"20110014",  -- addi $17, $0, 20     ; $s1 = 20
+		--8 => x"0800000A",  -- j    10               ; pula o bloco else
+		2 => x"20120005",  -- addi $18, $0, 5      ; $s2 = 5
+		3 => x"0211482A",  -- slt  $9, $16, $17    ; $t1 = ($s0 < $s1) = 1
+		4 => x"11200002",  -- beq  $9, $0, +2      ; NÃO salta
+		5 => x"22310000",  -- addi $17, $17, 0     ; $s1 = 20
+		6 => x"22520000",  -- addi $18, $18, 0     ; $s2 = 5
+		7 => x"02328020",  -- add  $16, $17, $18   ; $s0 = $s1 + $s2 
+		8 => x"0800000A",  -- j    10               ; pula o bloco else
+		9 => x"02288822",  -- sub  $16, $17, $18   ; NÃO executado
+		10 => x"2013002A",  -- addi $19, $0, 42    ;retorna 42
+		11 => x"20140000",  -- addi $20, $0, 0		 ;retorna 0
+		12 => x"20150004",  -- addi $21, $0, 4     ;retorna 4
+		13 => x"AEB30000",  -- sw   $19, 0($21)    ;retorna nada
+		14 => x"8EB40000",  -- lw   $20, 0($21)    ;retorna 42
+		15 => x"00000000",  -- NOP / fim
+		others => x"00000000"
+    );
+begin
+    process(ENTRADA_A)
+    begin
+        -- Leitura da memória no endereço determinado por 'a'
+        INSTRUCAO <= MEMORIA(to_integer(unsigned(ENTRADA_A(7 downto 2))));  -- Usa os 30 bits mais significativos
+    end process;
+end behave;

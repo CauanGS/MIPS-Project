@@ -1,0 +1,19 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity CONCATENAR_ENTRADAS is
+    Port (
+        entrada1 : in  STD_LOGIC_VECTOR(27 downto 0);  -- 28 bits
+        entrada2 : in  STD_LOGIC_VECTOR(3 downto 0);   -- 4 bits (MSBs)
+        saida    : out STD_LOGIC_VECTOR(31 downto 0)   -- 32 bits
+    );
+end Concatenar_Entradas;
+
+architecture Behavioral of Concatenar_Entradas is
+begin
+    process(entrada1, entrada2)
+    begin
+        -- Concatena os 4 bits de entrada2 como MSBs com os 28 bits de entrada1
+        saida <= entrada2 & entrada1;
+    end process;
+end Behavioral;a

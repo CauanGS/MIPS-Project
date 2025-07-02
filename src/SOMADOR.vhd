@@ -13,9 +13,8 @@ architecture behave of SOMADOR is
 	begin
 		process (ENTRADA_A, ENTRADA_B)
 		begin 
-			
-			A_INTEIRO <= SIGNED(A_INTEIRO);
-			B_INTEIRO <= SIGNED(B_INTEIRO);
+			A_INTEIRO <= SIGNED(ENTRADA_A);
+			B_INTEIRO <= SIGNED(ENTRADA_B);
 			R_INTEIRO <= A_INTEIRO + B_INTEIRO;
 		end process;
 	RESULTADO <= STD_LOGIC_VECTOR(R_INTEIRO);
