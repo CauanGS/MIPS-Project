@@ -2,7 +2,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
-entity MEMORIA_DE_REGISTRADORES is
+entity BANCO_DE_REGISTRADORES is
     Port ( CLK        : in  STD_LOGIC;              -- Sinal de clock
            RESET      : in  STD_LOGIC;              -- Sinal de reset síncrono
            WE         : in  STD_LOGIC;              -- Controle de escrita
@@ -13,9 +13,9 @@ entity MEMORIA_DE_REGISTRADORES is
            DADO_LIDO1 : out STD_LOGIC_VECTOR(31 downto 0); -- Saída leitura 1
            DADO_LIDO2 : out STD_LOGIC_VECTOR(31 downto 0)  -- Saída leitura 2
          );
-end MEMORIA_DE_REGISTRADORES;
+end BANCO_DE_REGISTRADORES;
 
-architecture behave of MEMORIA_DE_REGISTRADORES is
+architecture behave of BANCO_DE_REGISTRADORES is
 
     -- Banco de registradores: 32 registradores de 32 bits
     type BANCO_REGISTRADORES is array(0 to 31) of STD_LOGIC_VECTOR(31 downto 0);

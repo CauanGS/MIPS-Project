@@ -1,6 +1,6 @@
 Flow report for processador_mips
-Tue Jul 01 18:38:09 2025
-Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Tue Jul 01 22:23:31 2025
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -37,26 +37,26 @@ applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------------+
-; Flow Summary                                                                    ;
-+------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Tue Jul 01 18:38:09 2025      ;
-; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
-; Revision Name                      ; processador_mips                           ;
-; Top-level Entity Name              ; processador_mips                           ;
-; Family                             ; Cyclone IV E                               ;
-; Device                             ; EP4CE115F29C7                              ;
-; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 0 / 114,480 ( 0 % )                        ;
-;     Total combinational functions  ; 0 / 114,480 ( 0 % )                        ;
-;     Dedicated logic registers      ; 0 / 114,480 ( 0 % )                        ;
-; Total registers                    ; 0                                          ;
-; Total pins                         ; 48 / 529 ( 9 % )                           ;
-; Total virtual pins                 ; 0                                          ;
-; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                      ;
-; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                            ;
-; Total PLLs                         ; 0 / 4 ( 0 % )                              ;
-+------------------------------------+--------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Flow Summary                                                                         ;
++------------------------------------+-------------------------------------------------+
+; Flow Status                        ; Successful - Tue Jul 01 22:23:31 2025           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; processador_mips                                ;
+; Top-level Entity Name              ; processador_mips                                ;
+; Family                             ; Cyclone IV E                                    ;
+; Device                             ; EP4CE115F29C7                                   ;
+; Timing Models                      ; Final                                           ;
+; Total logic elements               ; 14,786 / 114,480 ( 13 % )                       ;
+;     Total combinational functions  ; 13,543 / 114,480 ( 12 % )                       ;
+;     Dedicated logic registers      ; 2,328 / 114,480 ( 2 % )                         ;
+; Total registers                    ; 2328                                            ;
+; Total pins                         ; 121 / 529 ( 23 % )                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                           ;
+; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                                 ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                                   ;
++------------------------------------+-------------------------------------------------+
 
 
 +-----------------------------------------+
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/01/2025 18:37:42 ;
+; Start date & time ; 07/01/2025 22:20:07 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; processador_mips    ;
 +-------------------+---------------------+
@@ -75,11 +75,12 @@ applicable agreement for further details.
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 198112244147332.175140586212604       ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 817180959092.175141920709132          ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; TB_EXTENSOR    ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; On                                    ; --            ; --          ; eda_simulation ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; TB_EXTENSOR                           ; --            ; --          ; eda_simulation ;
-; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                  ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (VHDL)                ; <None>        ; --          ; --             ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                           ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)             ; <None>        ; --          ; --             ;
 ; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                       ; --            ; --          ; eda_simulation ;
 ; EDA_TEST_BENCH_FILE                  ; sim/EXTENSOR_DE_SINAL_TB.vhd          ; --            ; --          ; TB_EXTENSOR    ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; EXTENSOR_DE_SINAL_TB                  ; --            ; --          ; TB_EXTENSOR    ;
@@ -103,12 +104,14 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4662 MB             ; 00:00:01                           ;
-; Fitter                    ; 00:00:14     ; 1.0                     ; 5128 MB             ; 00:00:13                           ;
-; Assembler                 ; 00:00:04     ; 1.0                     ; 4585 MB             ; 00:00:04                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4691 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4542 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:22     ; --                      ; --                  ; 00:00:21                           ;
+; Analysis & Synthesis      ; 00:00:15     ; 1.0                     ; 4723 MB             ; 00:00:15                           ;
+; Fitter                    ; 00:01:08     ; 1.0                     ; 5280 MB             ; 00:01:08                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 4598 MB             ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:11     ; 1.0                     ; 5564 MB             ; 00:00:11                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4611 MB             ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4602 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4614 MB             ; 00:00:02                           ;
+; Total                     ; 00:01:41     ; --                      ; --                  ; 00:01:42                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -117,11 +120,13 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; DESKTOP-N53D8N7  ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; DESKTOP-N53D8N7  ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; DESKTOP-N53D8N7  ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; DESKTOP-N53D8N7  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-N53D8N7  ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; DESKTOP-14GKDER  ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; DESKTOP-14GKDER  ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; DESKTOP-14GKDER  ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-14GKDER  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-14GKDER  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-14GKDER  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-14GKDER  ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
@@ -133,6 +138,8 @@ quartus_fit --read_settings_files=off --write_settings_files=off processador_mip
 quartus_asm --read_settings_files=off --write_settings_files=off processador_mips -c processador_mips
 quartus_sta processador_mips -c processador_mips
 quartus_eda --read_settings_files=off --write_settings_files=off processador_mips -c processador_mips
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog processador_mips -c processador_mips --vector_source=C:/Users/aluno/Documents/CAUAN/MIPS-Project/src/Waveform7.vwf --testbench_file=./simulation/qsim/processador_mips.vt
+quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog processador_mips -c processador_mips
 
 
 

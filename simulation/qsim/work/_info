@@ -4,78 +4,78 @@ K3
 cModel Technology
 Z0 dC:\Users\gabri\backupSSD\AreaDeTrabalhoAntiga\Unesp\5°semestre\LaboratorioCircuitosDigitais\Projeto\ProjetoGit\simulation\qsim
 vprocessador_mips
-Z1 !s100 1<>kISlo`]CM`lC:EVEl[1
-Z2 Im[mTci_Gz9G4ZSN_ZdCcL1
-Z3 VPHSdD3c^GW4mezcY70]Bi3
-Z4 dC:\Users\gabri\backupSSD\AreaDeTrabalhoAntiga\Unesp\5°semestre\LaboratorioCircuitosDigitais\Projeto\ProjetoGit\simulation\qsim
-Z5 w1751403789
-Z6 8processador_mips.vo
-Z7 Fprocessador_mips.vo
+Z1 I^OLUE81>aNlP6?L4lcUJK0
+Z2 VXDYR?z`kFCOPR11J6@m7L3
+Z3 dC:\Users\aluno\Documents\CAUAN\MIPS-Project\simulation\qsim
+Z4 w1751419411
+Z5 8processador_mips.vo
+Z6 Fprocessador_mips.vo
 L0 31
-Z8 OV;L;10.1d;51
+Z7 OV;L;10.1d;51
 r1
 31
-Z9 !s90 -work|work|processador_mips.vo|
-Z10 o-work work -O0
+Z8 !s90 -work|work|processador_mips.vo|
+Z9 o-work work -O0
 !i10b 1
+Z10 !s100 QD?dQL7H8c@Y_gWo7jzWV0
 !s85 0
-Z11 !s108 1751403790.400000
+Z11 !s108 1751419411.770000
 Z12 !s107 processador_mips.vo|
 !s101 -O0
 vprocessador_mips_vlg_check_tst
 !i10b 1
-Z13 !s100 7Um5nz90S?eEfJiRW[[Wn3
-Z14 ITW>iDc1SX3M`l9[czMYXJ1
-Z15 Vo;KF;b4fYDc6WGDXz[EP00
-R4
-Z16 w1751403788
-Z17 8Waveform6.vwf.vt
-Z18 FWaveform6.vwf.vt
-L0 61
-R8
+!s100 fa^GfG;hDWZG::26[cUm[1
+Iz]1ZRPOcJh^lC0aCSKS`z2
+ViO9?7QR06UcY_J5bPIPcS1
+R3
+Z13 w1751419409
+Z14 8processador_mips.vt
+Z15 Fprocessador_mips.vt
+L0 57
+R7
 r1
 !s85 0
 31
-Z19 !s108 1751403790.450000
-Z20 !s107 Waveform6.vwf.vt|
-Z21 !s90 -work|work|Waveform6.vwf.vt|
+Z16 !s108 1751419412.754000
+Z17 !s107 processador_mips.vt|
+Z18 !s90 -work|work|processador_mips.vt|
 !s101 -O0
-R10
+R9
 vprocessador_mips_vlg_sample_tst
 !i10b 1
-Z22 !s100 UaL^EUI>WRgFf3@0kGVM^1
-Z23 IKNbEojk]mTT`CB77gL`0=0
-Z24 V]eQmJ[=lbN[4;bKdlz7kz3
-R4
-R16
-R17
-R18
+Z19 !s100 HjG60hj5<5egG[YO8j4WQ2
+Z20 I2KTkdfUoJSKaF1@n=^K0c3
+Z21 VQ>33D_8aHCPl;oWkFf<dk3
+R3
+R13
+R14
+R15
 L0 29
-R8
+R7
 r1
 !s85 0
 31
-R19
-R20
-R21
+R16
+R17
+R18
 !s101 -O0
-R10
+R9
 vprocessador_mips_vlg_vec_tst
 !i10b 1
-!s100 6m31TPoGVf13W];b_ilX40
-I>AYDbYbdSXaWP=gd<dK302
-Z25 V`X9IMV<I2Df3B=El=H>SM0
-R4
-R16
-R17
-R18
-Z26 L0 227
-R8
+!s100 ^XZ6JR^8Kkk6ISA>N4RAQ3
+I^0^h3a^Ne[Wk3e2=8T=PA3
+Z22 V`X9IMV<I2Df3B=El=H>SM0
+R3
+R13
+R14
+R15
+L0 2365
+R7
 r1
 !s85 0
 31
-R19
-R20
-R21
+R16
+R17
+R18
 !s101 -O0
-R10
+R9

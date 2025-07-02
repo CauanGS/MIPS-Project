@@ -34,7 +34,7 @@ architecture behave of MEMORIA_DE_INSTRUCAO is
 begin
     process(ENTRADA_A)
     begin
-        -- Leitura da memória no endereço determinado por 'a'
+        -- Leitura da memória no endereço determinado por 'ENTRADA_A'
         INSTRUCAO <= MEMORIA(to_integer(unsigned(ENTRADA_A(7 downto 2))));  -- Usa os 30 bits mais significativos
     end process;
 end behave;
