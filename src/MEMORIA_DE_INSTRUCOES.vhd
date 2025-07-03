@@ -4,7 +4,7 @@ use IEEE.NUMERIC_STD.all;
 
 entity MEMORIA_DE_INSTRUCAO is
     port(
-        ENTRADA_A    : in STD_LOGIC_VECTOR(31 downto 0);  -- Endereço de 32 bits
+        ENTRADA    : in STD_LOGIC_VECTOR(31 downto 0);  -- Endereço de 32 bits
         INSTRUCAO : out STD_LOGIC_VECTOR(31 downto 0)  -- Instrução de 32 bits
     );
 end MEMORIA_DE_INSTRUCAO;
@@ -12,29 +12,31 @@ end MEMORIA_DE_INSTRUCAO;
 architecture behave of MEMORIA_DE_INSTRUCAO is
     type TIPORAM is array(63 downto 0) of STD_LOGIC_VECTOR(31 downto 0);
     signal MEMORIA : TIPORAM := (
-      0 => x"2010000A",  -- addi $16, $0, 10     ; $s0 = 10
-		1 => x"20110014",  -- addi $17, $0, 20     ; $s1 = 20
-		--8 => x"0800000A",  -- j    10               ; pula o bloco else
-		2 => x"20120005",  -- addi $18, $0, 5      ; $s2 = 5
-		3 => x"0211482A",  -- slt  $9, $16, $17    ; $t1 = ($s0 < $s1) = 1
-		4 => x"11200002",  -- beq  $9, $0, +2      ; NÃO salta
-		5 => x"22310000",  -- addi $17, $17, 0     ; $s1 = 20
-		6 => x"22520000",  -- addi $18, $18, 0     ; $s2 = 5
-		7 => x"02328020",  -- add  $16, $17, $18   ; $s0 = $s1 + $s2 
-		8 => x"0800000A",  -- j    10               ; pula o bloco else
-		9 => x"02288822",  -- sub  $16, $17, $18   ; NÃO executado
-		10 => x"2013002A",  -- addi $19, $0, 42    ;retorna 42
-		11 => x"20140000",  -- addi $20, $0, 0		 ;retorna 0
-		12 => x"20150004",  -- addi $21, $0, 4     ;retorna 4
-		13 => x"AEB30000",  -- sw   $19, 0($21)    ;retorna nada
-		14 => x"8EB40000",  -- lw   $20, 0($21)    ;retorna 42
-		15 => x"00000000",  -- NOP / fim
-		others => x"00000000"
+        -- Endereço de Palavra (índice do array)
+        -- Inicialização
+        0 => x"20100000",  -- 0x00: addi $s0, $zero, 0     			(soma = 0)
+        1 => x"20110001",  -- 0x04: addi $s1, $zero, 1     			(i = 1)
+        2 => x"20080004",  -- 0x08: addi $t0, $zero, 4   			(limite = 4)
+
+        -- Início do Loop
+        3 => x"0228482A",  -- 0x0C: loop: slt  $t1, $s1, $t0 		($t1 = 1 se i < 4, senão $t1 = 0)
+        4 => x"11200003",  -- 0x10: beq  $t1, $zero, end_loop		(+3 instruções = 0x20)
+        
+        -- Corpo do Loop
+        5 => x"02118020",  -- 0x14: add  $s0, $s0, $s1 				(soma = soma + i)
+        6 => x"22310001",  -- 0x18: addi $s1, $s1, 1					(i = i + 1)
+        7 => x"08000003",  -- 0x1C: j    loop 							(salta para o endereço 0x0C)
+
+        -- Fim do Loop e Teste de Memória
+        8 => x"AC100064",  -- 0x20: end_loop: sw $s0, 100($zero)	(Salva o resultado (6) no endereço de memória 100
+        9 => x"8C120064",  -- 0x24: lw   $s2, 100($zero)				(Carrega o valor armazenado no endereço de memória 100 no registrador $s2)
+
+        -- Fim do Programa
+        10 => x"0800000A", -- 0x28: done: j done (salta para ele mesmo)
+
+        -- Preenche o resto da memória com NOPs (instrução nula)
+        others => x"00000000"
     );
 begin
-    process(ENTRADA_A)
-    begin
-        -- Leitura da memória no endereço determinado por 'ENTRADA_A'
-        INSTRUCAO <= MEMORIA(to_integer(unsigned(ENTRADA_A(7 downto 2))));  -- Usa os 30 bits mais significativos
-    end process;
+	INSTRUCAO <= MEMORIA(to_integer(unsigned(ENTRADA(7 downto 2)))); -- Instrução recebe a instrução armazenada no endereço = ao valor da ENTRADA
 end behave;

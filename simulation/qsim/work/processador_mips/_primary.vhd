@@ -4,6 +4,7 @@ entity processador_mips is
     port(
         HEX0            : out    vl_logic_vector(6 downto 0);
         CLK             : in     vl_logic;
+        RESET           : in     vl_logic;
         HEX1            : out    vl_logic_vector(6 downto 0);
         HEX2            : out    vl_logic_vector(6 downto 0);
         HEX3            : out    vl_logic_vector(6 downto 0);

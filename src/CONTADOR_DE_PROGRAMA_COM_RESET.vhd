@@ -4,29 +4,28 @@ use IEEE.NUMERIC_STD.all;
 
 entity CONTADOR_DE_PROGRAMA_COM_RESET is 
     port(
-        clk      : in  STD_LOGIC;
-        adrs_in  : in  STD_LOGIC_VECTOR (31 downto 0);
-		  rst      : in  STD_LOGIC; -- Adicionada entrada de reset
-        adrs_out : out STD_LOGIC_VECTOR (31 downto 0)
+        CLK      : in  STD_LOGIC;
+        ENDERECO_ENTRADA  : in  STD_LOGIC_VECTOR (31 downto 0);
+		  RESET      : in  STD_LOGIC; -- Entrada de reset para evitar problemas de valores iniciais inesperados na hora de passar pra placa
+        ENDERECO_SAIDA : out STD_LOGIC_VECTOR (31 downto 0)
     );
 end entity CONTADOR_DE_PROGRAMA_COM_RESET;
 
-architecture behavior of CONTADOR_DE_PROGRAMA_COM_RESET is
+architecture behave of CONTADOR_DE_PROGRAMA_COM_RESET is
 begin
 
-process(clk)
+process(CLK)
 begin
-    if rising_edge(clk) then
-        if rst = '1' then
-            adrs_out <= (others => '0'); -- Reset
+    if rising_edge(CLK) then
+        if RESET = '1' then
+            ENDERECO_SAIDA <= (others => '0'); -- SE o sinal de reset é 1, zera o endereço do PC
         else
-            adrs_out <= adrs_in;        -- Mantém valor atual
-            -- Ou simplesmente não faça nada (já mantém)
+            ENDERECO_SAIDA <= ENDERECO_ENTRADA; -- Endereço de saida é igual ao endereço de entrada
         end if;
     end if;
 end process;
 
 
 
-end architecture behavior;
+end architecture behave;
 

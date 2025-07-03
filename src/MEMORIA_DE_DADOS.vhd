@@ -14,7 +14,7 @@ entity MEMORIA_DE_DADOS is
 end MEMORIA_DE_DADOS;
 
 architecture behave of MEMORIA_DE_DADOS is
-    type TIPORAM is array(63 downto 0) of STD_LOGIC_VECTOR(31 downto 0);
+    type TIPORAM is array(127 downto 0) of STD_LOGIC_VECTOR(31 downto 0); -- cria um um vetor com 128 endereços de 32 bits para simular a memória de dados
     signal MEMORIA: TIPORAM := (others => (others => '0')); -- Inicializa com zeros
 begin
     process(CLK)
