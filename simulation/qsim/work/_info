@@ -4,78 +4,78 @@ K3
 cModel Technology
 Z0 dC:\Users\gabri\backupSSD\AreaDeTrabalhoAntiga\Unesp\5°semestre\LaboratorioCircuitosDigitais\Projeto\ProjetoGit\simulation\qsim
 vprocessador_mips
-Z1 I86Xa[LPQdcQQBUk15if[o1
-Z2 VG?=@;lfOK^Ia=a8:zH^B@3
-Z3 dC:\Users\gabri\backupSSD\AreaDeTrabalhoAntiga\Unesp\5semestre\LaboratorioCircuitosDigitais\Projeto\ProjetoGit\simulation\qsim
-Z4 w1751636627
-Z5 8processador_mips.vo
-Z6 Fprocessador_mips.vo
+Z1 !s100 RR=Sj6@;Mn`n3i9@Q`JZG3
+Z2 I86Xa[LPQdcQQBUk15if[o1
+Z3 VG?=@;lfOK^Ia=a8:zH^B@3
+Z4 dC:\Users\gabri\backupSSD\AreaDeTrabalhoAntiga\Unesp\5semestre\LaboratorioCircuitosDigitais\Projeto\ProjetoGit\simulation\qsim
+Z5 w1751641237
+Z6 8processador_mips.vo
+Z7 Fprocessador_mips.vo
 L0 31
-Z7 OV;L;10.1d;51
+Z8 OV;L;10.1d;51
 r1
 31
-Z8 !s90 -work|work|processador_mips.vo|
-Z9 o-work work -O0
+Z9 !s90 -work|work|processador_mips.vo|
+Z10 o-work work -O0
 !i10b 1
-Z10 !s100 RR=Sj6@;Mn`n3i9@Q`JZG3
 !s85 0
-Z11 !s108 1751636627.749000
+Z11 !s108 1751641239.037000
 Z12 !s107 processador_mips.vo|
 !s101 -O0
 vprocessador_mips_vlg_check_tst
 !i10b 1
-!s100 W`[n=>_AB]o[Q><fZhGoJ0
-I<b5cjl[YQdek33PECS^7<1
-V6aOaUG<:;bUVD=ZRA1`=C3
-R3
-Z13 w1751636625
-Z14 8Waveform1.vwf.vt
-Z15 FWaveform1.vwf.vt
+!s100 o=OXKIzFee18dSnjC2Rbc0
+IT2kM>KlgiSnzhh9=5_kcL2
+Z13 V6aOaUG<:;bUVD=ZRA1`=C3
+R4
+Z14 w1751641235
+Z15 8Waveform2.vwf.vt
+Z16 FWaveform2.vwf.vt
 L0 59
-R7
+R8
 r1
 !s85 0
 31
-Z16 !s108 1751636628.283000
-Z17 !s107 Waveform1.vwf.vt|
-Z18 !s90 -work|work|Waveform1.vwf.vt|
+Z17 !s108 1751641239.583000
+Z18 !s107 Waveform2.vwf.vt|
+Z19 !s90 -work|work|Waveform2.vwf.vt|
 !s101 -O0
-R9
+R10
 vprocessador_mips_vlg_sample_tst
 !i10b 1
-Z19 !s100 b]IMVmTG_z^MESaWYYff_1
-Z20 I4=Rbm@3TzfU:ahEXN:SDW0
-Z21 VkTBC<jHBzYVhPP_7n?cOT1
-R3
-R13
+!s100 dH^ADnb_;O^8LUb^bK>8=0
+IVSIJ]oE?DQk[=mohBj:LJ2
+Z20 VkTBC<jHBzYVhPP_7n?cOT1
+R4
 R14
 R15
+R16
 L0 29
-R7
+R8
 r1
 !s85 0
 31
-R16
 R17
 R18
+R19
 !s101 -O0
-R9
+R10
 vprocessador_mips_vlg_vec_tst
 !i10b 1
-!s100 6Wii?g2P?YRQ;0^@iOhd^3
-Ia7Ni7HHZzY91@nFOB;^Ab2
-Z22 V`X9IMV<I2Df3B=El=H>SM0
-R3
-R13
+!s100 lXWhQYoFMgn;TYdWLc:QL2
+IZczNYHm?RGOTbVGh4cnSY2
+Z21 V`X9IMV<I2Df3B=El=H>SM0
+R4
 R14
 R15
-L0 6048
-R7
+R16
+Z22 L0 6048
+R8
 r1
 !s85 0
 31
-R16
 R17
 R18
+R19
 !s101 -O0
-R9
+R10

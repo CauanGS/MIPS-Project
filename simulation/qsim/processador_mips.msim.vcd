@@ -3,7 +3,7 @@ $comment
 		vcd file processador_mips.msim.vcd -direction
 $end
 $date
-	Fri Jul 04 10:43:49 2025
+	Fri Jul 04 12:00:40 2025
 $end
 $version
 	ModelSim Version 10.1d

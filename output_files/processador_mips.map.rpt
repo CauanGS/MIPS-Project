@@ -1,5 +1,5 @@
 Analysis & Synthesis report for processador_mips
-Fri Jul 04 10:41:49 2025
+Fri Jul 04 11:57:15 2025
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -43,7 +43,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Jul 04 10:41:48 2025      ;
+; Analysis & Synthesis Status        ; Successful - Fri Jul 04 11:57:15 2025      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; processador_mips                           ;
 ; Top-level Entity Name              ; processador_mips                           ;
@@ -932,7 +932,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Fri Jul 04 10:41:38 2025
+    Info: Processing started: Fri Jul 04 11:57:04 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off processador_mips -c processador_mips
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file src/banco_de_registradores.vhd
@@ -987,6 +987,8 @@ Info (12021): Found 2 design units, including 1 entities, in source file src/shi
     Info (12023): Found entity 1: SHIFT_ESQUERDA32
 Info (12021): Found 1 design units, including 1 entities, in source file simulation/teste_componentes.bdf
     Info (12023): Found entity 1: teste_componentes
+Info (12021): Found 1 design units, including 1 entities, in source file unidade_de_controle.bdf
+    Info (12023): Found entity 1: UNIDADE_DE_CONTROLE
 Info (12127): Elaborating entity "processador_mips" for the top level hierarchy
 Info (12128): Elaborating entity "DECODIFICADOR_PRINCIPAL" for hierarchy "DECODIFICADOR_PRINCIPAL:inst13"
 Info (12128): Elaborating entity "MEMORIA_DE_INSTRUCAO" for hierarchy "MEMORIA_DE_INSTRUCAO:inst22"
@@ -1092,8 +1094,8 @@ Info (21057): Implemented 5062 device resources after synthesis - the final reso
     Info (21059): Implemented 323 output pins
     Info (21061): Implemented 4737 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 43 warnings
-    Info: Peak virtual memory: 4686 megabytes
-    Info: Processing ended: Fri Jul 04 10:41:49 2025
+    Info: Peak virtual memory: 4678 megabytes
+    Info: Processing ended: Fri Jul 04 11:57:15 2025
     Info: Elapsed time: 00:00:11
     Info: Total CPU time (on all processors): 00:00:10
 

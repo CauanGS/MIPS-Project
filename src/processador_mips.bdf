@@ -1038,12 +1038,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "inst[5..0]" (rect 994 120 1037 132)(font "Arial" ))
-	(pt 984 136)
-	(pt 1056 136)
-	(bus)
-)
-(connector
 	(pt 1528 544)
 	(pt 1488 544)
 	(bus)
@@ -1851,6 +1845,12 @@ applicable agreement for further details.
 (connector
 	(pt 1472 336)
 	(pt 1552 336)
+	(bus)
+)
+(connector
+	(text "inst[5..0]" (rect 994 120 1037 132)(font "Arial" ))
+	(pt 984 136)
+	(pt 1056 136)
 	(bus)
 )
 (junction (pt 984 136))
