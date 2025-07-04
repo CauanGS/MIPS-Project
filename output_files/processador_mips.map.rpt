@@ -1,5 +1,5 @@
 Analysis & Synthesis report for processador_mips
-Thu Jul 03 23:53:25 2025
+Fri Jul 04 10:41:49 2025
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -43,7 +43,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Jul 03 23:53:25 2025      ;
+; Analysis & Synthesis Status        ; Successful - Fri Jul 04 10:41:48 2025      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; processador_mips                           ;
 ; Top-level Entity Name              ; processador_mips                           ;
@@ -52,7 +52,7 @@ applicable agreement for further details.
 ;     Total combinational functions  ; 2,305                                      ;
 ;     Dedicated logic registers      ; 2,462                                      ;
 ; Total registers                    ; 2462                                       ;
-; Total pins                         ; 261                                        ;
+; Total pins                         ; 325                                        ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -193,9 +193,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;                                             ;           ;
 ; Total combinational functions               ; 2305      ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 2035      ;
-;     -- 3 input functions                    ; 169       ;
-;     -- <=2 input functions                  ; 101       ;
+;     -- 4 input functions                    ; 2036      ;
+;     -- 3 input functions                    ; 167       ;
+;     -- <=2 input functions                  ; 102       ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
 ;     -- normal mode                          ; 2154      ;
@@ -205,12 +205,12 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;     -- Dedicated logic registers            ; 2462      ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 261       ;
+; I/O pins                                    ; 325       ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ; Maximum fan-out node                        ; CLK~input ;
 ; Maximum fan-out                             ; 2462      ;
-; Total fan-out                               ; 16739     ;
-; Average fan-out                             ; 3.16      ;
+; Total fan-out                               ; 16867     ;
+; Average fan-out                             ; 3.11      ;
 +---------------------------------------------+-----------+
 
 
@@ -219,9 +219,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                 ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                     ; Library Name ;
 +--------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------+--------------+
-; |processador_mips                          ; 2305 (19)         ; 2462 (0)     ; 0           ; 0            ; 0       ; 0         ; 261  ; 0            ; |processador_mips                                       ; work         ;
+; |processador_mips                          ; 2305 (19)         ; 2462 (0)     ; 0           ; 0            ; 0       ; 0         ; 325  ; 0            ; |processador_mips                                       ; work         ;
 ;    |BANCO_DE_REGISTRADORES:inst3|          ; 469 (469)         ; 384 (384)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|BANCO_DE_REGISTRADORES:inst3          ; work         ;
-;    |CONTADOR_DE_PROGRAMA_COM_RESET:inst21| ; 38 (38)           ; 30 (30)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|CONTADOR_DE_PROGRAMA_COM_RESET:inst21 ; work         ;
+;    |CONTADOR_DE_PROGRAMA_COM_RESET:inst21| ; 39 (39)           ; 30 (30)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|CONTADOR_DE_PROGRAMA_COM_RESET:inst21 ; work         ;
 ;    |DECODIFICADOR_PRINCIPAL:inst13|        ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|DECODIFICADOR_PRINCIPAL:inst13        ; work         ;
 ;    |MEMORIA_DE_DADOS:inst11|               ; 73 (73)           ; 2048 (2048)  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|MEMORIA_DE_DADOS:inst11               ; work         ;
 ;    |MEMORIA_DE_INSTRUCAO:inst22|           ; 29 (29)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|MEMORIA_DE_INSTRUCAO:inst22           ; work         ;
@@ -230,7 +230,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;    |MULTIPLEXADOR_DOIS:inst9|              ; 32 (32)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|MULTIPLEXADOR_DOIS:inst9              ; work         ;
 ;    |SOMADOR:inst6|                         ; 30 (30)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|SOMADOR:inst6                         ; work         ;
 ;    |SOMADOR_MAIS_QUATRO:inst23|            ; 30 (30)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|SOMADOR_MAIS_QUATRO:inst23            ; work         ;
-;    |ULA:inst10|                            ; 198 (198)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|ULA:inst10                            ; work         ;
+;    |ULA:inst10|                            ; 197 (197)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|ULA:inst10                            ; work         ;
 ;    |ULA_DECODIFICADOR:inst14|              ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|ULA_DECODIFICADOR:inst14              ; work         ;
 +--------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -932,7 +932,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Thu Jul 03 23:53:15 2025
+    Info: Processing started: Fri Jul 04 10:41:38 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off processador_mips -c processador_mips
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file src/banco_de_registradores.vhd
@@ -1087,14 +1087,14 @@ Info (286030): Timing-Driven Synthesis is running
 Info (17049): 512 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 4998 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 5062 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 259 output pins
+    Info (21059): Implemented 323 output pins
     Info (21061): Implemented 4737 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 43 warnings
-    Info: Peak virtual memory: 4682 megabytes
-    Info: Processing ended: Thu Jul 03 23:53:25 2025
-    Info: Elapsed time: 00:00:10
+    Info: Peak virtual memory: 4686 megabytes
+    Info: Processing ended: Fri Jul 04 10:41:49 2025
+    Info: Elapsed time: 00:00:11
     Info: Total CPU time (on all processors): 00:00:10
 
 

@@ -19,7 +19,7 @@ architecture behave of MEMORIA_DE_INSTRUCAO is
         2 => x"20080003",  -- 0x08: addi $t0, $zero, 3   			(limite = 3)
 
         -- Início do Loop
-        3 => x"0228482A",  -- 0x0C: loop: slt  $t1, $s1, $t0 		($t1 = 1 se i($s1) < 4, senão $t1 = 0)
+        3 => x"0228482A",  -- 0x0C: loop: slt  $t1, $s1, $t0 		($t1 = 1 se i($s1) < 3, senão $t1 = 0)
         4 => x"11200003",  -- 0x10: beq  $t1, $zero, end_loop		(+3 instruções = 0x20)
         
         -- Corpo do Loop
@@ -28,7 +28,7 @@ architecture behave of MEMORIA_DE_INSTRUCAO is
         7 => x"08000003",  -- 0x1C: j    loop 							(salta para o endereço 0x0C)
 
         -- Fim do Loop e Teste de Memória
-        8 => x"AC100064",  -- 0x20: end_loop: sw $s0, 100($zero)	(Salva o resultado (6) no endereço de memória 100
+        8 => x"AC100064",  -- 0x20: end_loop: sw $s0, 100($zero)	(Salva o resultado (3) no endereço de memória 100
         9 => x"8C120064",  -- 0x24: lw   $s2, 100($zero)				(Carrega o valor armazenado no endereço de memória 100 no registrador $s2)
 
         -- Fim do Programa

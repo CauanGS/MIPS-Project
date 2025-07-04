@@ -4,10 +4,10 @@ K3
 cModel Technology
 Z0 dC:\Users\gabri\backupSSD\AreaDeTrabalhoAntiga\Unesp\5°semestre\LaboratorioCircuitosDigitais\Projeto\ProjetoGit\simulation\qsim
 vprocessador_mips
-Z1 IUOWa`CQ9HQ<XQ4^7nmT[m2
-Z2 VJ173=nG1YVmJ2[jAg@Y=C3
+Z1 I86Xa[LPQdcQQBUk15if[o1
+Z2 VG?=@;lfOK^Ia=a8:zH^B@3
 Z3 dC:\Users\gabri\backupSSD\AreaDeTrabalhoAntiga\Unesp\5semestre\LaboratorioCircuitosDigitais\Projeto\ProjetoGit\simulation\qsim
-Z4 w1751597821
+Z4 w1751636627
 Z5 8processador_mips.vo
 Z6 Fprocessador_mips.vo
 L0 31
@@ -17,65 +17,65 @@ r1
 Z8 !s90 -work|work|processador_mips.vo|
 Z9 o-work work -O0
 !i10b 1
-Z10 !s100 OFWz_TWn_<gTWHoRJU>@W2
+Z10 !s100 RR=Sj6@;Mn`n3i9@Q`JZG3
 !s85 0
-Z11 !s108 1751597822.358000
+Z11 !s108 1751636627.749000
 Z12 !s107 processador_mips.vo|
 !s101 -O0
 vprocessador_mips_vlg_check_tst
 !i10b 1
-Z13 !s100 UBBKG6ddcR=L4k^TlZhAa2
-Z14 ISP?5BYSOTNF9o2=K=SMeH1
-Z15 VAm1K[MRSG=kA>GCh<aJD^0
+!s100 W`[n=>_AB]o[Q><fZhGoJ0
+I<b5cjl[YQdek33PECS^7<1
+V6aOaUG<:;bUVD=ZRA1`=C3
 R3
-Z16 w1751597819
-Z17 8Waveform.vwf.vt
-Z18 FWaveform.vwf.vt
+Z13 w1751636625
+Z14 8Waveform1.vwf.vt
+Z15 FWaveform1.vwf.vt
 L0 59
 R7
 r1
 !s85 0
 31
-Z19 !s108 1751597822.875000
-Z20 !s107 Waveform.vwf.vt|
-Z21 !s90 -work|work|Waveform.vwf.vt|
+Z16 !s108 1751636628.283000
+Z17 !s107 Waveform1.vwf.vt|
+Z18 !s90 -work|work|Waveform1.vwf.vt|
 !s101 -O0
 R9
 vprocessador_mips_vlg_sample_tst
 !i10b 1
-Z22 !s100 bcMaB9L:36_EYVY3QXTWb2
-Z23 IAoQ@FOk3agIOIiALil2Q?3
-Z24 VkTBC<jHBzYVhPP_7n?cOT1
+Z19 !s100 b]IMVmTG_z^MESaWYYff_1
+Z20 I4=Rbm@3TzfU:ahEXN:SDW0
+Z21 VkTBC<jHBzYVhPP_7n?cOT1
 R3
-R16
-R17
-R18
+R13
+R14
+R15
 L0 29
 R7
 r1
 !s85 0
 31
-R19
-R20
-R21
+R16
+R17
+R18
 !s101 -O0
 R9
 vprocessador_mips_vlg_vec_tst
 !i10b 1
-Z25 !s100 ]Sn[L6C@MLB`KP=EVcbRB1
-Z26 IHMQl1Pzmz;5?TP0Y>GjE90
-Z27 V`X9IMV<I2Df3B=El=H>SM0
+!s100 6Wii?g2P?YRQ;0^@iOhd^3
+Ia7Ni7HHZzY91@nFOB;^Ab2
+Z22 V`X9IMV<I2Df3B=El=H>SM0
 R3
-R16
-R17
-R18
-Z28 L0 4880
+R13
+R14
+R15
+L0 6048
 R7
 r1
 !s85 0
 31
-R19
-R20
-R21
+R16
+R17
+R18
 !s101 -O0
 R9

@@ -18,7 +18,7 @@ end BANCO_DE_REGISTRADORES;
 architecture behave of BANCO_DE_REGISTRADORES is
     type BANCO_REGISTRADORES is array(0 to 31) of STD_LOGIC_VECTOR(31 downto 0);
     signal REGISTRADORES : BANCO_REGISTRADORES := (others => (others => '0'));  -- cria o tipo BANCO_DE_REGISTRADORES para simular um banco de registradores 32 registradores de 32 bits
-
+		-- inicialmente todos os valores em todos os registradores são 0
 begin
 
     -- Process: aqui dentro usa lógica sequencial para a escrita -- a escrita é assíncrona 
@@ -35,10 +35,10 @@ begin
 	 
 	-- Lógica de Leitura assíncrona
 	-- Porta 1
-	DADO_LIDO1 <= x"00000000" when ENDERECO_LEITURA1 = "00000" else
-              REGISTRADORES(to_integer(unsigned(ENDERECO_LEITURA1)));
+	DADO_LIDO1 <= x"00000000" when ENDERECO_LEITURA1 = "00000" else 
+              REGISTRADORES(to_integer(unsigned(ENDERECO_LEITURA1))); --leitura do registrado $zero é sempre 0
 
 	-- Porta 2
 	DADO_LIDO2 <= x"00000000" when ENDERECO_LEITURA2 = "00000" else
-              REGISTRADORES(to_integer(unsigned(ENDERECO_LEITURA2)));
+              REGISTRADORES(to_integer(unsigned(ENDERECO_LEITURA2))); -- não é possível escrever outro valor no registrador $zero
 end behave;

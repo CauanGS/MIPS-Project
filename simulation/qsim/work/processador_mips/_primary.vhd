@@ -12,6 +12,8 @@ entity processador_mips is
         ENTRADA_ULA2    : out    vl_logic_vector(31 downto 0);
         INSTR           : out    vl_logic_vector(31 downto 0);
         PC              : out    vl_logic_vector(31 downto 0);
+        RD1             : out    vl_logic_vector(31 downto 0);
+        RD2             : out    vl_logic_vector(31 downto 0);
         RESULTADO       : out    vl_logic_vector(31 downto 0);
         SAIDA_EXTENSOR  : out    vl_logic_vector(31 downto 0);
         SAIDA_SHIFT2L   : out    vl_logic_vector(31 downto 0)

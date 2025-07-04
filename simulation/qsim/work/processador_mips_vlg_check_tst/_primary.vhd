@@ -10,6 +10,8 @@ entity processador_mips_vlg_check_tst is
         INSTR           : in     vl_logic_vector(31 downto 0);
         JumpSinal       : in     vl_logic;
         PC              : in     vl_logic_vector(31 downto 0);
+        RD1             : in     vl_logic_vector(31 downto 0);
+        RD2             : in     vl_logic_vector(31 downto 0);
         RESULTADO       : in     vl_logic_vector(31 downto 0);
         SAIDA_EXTENSOR  : in     vl_logic_vector(31 downto 0);
         SAIDA_SHIFT2L   : in     vl_logic_vector(31 downto 0);
