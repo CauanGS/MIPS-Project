@@ -1,0 +1,3 @@
+# Arquivos temporários e de simulação do Quartus
+simulation/qsim/*.temp
+simulation/qsim/*.vwf

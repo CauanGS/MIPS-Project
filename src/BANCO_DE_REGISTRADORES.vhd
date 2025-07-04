@@ -3,27 +3,25 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 entity BANCO_DE_REGISTRADORES is
-    Port ( CLK        : in  STD_LOGIC;              -- Sinal de clock
-           RESET      : in  STD_LOGIC;              -- Sinal de reset síncrono
-           WE         : in  STD_LOGIC;              -- Controle de escrita
-           ENDERECO_LEITURA1      : in  STD_LOGIC_VECTOR(4 downto 0); -- Endereço de leitura 1
-           ENDERECO_LEITURA2      : in  STD_LOGIC_VECTOR(4 downto 0); -- Endereço de leitura 2
-           ENDERECO_ESCRITA      : in  STD_LOGIC_VECTOR(4 downto 0); -- Endereço de escrita
-           DADOS_ESCREVER : in  STD_LOGIC_VECTOR(31 downto 0); -- Dados a serem escritos
-           DADO_LIDO1 : out STD_LOGIC_VECTOR(31 downto 0); -- Saída leitura 1
-           DADO_LIDO2 : out STD_LOGIC_VECTOR(31 downto 0)  -- Saída leitura 2
+    Port ( CLK        : in  STD_LOGIC;              
+           RESET      : in  STD_LOGIC; -- Sinal de reset síncrono
+           WE         : in  STD_LOGIC; -- Sinal de controle de escrita
+           ENDERECO_LEITURA1      : in  STD_LOGIC_VECTOR(4 downto 0); -- A1
+           ENDERECO_LEITURA2      : in  STD_LOGIC_VECTOR(4 downto 0); -- A2
+           ENDERECO_ESCRITA      : in  STD_LOGIC_VECTOR(4 downto 0);  -- A3
+           DADOS_ESCREVER : in  STD_LOGIC_VECTOR(31 downto 0); 		 -- WD
+           DADO_LIDO1 : out STD_LOGIC_VECTOR(31 downto 0); -- RD1
+           DADO_LIDO2 : out STD_LOGIC_VECTOR(31 downto 0)  -- RD2
          );
 end BANCO_DE_REGISTRADORES;
 
 architecture behave of BANCO_DE_REGISTRADORES is
-
-    -- Banco de registradores: 32 registradores de 32 bits
     type BANCO_REGISTRADORES is array(0 to 31) of STD_LOGIC_VECTOR(31 downto 0);
-    signal REGISTRADORES : BANCO_REGISTRADORES := (others => (others => '0'));
+    signal REGISTRADORES : BANCO_REGISTRADORES := (others => (others => '0'));  -- cria o tipo BANCO_DE_REGISTRADORES para simular um banco de registradores 32 registradores de 32 bits
 
 begin
 
-    -- Processo de escrita e reset síncrono
+    -- Process: aqui dentro usa lógica sequencial para a escrita -- a escrita é assíncrona 
     process(CLK)
     begin
         if rising_edge(CLK) then
@@ -34,21 +32,13 @@ begin
             end if;
         end if;
     end process;
+	 
+	-- Lógica de Leitura assíncrona
+	-- Porta 1
+	DADO_LIDO1 <= x"00000000" when ENDERECO_LEITURA1 = "00000" else
+              REGISTRADORES(to_integer(unsigned(ENDERECO_LEITURA1)));
 
-    -- Processo de leitura (com registrador zero fixo)
-    process(all)
-    begin
-        if (to_integer(unsigned(ENDERECO_LEITURA1)) = 0) then
-            DADO_LIDO1 <= X"00000000";
-        else
-            DADO_LIDO1 <= REGISTRADORES(to_integer(unsigned(ENDERECO_LEITURA1)));
-        end if;
-
-        if (to_integer(unsigned(ENDERECO_LEITURA2)) = 0) then
-            DADO_LIDO2 <= X"00000000";
-        else
-            DADO_LIDO2 <= REGISTRADORES(to_integer(unsigned(ENDERECO_LEITURA2)));
-        end if;
-    end process;
-
+	-- Porta 2
+	DADO_LIDO2 <= x"00000000" when ENDERECO_LEITURA2 = "00000" else
+              REGISTRADORES(to_integer(unsigned(ENDERECO_LEITURA2)));
 end behave;

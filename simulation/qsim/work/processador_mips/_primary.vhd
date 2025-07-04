@@ -7,7 +7,6 @@ entity processador_mips is
         RESET           : in     vl_logic;
         BranchSinal     : out    vl_logic;
         JumpSinal       : out    vl_logic;
-        ENTRADA_EXTENSOR: out    vl_logic_vector(15 downto 0);
         ENTRADA_SHIFT_LEFT: out    vl_logic_vector(31 downto 0);
         ENTRADA_ULA1    : out    vl_logic_vector(31 downto 0);
         ENTRADA_ULA2    : out    vl_logic_vector(31 downto 0);

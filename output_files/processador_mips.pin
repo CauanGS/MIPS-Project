@@ -69,35 +69,35 @@ CHIP  "processador_mips"  ASSIGNED TO AN: EP4CE115F29C7
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
 VCCIO8                       : A2        : power  :                   : 2.5V    : 8         :                
-INSTR[13]                    : A3        : output : 2.5 V             :         : 8         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : A4        :        :                   :         : 8         :                
+SAIDA_SHIFT2L[8]             : A3        : output : 2.5 V             :         : 8         : N              
+SAIDA_SHIFT2L[22]            : A4        : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : A5        : power  :                   : 2.5V    : 8         :                
-ENTRADA_ULA1[20]             : A6        : output : 2.5 V             :         : 8         : N              
-INSTR[31]                    : A7        : output : 2.5 V             :         : 8         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : A8        :        :                   :         : 8         :                
+SAIDA_SHIFT2L[3]             : A6        : output : 2.5 V             :         : 8         : N              
+PC[28]                       : A7        : output : 2.5 V             :         : 8         : N              
+SAIDA_EXTENSOR[22]           : A8        : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : A9        : power  :                   : 2.5V    : 8         :                
-ENTRADA_ULA1[8]              : A10       : output : 2.5 V             :         : 8         : N              
-ENTRADA_ULA1[11]             : A11       : output : 2.5 V             :         : 8         : N              
-ENTRADA_ULA1[19]             : A12       : output : 2.5 V             :         : 8         : N              
+ENTRADA_ULA2[14]             : A10       : output : 2.5 V             :         : 8         : N              
+ENTRADA_ULA1[16]             : A11       : output : 2.5 V             :         : 8         : N              
+RESULTADO[16]                : A12       : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : A13       : power  :                   : 2.5V    : 8         :                
 GND+                         : A14       :        :                   :         : 8         :                
 GND+                         : A15       :        :                   :         : 7         :                
 VCCIO7                       : A16       : power  :                   : 2.5V    : 7         :                
-ENTRADA_ULA1[5]              : A17       : output : 2.5 V             :         : 7         : N              
-ENTRADA_ULA1[2]              : A18       : output : 2.5 V             :         : 7         : N              
-PC[22]                       : A19       : output : 2.5 V             :         : 7         : N              
+PC[5]                        : A17       : output : 2.5 V             :         : 7         : N              
+BranchSinal                  : A18       : output : 2.5 V             :         : 7         : N              
+INSTR[24]                    : A19       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : A20       : power  :                   : 2.5V    : 7         :                
-ENTRADA_SHIFT_LEFT[20]       : A21       : output : 2.5 V             :         : 7         : N              
-PC[21]                       : A22       : output : 2.5 V             :         : 7         : N              
+INSTR[3]                     : A21       : output : 2.5 V             :         : 7         : N              
+PC[20]                       : A22       : output : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : A23       :        :                   :         : 7         :                
 VCCIO7                       : A24       : power  :                   : 2.5V    : 7         :                
-SAIDA_EXTENSOR[29]           : A25       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A25       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A26       :        :                   :         : 7         :                
 VCCIO7                       : A27       : power  :                   : 2.5V    : 7         :                
 VCCIO2                       : AA1       : power  :                   : 2.5V    : 2         :                
 GND                          : AA2       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA3       :        :                   :         : 2         :                
-PC[0]                        : AA4       : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA4       :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA5       :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA6       :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA7       :        :                   :         : 2         :                
@@ -105,73 +105,73 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AA8       :        :                   :      
 GNDA1                        : AA9       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA10      :        :                   :         : 3         :                
 VCCIO3                       : AA11      : power  :                   : 2.5V    : 3         :                
-PC[10]                       : AA12      : output : 2.5 V             :         : 3         : N              
-PC[8]                        : AA13      : output : 2.5 V             :         : 3         : N              
-ENTRADA_ULA2[16]             : AA14      : output : 2.5 V             :         : 3         : N              
-RESULTADO[23]                : AA15      : output : 2.5 V             :         : 4         : N              
-ENTRADA_ULA1[3]              : AA16      : output : 2.5 V             :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AA17      :        :                   :         : 4         :                
+RESULTADO[22]                : AA12      : output : 2.5 V             :         : 3         : N              
+INSTR[19]                    : AA13      : output : 2.5 V             :         : 3         : N              
+RESULTADO[4]                 : AA14      : output : 2.5 V             :         : 3         : N              
+PC[13]                       : AA15      : output : 2.5 V             :         : 4         : N              
+ENTRADA_ULA2[25]             : AA16      : output : 2.5 V             :         : 4         : N              
+PC[1]                        : AA17      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AA18      : power  :                   : 2.5V    : 4         :                
-SAIDA_EXTENSOR[21]           : AA19      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA19      :        :                   :         : 4         :                
 GNDA4                        : AA20      : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA21      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA22      :        :                   :         : 5         :                
-ENTRADA_SHIFT_LEFT[23]       : AA23      : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA23      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA24      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA25      :        :                   :         : 5         :                
-SAIDA_SHIFT2L[1]             : AA26      : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA26      :        :                   :         : 5         :                
 GND                          : AA27      : gnd    :                   :         :           :                
 VCCIO5                       : AA28      : power  :                   : 2.5V    : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB1       :        :                   :         : 2         :                
-SAIDA_EXTENSOR[28]           : AB2       : output : 2.5 V             :         : 2         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB3       :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB2       :        :                   :         : 2         :                
+INSTR[30]                    : AB3       : output : 2.5 V             :         : 2         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB4       :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB5       :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB6       :        :                   :         : 2         :                
-INSTR[22]                    : AB7       : output : 2.5 V             :         : 3         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB8       :        :                   :         : 3         :                
-SAIDA_EXTENSOR[26]           : AB9       : output : 2.5 V             :         : 3         : N              
-ENTRADA_SHIFT_LEFT[0]        : AB10      : output : 2.5 V             :         : 3         : N              
-SAIDA_SHIFT2L[9]             : AB11      : output : 2.5 V             :         : 3         : N              
+SAIDA_EXTENSOR[15]           : AB7       : output : 2.5 V             :         : 3         : N              
+SAIDA_SHIFT2L[16]            : AB8       : output : 2.5 V             :         : 3         : N              
+SAIDA_EXTENSOR[30]           : AB9       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB10      :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB11      :        :                   :         : 3         :                
 SAIDA_EXTENSOR[7]            : AB12      : output : 2.5 V             :         : 3         : N              
 INSTR[0]                     : AB13      : output : 2.5 V             :         : 3         : N              
-ENTRADA_ULA2[13]             : AB14      : output : 2.5 V             :         : 3         : N              
-RESULTADO[24]                : AB15      : output : 2.5 V             :         : 4         : N              
-PC[7]                        : AB16      : output : 2.5 V             :         : 4         : N              
+RESULTADO[17]                : AB14      : output : 2.5 V             :         : 3         : N              
+ENTRADA_SHIFT_LEFT[22]       : AB15      : output : 2.5 V             :         : 4         : N              
+ENTRADA_ULA2[22]             : AB16      : output : 2.5 V             :         : 4         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB17      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB18      :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB19      :        :                   :         : 4         :                
+SAIDA_EXTENSOR[8]            : AB19      : output : 2.5 V             :         : 4         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB20      :        :                   :         : 4         :                
-ENTRADA_EXTENSOR[15]         : AB21      : output : 2.5 V             :         : 4         : N              
-ENTRADA_SHIFT_LEFT[29]       : AB22      : output : 2.5 V             :         : 4         : N              
+SAIDA_EXTENSOR[19]           : AB21      : output : 2.5 V             :         : 4         : N              
+SAIDA_SHIFT2L[27]            : AB22      : output : 2.5 V             :         : 4         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB23      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB24      :        :                   :         : 5         :                
-INSTR[15]                    : AB25      : output : 2.5 V             :         : 5         : N              
-SAIDA_SHIFT2L[22]            : AB26      : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB25      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB26      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB27      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB28      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC1       :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC2       :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC3       :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AC4       :        :                   :         : 2         :                
+SAIDA_EXTENSOR[11]           : AC4       : output : 2.5 V             :         : 2         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC5       :        :                   :         : 2         :                
 GND                          : AC6       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC7       :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC8       :        :                   :         : 3         :                
 GND                          : AC9       : gnd    :                   :         :           :                
-ENTRADA_EXTENSOR[6]          : AC10      : output : 2.5 V             :         : 3         : N              
-ENTRADA_ULA1[15]             : AC11      : output : 2.5 V             :         : 3         : N              
-PC[28]                       : AC12      : output : 2.5 V             :         : 3         : N              
+ENTRADA_SHIFT_LEFT[0]        : AC10      : output : 2.5 V             :         : 3         : N              
+SAIDA_EXTENSOR[0]            : AC11      : output : 2.5 V             :         : 3         : N              
+SAIDA_SHIFT2L[2]             : AC12      : output : 2.5 V             :         : 3         : N              
 GND                          : AC13      : gnd    :                   :         :           :                
-RESULTADO[22]                : AC14      : output : 2.5 V             :         : 3         : N              
-RESULTADO[30]                : AC15      : output : 2.5 V             :         : 4         : N              
+PC[15]                       : AC14      : output : 2.5 V             :         : 3         : N              
+ENTRADA_ULA1[1]              : AC15      : output : 2.5 V             :         : 4         : N              
 GND                          : AC16      : gnd    :                   :         :           :                
-PC[27]                       : AC17      : output : 2.5 V             :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AC18      :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AC19      :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC17      :        :                   :         : 4         :                
+ENTRADA_SHIFT_LEFT[21]       : AC18      : output : 2.5 V             :         : 4         : N              
+SAIDA_EXTENSOR[17]           : AC19      : output : 2.5 V             :         : 4         : N              
 GND                          : AC20      : gnd    :                   :         :           :                
-INSTR[10]                    : AC21      : output : 2.5 V             :         : 4         : N              
-SAIDA_EXTENSOR[18]           : AC22      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC21      :        :                   :         : 4         :                
+SAIDA_SHIFT2L[19]            : AC22      : output : 2.5 V             :         : 4         : N              
 GND                          : AC23      : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC24      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC25      :        :                   :         : 5         :                
@@ -181,51 +181,51 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AC28      :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD1       :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD2       :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD3       :        :                   :         : 2         :                
-SAIDA_EXTENSOR[31]           : AD4       : output : 2.5 V             :         : 3         : N              
-ENTRADA_SHIFT_LEFT[24]       : AD5       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD4       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD5       :        :                   :         : 3         :                
 VCCIO3                       : AD6       : power  :                   : 2.5V    : 3         :                
-ENTRADA_SHIFT_LEFT[31]       : AD7       : output : 2.5 V             :         : 3         : N              
-INSTR[30]                    : AD8       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD7       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD8       :        :                   :         : 3         :                
 VCCIO3                       : AD9       : power  :                   : 2.5V    : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD10      :        :                   :         : 3         :                
-PC[9]                        : AD11      : output : 2.5 V             :         : 3         : N              
-ENTRADA_ULA2[9]              : AD12      : output : 2.5 V             :         : 3         : N              
+ENTRADA_ULA2[8]              : AD11      : output : 2.5 V             :         : 3         : N              
+ENTRADA_SHIFT_LEFT[23]       : AD12      : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AD13      : power  :                   : 2.5V    : 3         :                
-RESULTADO[8]                 : AD14      : output : 2.5 V             :         : 3         : N              
-PC[20]                       : AD15      : output : 2.5 V             :         : 4         : N              
+PC[26]                       : AD14      : output : 2.5 V             :         : 3         : N              
+ENTRADA_ULA2[27]             : AD15      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AD16      : power  :                   : 2.5V    : 4         :                
-ENTRADA_ULA1[25]             : AD17      : output : 2.5 V             :         : 4         : N              
-ENTRADA_SHIFT_LEFT[15]       : AD18      : output : 2.5 V             :         : 4         : N              
-INSTR[18]                    : AD19      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD17      :        :                   :         : 4         :                
+INSTR[23]                    : AD18      : output : 2.5 V             :         : 4         : N              
+SAIDA_EXTENSOR[9]            : AD19      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AD20      : power  :                   : 2.5V    : 4         :                
-SAIDA_EXTENSOR[4]            : AD21      : output : 2.5 V             :         : 4         : N              
-SAIDA_SHIFT2L[11]            : AD22      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD21      :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD22      :        :                   :         : 4         :                
 VCCIO4                       : AD23      : power  :                   : 2.5V    : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD24      :        :                   :         : 4         :                
-ENTRADA_EXTENSOR[10]         : AD25      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD25      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD26      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD27      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD28      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE1       :        :                   :         : 2         :                
-ENTRADA_SHIFT_LEFT[25]       : AE2       : output : 2.5 V             :         : 2         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AE3       :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AE4       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE2       :        :                   :         : 2         :                
+SAIDA_EXTENSOR[16]           : AE3       : output : 2.5 V             :         : 2         : N              
+SAIDA_SHIFT2L[20]            : AE4       : output : 2.5 V             :         : 3         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE5       :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE6       :        :                   :         : 3         :                
-INSTR[12]                    : AE7       : output : 2.5 V             :         : 3         : N              
+ENTRADA_SHIFT_LEFT[18]       : AE7       : output : 2.5 V             :         : 3         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE8       :        :                   :         : 3         :                
-SAIDA_EXTENSOR[23]           : AE9       : output : 2.5 V             :         : 3         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AE10      :        :                   :         : 3         :                
-ENTRADA_SHIFT_LEFT[13]       : AE11      : output : 2.5 V             :         : 3         : N              
-ENTRADA_SHIFT_LEFT[30]       : AE12      : output : 2.5 V             :         : 3         : N              
-INSTR[1]                     : AE13      : output : 2.5 V             :         : 3         : N              
-PC[25]                       : AE14      : output : 2.5 V             :         : 3         : N              
-ENTRADA_ULA1[28]             : AE15      : output : 2.5 V             :         : 4         : N              
-ENTRADA_ULA2[22]             : AE16      : output : 2.5 V             :         : 4         : N              
-ENTRADA_ULA1[6]              : AE17      : output : 2.5 V             :         : 4         : N              
-ENTRADA_SHIFT_LEFT[4]        : AE18      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE9       :        :                   :         : 3         :                
+ENTRADA_SHIFT_LEFT[10]       : AE10      : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE11      :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE12      :        :                   :         : 3         :                
+SAIDA_EXTENSOR[25]           : AE13      : output : 2.5 V             :         : 3         : N              
+PC[23]                       : AE14      : output : 2.5 V             :         : 3         : N              
+RESULTADO[3]                 : AE15      : output : 2.5 V             :         : 4         : N              
+PC[17]                       : AE16      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE17      :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE18      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE19      :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AE20      :        :                   :         : 4         :                
+INSTR[13]                    : AE20      : output : 2.5 V             :         : 4         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE21      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE22      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE23      :        :                   :         : 4         :                
@@ -237,194 +237,194 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AE28      :        :                   :      
 GND                          : AF1       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF2       :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF3       :        :                   :         : 3         :                
-SAIDA_EXTENSOR[30]           : AF4       : output : 2.5 V             :         : 3         : N              
-SAIDA_EXTENSOR[16]           : AF5       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF4       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF5       :        :                   :         : 3         :                
 SAIDA_EXTENSOR[20]           : AF6       : output : 2.5 V             :         : 3         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AF7       :        :                   :         : 3         :                
-ENTRADA_SHIFT_LEFT[18]       : AF8       : output : 2.5 V             :         : 3         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AF9       :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AF10      :        :                   :         : 3         :                
-ENTRADA_EXTENSOR[0]          : AF11      : output : 2.5 V             :         : 3         : N              
-INSTR[26]                    : AF12      : output : 2.5 V             :         : 3         : N              
-ENTRADA_EXTENSOR[1]          : AF13      : output : 2.5 V             :         : 3         : N              
-PC[12]                       : AF14      : output : 2.5 V             :         : 3         : N              
-ENTRADA_ULA2[10]             : AF15      : output : 2.5 V             :         : 4         : N              
-ENTRADA_ULA1[12]             : AF16      : output : 2.5 V             :         : 4         : N              
-ENTRADA_ULA1[13]             : AF17      : output : 2.5 V             :         : 4         : N              
+ENTRADA_SHIFT_LEFT[29]       : AF7       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF8       :        :                   :         : 3         :                
+INSTR[4]                     : AF9       : output : 2.5 V             :         : 3         : N              
+SAIDA_SHIFT2L[11]            : AF10      : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF11      :        :                   :         : 3         :                
+ENTRADA_SHIFT_LEFT[12]       : AF12      : output : 2.5 V             :         : 3         : N              
+ENTRADA_SHIFT_LEFT[20]       : AF13      : output : 2.5 V             :         : 3         : N              
+ENTRADA_ULA2[19]             : AF14      : output : 2.5 V             :         : 3         : N              
+ENTRADA_ULA1[2]              : AF15      : output : 2.5 V             :         : 4         : N              
+ENTRADA_ULA2[17]             : AF16      : output : 2.5 V             :         : 4         : N              
+ENTRADA_SHIFT_LEFT[19]       : AF17      : output : 2.5 V             :         : 4         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF18      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF19      :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AF20      :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AF21      :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AF22      :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AF23      :        :                   :         : 4         :                
+SAIDA_SHIFT2L[12]            : AF20      : output : 2.5 V             :         : 4         : N              
+SAIDA_EXTENSOR[24]           : AF21      : output : 2.5 V             :         : 4         : N              
+SAIDA_EXTENSOR[21]           : AF22      : output : 2.5 V             :         : 4         : N              
+SAIDA_EXTENSOR[27]           : AF23      : output : 2.5 V             :         : 4         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF24      :        :                   :         : 4         :                
-ENTRADA_EXTENSOR[12]         : AF25      : output : 2.5 V             :         : 4         : N              
+SAIDA_EXTENSOR[4]            : AF25      : output : 2.5 V             :         : 4         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF26      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF27      :        :                   :         : 5         :                
 GND                          : AF28      : gnd    :                   :         :           :                
 VCCIO2                       : AG1       : power  :                   : 2.5V    : 2         :                
 GND                          : AG2       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AG3       :        :                   :         : 3         :                
-SAIDA_EXTENSOR[10]           : AG4       : output : 2.5 V             :         : 3         : N              
+ENTRADA_SHIFT_LEFT[31]       : AG3       : output : 2.5 V             :         : 3         : N              
+ENTRADA_SHIFT_LEFT[26]       : AG4       : output : 2.5 V             :         : 3         : N              
 GND                          : AG5       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AG6       :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AG7       :        :                   :         : 3         :                
-ENTRADA_SHIFT_LEFT[10]       : AG8       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG8       :        :                   :         : 3         :                
 GND                          : AG9       : gnd    :                   :         :           :                
-SAIDA_SHIFT2L[2]             : AG10      : output : 2.5 V             :         : 3         : N              
-SAIDA_SHIFT2L[8]             : AG11      : output : 2.5 V             :         : 3         : N              
-RESULTADO[17]                : AG12      : output : 2.5 V             :         : 3         : N              
+SAIDA_EXTENSOR[26]           : AG10      : output : 2.5 V             :         : 3         : N              
+SAIDA_SHIFT2L[21]            : AG11      : output : 2.5 V             :         : 3         : N              
+PC[24]                       : AG12      : output : 2.5 V             :         : 3         : N              
 GND                          : AG13      : gnd    :                   :         :           :                
 GND+                         : AG14      :        :                   :         : 3         :                
 GND+                         : AG15      :        :                   :         : 4         :                
 GND                          : AG16      : gnd    :                   :         :           :                
-ENTRADA_ULA1[17]             : AG17      : output : 2.5 V             :         : 4         : N              
-ENTRADA_ULA1[22]             : AG18      : output : 2.5 V             :         : 4         : N              
-ENTRADA_ULA2[6]              : AG19      : output : 2.5 V             :         : 4         : N              
+ENTRADA_ULA2[1]              : AG17      : output : 2.5 V             :         : 4         : N              
+SAIDA_SHIFT2L[24]            : AG18      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG19      :        :                   :         : 4         :                
 GND                          : AG20      : gnd    :                   :         :           :                
-ENTRADA_ULA1[31]             : AG21      : output : 2.5 V             :         : 4         : N              
-INSTR[23]                    : AG22      : output : 2.5 V             :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AG23      :        :                   :         : 4         :                
+INSTR[15]                    : AG21      : output : 2.5 V             :         : 4         : N              
+ENTRADA_SHIFT_LEFT[24]       : AG22      : output : 2.5 V             :         : 4         : N              
+SAIDA_SHIFT2L[29]            : AG23      : output : 2.5 V             :         : 4         : N              
 GND                          : AG24      : gnd    :                   :         :           :                
-SAIDA_SHIFT2L[15]            : AG25      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG25      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AG26      :        :                   :         : 4         :                
 GND                          : AG27      : gnd    :                   :         :           :                
 VCCIO5                       : AG28      : power  :                   : 2.5V    : 5         :                
 VCCIO3                       : AH2       : power  :                   : 2.5V    : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AH3       :        :                   :         : 3         :                
-ENTRADA_EXTENSOR[9]          : AH4       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH4       :        :                   :         : 3         :                
 VCCIO3                       : AH5       : power  :                   : 2.5V    : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AH6       :        :                   :         : 3         :                
+SAIDA_EXTENSOR[28]           : AH6       : output : 2.5 V             :         : 3         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AH7       :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AH8       :        :                   :         : 3         :                
 VCCIO3                       : AH9       : power  :                   : 2.5V    : 3         :                
-SAIDA_EXTENSOR[0]            : AH10      : output : 2.5 V             :         : 3         : N              
-SAIDA_SHIFT2L[3]             : AH11      : output : 2.5 V             :         : 3         : N              
-RESULTADO[14]                : AH12      : output : 2.5 V             :         : 3         : N              
+ENTRADA_SHIFT_LEFT[30]       : AH10      : output : 2.5 V             :         : 3         : N              
+SAIDA_SHIFT2L[17]            : AH11      : output : 2.5 V             :         : 3         : N              
+PC[25]                       : AH12      : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AH13      : power  :                   : 2.5V    : 3         :                
 GND+                         : AH14      :        :                   :         : 3         :                
 GND+                         : AH15      :        :                   :         : 4         :                
 VCCIO4                       : AH16      : power  :                   : 2.5V    : 4         :                
-ENTRADA_ULA1[0]              : AH17      : output : 2.5 V             :         : 4         : N              
-ENTRADA_ULA2[24]             : AH18      : output : 2.5 V             :         : 4         : N              
-ENTRADA_ULA1[27]             : AH19      : output : 2.5 V             :         : 4         : N              
+ENTRADA_ULA1[27]             : AH17      : output : 2.5 V             :         : 4         : N              
+SAIDA_EXTENSOR[29]           : AH18      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH19      :        :                   :         : 4         :                
 VCCIO4                       : AH20      : power  :                   : 2.5V    : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AH21      :        :                   :         : 4         :                
-SAIDA_SHIFT2L[30]            : AH22      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH22      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AH23      :        :                   :         : 4         :                
 VCCIO4                       : AH24      : power  :                   : 2.5V    : 4         :                
-ENTRADA_SHIFT_LEFT[28]       : AH25      : output : 2.5 V             :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AH26      :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH25      :        :                   :         : 4         :                
+SAIDA_SHIFT2L[26]            : AH26      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AH27      : power  :                   : 2.5V    : 4         :                
 VCCIO1                       : B1        : power  :                   : 2.5V    : 1         :                
 GND                          : B2        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : B3        :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : B4        :        :                   :         : 8         :                
+INSTR[6]                     : B3        : output : 2.5 V             :         : 8         : N              
+ENTRADA_SHIFT_LEFT[6]        : B4        : output : 2.5 V             :         : 8         : N              
 GND                          : B5        : gnd    :                   :         :           :                
-PC[1]                        : B6        : output : 2.5 V             :         : 8         : N              
-ENTRADA_SHIFT_LEFT[6]        : B7        : output : 2.5 V             :         : 8         : N              
-ENTRADA_SHIFT_LEFT[16]       : B8        : output : 2.5 V             :         : 8         : N              
+PC[10]                       : B6        : output : 2.5 V             :         : 8         : N              
+INSTR[18]                    : B7        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : B8        :        :                   :         : 8         :                
 GND                          : B9        : gnd    :                   :         :           :                
-ENTRADA_ULA2[15]             : B10       : output : 2.5 V             :         : 8         : N              
-RESULTADO[11]                : B11       : output : 2.5 V             :         : 8         : N              
+ENTRADA_ULA1[7]              : B10       : output : 2.5 V             :         : 8         : N              
+ENTRADA_ULA1[11]             : B11       : output : 2.5 V             :         : 8         : N              
 GND                          : B12       : gnd    :                   :         :           :                
 GND                          : B13       : gnd    :                   :         :           :                
 GND+                         : B14       :        :                   :         : 8         :                
 GND+                         : B15       :        :                   :         : 7         :                
 GND                          : B16       : gnd    :                   :         :           :                
-ENTRADA_ULA2[19]             : B17       : output : 2.5 V             :         : 7         : N              
-ENTRADA_ULA2[3]              : B18       : output : 2.5 V             :         : 7         : N              
-ENTRADA_ULA2[28]             : B19       : output : 2.5 V             :         : 7         : N              
+RESULTADO[0]                 : B17       : output : 2.5 V             :         : 7         : N              
+ENTRADA_ULA1[8]              : B18       : output : 2.5 V             :         : 7         : N              
+INSTR[28]                    : B19       : output : 2.5 V             :         : 7         : N              
 GND                          : B20       : gnd    :                   :         :           :                
-PC[19]                       : B21       : output : 2.5 V             :         : 7         : N              
-INSTR[27]                    : B22       : output : 2.5 V             :         : 7         : N              
-SAIDA_EXTENSOR[13]           : B23       : output : 2.5 V             :         : 7         : N              
+ENTRADA_ULA2[15]             : B21       : output : 2.5 V             :         : 7         : N              
+ENTRADA_SHIFT_LEFT[3]        : B22       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : B23       :        :                   :         : 7         :                
 GND                          : B24       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : B25       :        :                   :         : 7         :                
+SAIDA_SHIFT2L[30]            : B25       : output : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : B26       :        :                   :         : 7         :                
 GND                          : B27       : gnd    :                   :         :           :                
 VCCIO6                       : B28       : power  :                   : 2.5V    : 6         :                
 GND                          : C1        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C2        :        :                   :         : 1         :                
-INSTR[11]                    : C3        : output : 2.5 V             :         : 8         : N              
-SAIDA_SHIFT2L[27]            : C4        : output : 2.5 V             :         : 8         : N              
+SAIDA_SHIFT2L[18]            : C2        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C3        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C4        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C5        :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C6        :        :                   :         : 8         :                
-SAIDA_SHIFT2L[16]            : C7        : output : 2.5 V             :         : 8         : N              
-ENTRADA_SHIFT_LEFT[14]       : C8        : output : 2.5 V             :         : 8         : N              
-PC[17]                       : C9        : output : 2.5 V             :         : 8         : N              
-ENTRADA_ULA1[9]              : C10       : output : 2.5 V             :         : 8         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : C11       :        :                   :         : 8         :                
-RESULTADO[1]                 : C12       : output : 2.5 V             :         : 8         : N              
-RESULTADO[6]                 : C13       : output : 2.5 V             :         : 8         : N              
-RESULTADO[16]                : C14       : output : 2.5 V             :         : 8         : N              
-INSTR[29]                    : C15       : output : 2.5 V             :         : 7         : N              
-RESULTADO[4]                 : C16       : output : 2.5 V             :         : 7         : N              
-ENTRADA_ULA1[10]             : C17       : output : 2.5 V             :         : 7         : N              
-INSTR[2]                     : C18       : output : 2.5 V             :         : 7         : N              
-PC[23]                       : C19       : output : 2.5 V             :         : 7         : N              
-PC[14]                       : C20       : output : 2.5 V             :         : 7         : N              
+SAIDA_EXTENSOR[12]           : C6        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C7        :        :                   :         : 8         :                
+SAIDA_SHIFT2L[1]             : C8        : output : 2.5 V             :         : 8         : N              
+ENTRADA_SHIFT_LEFT[5]        : C9        : output : 2.5 V             :         : 8         : N              
+ENTRADA_ULA2[9]              : C10       : output : 2.5 V             :         : 8         : N              
+ENTRADA_SHIFT_LEFT[7]        : C11       : output : 2.5 V             :         : 8         : N              
+RESULTADO[11]                : C12       : output : 2.5 V             :         : 8         : N              
+PC[6]                        : C13       : output : 2.5 V             :         : 8         : N              
+PC[4]                        : C14       : output : 2.5 V             :         : 8         : N              
+PC[2]                        : C15       : output : 2.5 V             :         : 7         : N              
+PC[3]                        : C16       : output : 2.5 V             :         : 7         : N              
+ENTRADA_ULA1[22]             : C17       : output : 2.5 V             :         : 7         : N              
+PC[27]                       : C18       : output : 2.5 V             :         : 7         : N              
+PC[30]                       : C19       : output : 2.5 V             :         : 7         : N              
+PC[8]                        : C20       : output : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : C21       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C22       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C23       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C24       :        :                   :         : 7         :                
+ENTRADA_SHIFT_LEFT[17]       : C24       : output : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : C25       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C26       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C27       :        :                   :         : 6         :                
 GND                          : C28       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D1        :        :                   :         : 1         :                
-SAIDA_EXTENSOR[15]           : D2        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D2        :        :                   :         : 1         :                
 GND                          : D3        : gnd    :                   :         :           :                
-ENTRADA_EXTENSOR[11]         : D4        : output : 2.5 V             :         : 8         : N              
+INSTR[11]                    : D4        : output : 2.5 V             :         : 8         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : D5        :        :                   :         : 8         :                
-ENTRADA_SHIFT_LEFT[26]       : D6        : output : 2.5 V             :         : 8         : N              
-SAIDA_SHIFT2L[23]            : D7        : output : 2.5 V             :         : 8         : N              
-ENTRADA_EXTENSOR[14]         : D8        : output : 2.5 V             :         : 8         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : D9        :        :                   :         : 8         :                
-ENTRADA_ULA2[8]              : D10       : output : 2.5 V             :         : 8         : N              
-SAIDA_SHIFT2L[24]            : D11       : output : 2.5 V             :         : 8         : N              
-RESULTADO[18]                : D12       : output : 2.5 V             :         : 8         : N              
-INSTR[17]                    : D13       : output : 2.5 V             :         : 8         : N              
-RESULTADO[13]                : D14       : output : 2.5 V             :         : 8         : N              
-RESULTADO[12]                : D15       : output : 2.5 V             :         : 7         : N              
-ENTRADA_ULA2[1]              : D16       : output : 2.5 V             :         : 7         : N              
-ENTRADA_ULA2[2]              : D17       : output : 2.5 V             :         : 7         : N              
-PC[15]                       : D18       : output : 2.5 V             :         : 7         : N              
-PC[29]                       : D19       : output : 2.5 V             :         : 7         : N              
-SAIDA_SHIFT2L[4]             : D20       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D6        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D7        :        :                   :         : 8         :                
+INSTR[1]                     : D8        : output : 2.5 V             :         : 8         : N              
+SAIDA_SHIFT2L[14]            : D9        : output : 2.5 V             :         : 8         : N              
+PC[11]                       : D10       : output : 2.5 V             :         : 8         : N              
+SAIDA_SHIFT2L[25]            : D11       : output : 2.5 V             :         : 8         : N              
+INSTR[21]                    : D12       : output : 2.5 V             :         : 8         : N              
+BranchResult                 : D13       : output : 2.5 V             :         : 8         : N              
+RESULTADO[19]                : D14       : output : 2.5 V             :         : 8         : N              
+PC[7]                        : D15       : output : 2.5 V             :         : 7         : N              
+RESULTADO[1]                 : D16       : output : 2.5 V             :         : 7         : N              
+ENTRADA_ULA2[11]             : D17       : output : 2.5 V             :         : 7         : N              
+ENTRADA_ULA2[21]             : D18       : output : 2.5 V             :         : 7         : N              
+PC[9]                        : D19       : output : 2.5 V             :         : 7         : N              
+SAIDA_EXTENSOR[3]            : D20       : output : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : D21       :        :                   :         : 7         :                
 INSTR[8]                     : D22       : output : 2.5 V             :         : 7         : N              
-ENTRADA_EXTENSOR[7]          : D23       : output : 2.5 V             :         : 7         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : D24       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D23       :        :                   :         : 7         :                
+ENTRADA_SHIFT_LEFT[8]        : D24       : output : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : D25       :        :                   :         : 7         :                
-SAIDA_EXTENSOR[9]            : D26       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D26       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D27       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D28       :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : E1        :        :                   :         : 1         :                
+SAIDA_EXTENSOR[10]           : E1        : output : 2.5 V             :         : 1         : N              
 ~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : E2        : input  : 2.5 V             :         : 1         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : E3        :        :                   :         : 1         :                
-SAIDA_SHIFT2L[25]            : E4        : output : 2.5 V             :         : 8         : N              
-SAIDA_EXTENSOR[17]           : E5        : output : 2.5 V             :         : 8         : N              
+INSTR[14]                    : E4        : output : 2.5 V             :         : 8         : N              
+SAIDA_SHIFT2L[6]             : E5        : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : E6        : power  :                   : 2.5V    : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : E7        :        :                   :         : 8         :                
+ENTRADA_SHIFT_LEFT[4]        : E7        : output : 2.5 V             :         : 8         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : E8        :        :                   :         : 8         :                
 VCCIO8                       : E9        : power  :                   : 2.5V    : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : E10       :        :                   :         : 8         :                
-SAIDA_EXTENSOR[6]            : E11       : output : 2.5 V             :         : 8         : N              
-ENTRADA_ULA1[29]             : E12       : output : 2.5 V             :         : 8         : N              
+PC[29]                       : E10       : output : 2.5 V             :         : 8         : N              
+PC[16]                       : E11       : output : 2.5 V             :         : 8         : N              
+ENTRADA_ULA1[20]             : E12       : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : E13       : power  :                   : 2.5V    : 8         :                
-RESULTADO[3]                 : E14       : output : 2.5 V             :         : 8         : N              
-RESULTADO[20]                : E15       : output : 2.5 V             :         : 7         : N              
+RESULTADO[7]                 : E14       : output : 2.5 V             :         : 8         : N              
+INSTR[20]                    : E15       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : E16       : power  :                   : 2.5V    : 7         :                
-INSTR[21]                    : E17       : output : 2.5 V             :         : 7         : N              
-SAIDA_EXTENSOR[22]           : E18       : output : 2.5 V             :         : 7         : N              
+ENTRADA_ULA1[3]              : E17       : output : 2.5 V             :         : 7         : N              
+PC[22]                       : E18       : output : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : E19       :        :                   :         : 7         :                
 VCCIO7                       : E20       : power  :                   : 2.5V    : 7         :                
-SAIDA_SHIFT2L[19]            : E21       : output : 2.5 V             :         : 7         : N              
+ENTRADA_SHIFT_LEFT[15]       : E21       : output : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : E22       :        :                   :         : 7         :                
 VCCIO7                       : E23       : power  :                   : 2.5V    : 7         :                
-ENTRADA_EXTENSOR[2]          : E24       : output : 2.5 V             :         : 7         : N              
-ENTRADA_ULA1[16]             : E25       : output : 2.5 V             :         : 7         : N              
+INSTR[27]                    : E24       : output : 2.5 V             :         : 7         : N              
+PC[12]                       : E25       : output : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : E26       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : E27       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : E28       :        :                   :         : 6         :                
@@ -434,77 +434,77 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : F3        :        :                   :      
 ~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : F4        : input  : 2.5 V             :         : 1         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : F5        :        :                   :         : 1         :                
 GND                          : F6        : gnd    :                   :         :           :                
-SAIDA_EXTENSOR[14]           : F7        : output : 2.5 V             :         : 8         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : F8        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F7        :        :                   :         : 8         :                
+INSTR[26]                    : F8        : output : 2.5 V             :         : 8         : N              
 GND                          : F9        : gnd    :                   :         :           :                
-ENTRADA_SHIFT_LEFT[12]       : F10       : output : 2.5 V             :         : 8         : N              
-INSTR[6]                     : F11       : output : 2.5 V             :         : 8         : N              
-PC[13]                       : F12       : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F10       :        :                   :         : 8         :                
+PC[21]                       : F11       : output : 2.5 V             :         : 8         : N              
+SAIDA_EXTENSOR[5]            : F12       : output : 2.5 V             :         : 8         : N              
 GND                          : F13       : gnd    :                   :         :           :                
-RESULTADO[7]                 : F14       : output : 2.5 V             :         : 8         : N              
-RESULTADO[19]                : F15       : output : 2.5 V             :         : 7         : N              
+RESULTADO[10]                : F14       : output : 2.5 V             :         : 8         : N              
+RESULTADO[21]                : F15       : output : 2.5 V             :         : 7         : N              
 GND                          : F16       : gnd    :                   :         :           :                
-RESULTADO[26]                : F17       : output : 2.5 V             :         : 7         : N              
-ENTRADA_SHIFT_LEFT[2]        : F18       : output : 2.5 V             :         : 7         : N              
-ENTRADA_EXTENSOR[8]          : F19       : output : 2.5 V             :         : 7         : N              
+ENTRADA_ULA1[24]             : F17       : output : 2.5 V             :         : 7         : N              
+SAIDA_SHIFT2L[5]             : F18       : output : 2.5 V             :         : 7         : N              
+PC[14]                       : F19       : output : 2.5 V             :         : 7         : N              
 GND                          : F20       : gnd    :                   :         :           :                
-SAIDA_SHIFT2L[17]            : F21       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F21       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F22       :        :                   :         : 7         :                
 GND                          : F23       : gnd    :                   :         :           :                
-SAIDA_SHIFT2L[0]             : F24       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F24       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F25       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F26       :        :                   :         : 6         :                
-ENTRADA_EXTENSOR[4]          : F27       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F27       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F28       :        :                   :         : 6         :                
-ENTRADA_SHIFT_LEFT[19]       : G1        : output : 2.5 V             :         : 1         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : G2        :        :                   :         : 1         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : G3        :        :                   :         : 1         :                
+INSTR[2]                     : G1        : output : 2.5 V             :         : 1         : N              
+SAIDA_SHIFT2L[13]            : G2        : output : 2.5 V             :         : 1         : N              
+PC[0]                        : G3        : output : 2.5 V             :         : 1         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : G4        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G5        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G6        :        :                   :         : 1         :                
-SAIDA_SHIFT2L[13]            : G7        : output : 2.5 V             :         : 8         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : G8        :        :                   :         : 8         :                
-INSTR[14]                    : G9        : output : 2.5 V             :         : 8         : N              
-ENTRADA_SHIFT_LEFT[11]       : G10       : output : 2.5 V             :         : 8         : N              
-SAIDA_EXTENSOR[11]           : G11       : output : 2.5 V             :         : 8         : N              
-ENTRADA_SHIFT_LEFT[7]        : G12       : output : 2.5 V             :         : 8         : N              
-SAIDA_EXTENSOR[1]            : G13       : output : 2.5 V             :         : 8         : N              
-RESULTADO[15]                : G14       : output : 2.5 V             :         : 8         : N              
-PC[5]                        : G15       : output : 2.5 V             :         : 7         : N              
-INSTR[20]                    : G16       : output : 2.5 V             :         : 7         : N              
-SAIDA_EXTENSOR[2]            : G17       : output : 2.5 V             :         : 7         : N              
-PC[3]                        : G18       : output : 2.5 V             :         : 7         : N              
-RESULTADO[5]                 : G19       : output : 2.5 V             :         : 7         : N              
-ENTRADA_ULA2[23]             : G20       : output : 2.5 V             :         : 7         : N              
-ENTRADA_ULA1[23]             : G21       : output : 2.5 V             :         : 7         : N              
-ENTRADA_ULA2[30]             : G22       : output : 2.5 V             :         : 7         : N              
+ENTRADA_SHIFT_LEFT[1]        : G7        : output : 2.5 V             :         : 8         : N              
+INSTR[31]                    : G8        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G9        :        :                   :         : 8         :                
+ENTRADA_SHIFT_LEFT[13]       : G10       : output : 2.5 V             :         : 8         : N              
+SAIDA_EXTENSOR[6]            : G11       : output : 2.5 V             :         : 8         : N              
+INSTR[5]                     : G12       : output : 2.5 V             :         : 8         : N              
+ENTRADA_ULA1[14]             : G13       : output : 2.5 V             :         : 8         : N              
+RESULTADO[29]                : G14       : output : 2.5 V             :         : 8         : N              
+ENTRADA_ULA1[13]             : G15       : output : 2.5 V             :         : 7         : N              
+RESULTADO[26]                : G16       : output : 2.5 V             :         : 7         : N              
+ENTRADA_ULA2[16]             : G17       : output : 2.5 V             :         : 7         : N              
+RESULTADO[30]                : G18       : output : 2.5 V             :         : 7         : N              
+ENTRADA_ULA1[30]             : G19       : output : 2.5 V             :         : 7         : N              
+ENTRADA_ULA2[0]              : G20       : output : 2.5 V             :         : 7         : N              
+ENTRADA_ULA1[10]             : G21       : output : 2.5 V             :         : 7         : N              
+ENTRADA_ULA2[18]             : G22       : output : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : G23       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G24       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G25       :        :                   :         : 6         :                
-SAIDA_SHIFT2L[14]            : G26       : output : 2.5 V             :         : 6         : N              
-INSTR[4]                     : G27       : output : 2.5 V             :         : 6         : N              
-SAIDA_EXTENSOR[12]           : G28       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G26       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G27       :        :                   :         : 6         :                
+PC[31]                       : G28       : output : 2.5 V             :         : 6         : N              
 VCCIO1                       : H1        : power  :                   : 2.5V    : 1         :                
 GND                          : H2        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H3        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H4        :        :                   :         : 1         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : H5        :        :                   :         : 1         :                
-ENTRADA_SHIFT_LEFT[9]        : H6        : output : 2.5 V             :         : 1         : N              
+INSTR[12]                    : H5        : output : 2.5 V             :         : 1         : N              
+SAIDA_EXTENSOR[23]           : H6        : output : 2.5 V             :         : 1         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : H7        :        :                   :         : 1         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : H8        :        :                   :         : 8         :                
+SAIDA_EXTENSOR[1]            : H8        : output : 2.5 V             :         : 8         : N              
 GNDA3                        : H9        : gnd    :                   :         :           :                
-SAIDA_SHIFT2L[18]            : H10       : output : 2.5 V             :         : 8         : N              
+SAIDA_SHIFT2L[4]             : H10       : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : H11       : power  :                   : 2.5V    : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : H12       :        :                   :         : 8         :                
-ENTRADA_SHIFT_LEFT[1]        : H13       : output : 2.5 V             :         : 8         : N              
-RESULTADO[9]                 : H14       : output : 2.5 V             :         : 8         : N              
-RESULTADO[27]                : H15       : output : 2.5 V             :         : 7         : N              
-ENTRADA_ULA1[21]             : H16       : output : 2.5 V             :         : 7         : N              
-PC[4]                        : H17       : output : 2.5 V             :         : 7         : N              
+ENTRADA_ULA2[12]             : H12       : output : 2.5 V             :         : 8         : N              
+ENTRADA_ULA2[30]             : H13       : output : 2.5 V             :         : 8         : N              
+INSTR[16]                    : H14       : output : 2.5 V             :         : 8         : N              
+RESULTADO[31]                : H15       : output : 2.5 V             :         : 7         : N              
+ENTRADA_ULA2[3]              : H16       : output : 2.5 V             :         : 7         : N              
+RESULTADO[2]                 : H17       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : H18       : power  :                   : 2.5V    : 7         :                
-ENTRADA_ULA2[21]             : H19       : output : 2.5 V             :         : 7         : N              
+ENTRADA_ULA1[28]             : H19       : output : 2.5 V             :         : 7         : N              
 GNDA2                        : H20       : gnd    :                   :         :           :                
-ENTRADA_ULA2[5]              : H21       : output : 2.5 V             :         : 7         : N              
+ENTRADA_ULA1[6]              : H21       : output : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : H22       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H23       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H24       :        :                   :         : 6         :                
@@ -514,40 +514,40 @@ GND                          : H27       : gnd    :                   :         
 VCCIO6                       : H28       : power  :                   : 2.5V    : 6         :                
 CLK                          : J1        : input  : 2.5 V             :         : 1         : N              
 GND                          : J2        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : J3        :        :                   :         : 1         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : J4        :        :                   :         : 1         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : J5        :        :                   :         : 1         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : J6        :        :                   :         : 1         :                
-SAIDA_SHIFT2L[6]             : J7        : output : 2.5 V             :         : 1         : N              
+SAIDA_EXTENSOR[2]            : J3        : output : 2.5 V             :         : 1         : N              
+ENTRADA_SHIFT_LEFT[16]       : J4        : output : 2.5 V             :         : 1         : N              
+ENTRADA_ULA1[12]             : J5        : output : 2.5 V             :         : 1         : N              
+ENTRADA_ULA2[5]              : J6        : output : 2.5 V             :         : 1         : N              
+ENTRADA_ULA2[10]             : J7        : output : 2.5 V             :         : 1         : N              
 VCCA3                        : J8        : power  :                   : 2.5V    :           :                
 VCCD_PLL3                    : J9        : power  :                   : 1.2V    :           :                
-ENTRADA_SHIFT_LEFT[8]        : J10       : output : 2.5 V             :         : 8         : N              
+SAIDA_SHIFT2L[7]             : J10       : output : 2.5 V             :         : 8         : N              
 GND                          : J11       : gnd    :                   :         :           :                
-ENTRADA_ULA2[11]             : J12       : output : 2.5 V             :         : 8         : N              
-ENTRADA_ULA2[17]             : J13       : output : 2.5 V             :         : 8         : N              
-ENTRADA_ULA2[18]             : J14       : output : 2.5 V             :         : 8         : N              
-RESULTADO[2]                 : J15       : output : 2.5 V             :         : 7         : N              
+ENTRADA_ULA1[0]              : J12       : output : 2.5 V             :         : 8         : N              
+ENTRADA_ULA2[6]              : J13       : output : 2.5 V             :         : 8         : N              
+RESULTADO[6]                 : J14       : output : 2.5 V             :         : 8         : N              
+RESULTADO[24]                : J15       : output : 2.5 V             :         : 7         : N              
 ENTRADA_ULA1[4]              : J16       : output : 2.5 V             :         : 7         : N              
-ENTRADA_ULA1[24]             : J17       : output : 2.5 V             :         : 7         : N              
+ENTRADA_ULA1[18]             : J17       : output : 2.5 V             :         : 7         : N              
 GND                          : J18       : gnd    :                   :         :           :                
-RESULTADO[29]                : J19       : output : 2.5 V             :         : 7         : N              
+ENTRADA_ULA2[23]             : J19       : output : 2.5 V             :         : 7         : N              
 VCCD_PLL2                    : J20       : power  :                   : 1.2V    :           :                
 VCCA2                        : J21       : power  :                   : 2.5V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : J22       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : J23       :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : J24       :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : J25       :        :                   :         : 6         :                
-SAIDA_SHIFT2L[21]            : J26       : output : 2.5 V             :         : 6         : N              
+ENTRADA_SHIFT_LEFT[9]        : J24       : output : 2.5 V             :         : 6         : N              
+ENTRADA_ULA2[13]             : J25       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : J26       :        :                   :         : 6         :                
 GND+                         : J27       :        :                   :         : 6         :                
 GND+                         : J28       :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : K1        :        :                   :         : 1         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : K2        :        :                   :         : 1         :                
+ENTRADA_SHIFT_LEFT[11]       : K1        : output : 2.5 V             :         : 1         : N              
+ENTRADA_SHIFT_LEFT[2]        : K2        : output : 2.5 V             :         : 1         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : K3        :        :                   :         : 1         :                
-SAIDA_SHIFT2L[10]            : K4        : output : 2.5 V             :         : 1         : N              
+ENTRADA_ULA2[7]              : K4        : output : 2.5 V             :         : 1         : N              
 VCCIO1                       : K5        : power  :                   : 2.5V    : 1         :                
 GND                          : K6        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : K7        :        :                   :         : 1         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : K8        :        :                   :         : 1         :                
+ENTRADA_ULA2[4]              : K7        : output : 2.5 V             :         : 1         : N              
+ENTRADA_ULA1[29]             : K8        : output : 2.5 V             :         : 1         : N              
 VCCINT                       : K9        : power  :                   : 1.2V    :           :                
 GND                          : K10       : gnd    :                   :         :           :                
 VCCINT                       : K11       : power  :                   : 1.2V    :           :                
@@ -564,18 +564,18 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : K21       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : K22       :        :                   :         : 6         :                
 GND                          : K23       : gnd    :                   :         :           :                
 VCCIO6                       : K24       : power  :                   : 2.5V    : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : K25       :        :                   :         : 6         :                
+INSTR[10]                    : K25       : output : 2.5 V             :         : 6         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : K26       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : K27       :        :                   :         : 6         :                
-ENTRADA_SHIFT_LEFT[17]       : K28       : output : 2.5 V             :         : 6         : N              
-INSTR[25]                    : L1        : output : 2.5 V             :         : 1         : N              
-INSTR[16]                    : L2        : output : 2.5 V             :         : 1         : N              
+ENTRADA_ULA1[5]              : K28       : output : 2.5 V             :         : 6         : N              
+RESULTADO[5]                 : L1        : output : 2.5 V             :         : 1         : N              
+ENTRADA_ULA1[19]             : L2        : output : 2.5 V             :         : 1         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : L3        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : L4        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : L5        :        :                   :         : 1         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : L6        :        :                   :         : 1         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : L7        :        :                   :         : 1         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : L8        :        :                   :         : 1         :                
+INSTR[25]                    : L6        : output : 2.5 V             :         : 1         : N              
+ENTRADA_ULA2[31]             : L7        : output : 2.5 V             :         : 1         : N              
+ENTRADA_ULA2[24]             : L8        : output : 2.5 V             :         : 1         : N              
 GND                          : L9        : gnd    :                   :         :           :                
 VCCINT                       : L10       : power  :                   : 1.2V    :           :                
 GND                          : L11       : gnd    :                   :         :           :                
@@ -590,20 +590,20 @@ GND                          : L19       : gnd    :                   :         
 VCCINT                       : L20       : power  :                   : 1.2V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : L21       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : L22       :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : L23       :        :                   :         : 6         :                
-SAIDA_SHIFT2L[12]            : L24       : output : 2.5 V             :         : 6         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : L25       :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : L26       :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : L27       :        :                   :         : 6         :                
-ENTRADA_ULA2[12]             : L28       : output : 2.5 V             :         : 6         : N              
-ENTRADA_ULA2[0]              : M1        : output : 2.5 V             :         : 1         : N              
-INSTR[19]                    : M2        : output : 2.5 V             :         : 1         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : M3        :        :                   :         : 1         :                
+ENTRADA_ULA1[25]             : L23       : output : 2.5 V             :         : 6         : N              
+INSTR[29]                    : L24       : output : 2.5 V             :         : 6         : N              
+SAIDA_SHIFT2L[10]            : L25       : output : 2.5 V             :         : 6         : N              
+ENTRADA_ULA1[15]             : L26       : output : 2.5 V             :         : 6         : N              
+ENTRADA_ULA1[21]             : L27       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : L28       :        :                   :         : 6         :                
+ENTRADA_ULA2[28]             : M1        : output : 2.5 V             :         : 1         : N              
+RESULTADO[12]                : M2        : output : 2.5 V             :         : 1         : N              
+ENTRADA_ULA1[9]              : M3        : output : 2.5 V             :         : 1         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : M4        :        :                   :         : 1         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : M5        :        :                   :         : 1         :                
+INSTR[17]                    : M5        : output : 2.5 V             :         : 1         : N              
 nSTATUS                      : M6        :        :                   :         : 1         :                
-BranchResult                 : M7        : output : 2.5 V             :         : 1         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : M8        :        :                   :         : 1         :                
+ENTRADA_ULA1[26]             : M7        : output : 2.5 V             :         : 1         : N              
+RESULTADO[9]                 : M8        : output : 2.5 V             :         : 1         : N              
 VCCINT                       : M9        : power  :                   : 1.2V    :           :                
 GND                          : M10       : gnd    :                   :         :           :                
 VCCINT                       : M11       : power  :                   : 1.2V    :           :                
@@ -616,22 +616,22 @@ VCCINT                       : M17       : power  :                   : 1.2V    
 GND                          : M18       : gnd    :                   :         :           :                
 VCCINT                       : M19       : power  :                   : 1.2V    :           :                
 GND                          : M20       : gnd    :                   :         :           :                
-SAIDA_EXTENSOR[27]           : M21       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : M21       :        :                   :         : 6         :                
 MSEL2                        : M22       :        :                   :         : 6         :                
-RESULTADO[10]                : M23       : output : 2.5 V             :         : 6         : N              
-BranchSinal                  : M24       : output : 2.5 V             :         : 6         : N              
-ENTRADA_ULA1[18]             : M25       : output : 2.5 V             :         : 6         : N              
-ENTRADA_ULA2[29]             : M26       : output : 2.5 V             :         : 6         : N              
-RESULTADO[21]                : M27       : output : 2.5 V             :         : 6         : N              
-RESULTADO[28]                : M28       : output : 2.5 V             :         : 6         : N              
+RESULTADO[20]                : M23       : output : 2.5 V             :         : 6         : N              
+PC[19]                       : M24       : output : 2.5 V             :         : 6         : N              
+ENTRADA_ULA2[20]             : M25       : output : 2.5 V             :         : 6         : N              
+RESULTADO[18]                : M26       : output : 2.5 V             :         : 6         : N              
+RESULTADO[25]                : M27       : output : 2.5 V             :         : 6         : N              
+PC[18]                       : M28       : output : 2.5 V             :         : 6         : N              
 VCCIO1                       : N1        : power  :                   : 2.5V    : 1         :                
 GND                          : N2        : gnd    :                   :         :           :                
-ENTRADA_SHIFT_LEFT[22]       : N3        : output : 2.5 V             :         : 1         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : N4        :        :                   :         : 1         :                
+ENTRADA_ULA2[26]             : N3        : output : 2.5 V             :         : 1         : N              
+ENTRADA_ULA1[31]             : N4        : output : 2.5 V             :         : 1         : N              
 VCCIO1                       : N5        : power  :                   : 2.5V    : 1         :                
 GND                          : N6        : gnd    :                   :         :           :                
 ~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : N7        : input  : 2.5 V             :         : 1         : N              
-RESULTADO[0]                 : N8        : output : 2.5 V             :         : 1         : N              
+RESULTADO[15]                : N8        : output : 2.5 V             :         : 1         : N              
 GND                          : N9        : gnd    :                   :         :           :                
 VCCINT                       : N10       : power  :                   : 1.2V    :           :                
 GND                          : N11       : gnd    :                   :         :           :                
@@ -644,16 +644,16 @@ GND                          : N17       : gnd    :                   :         
 VCCINT                       : N18       : power  :                   : 1.2V    :           :                
 GND                          : N19       : gnd    :                   :         :           :                
 VCCINT                       : N20       : power  :                   : 1.2V    :           :                
-PC[2]                        : N21       : output : 2.5 V             :         : 6         : N              
+RESULTADO[27]                : N21       : output : 2.5 V             :         : 6         : N              
 MSEL0                        : N22       :        :                   :         : 6         :                
 GND                          : N23       : gnd    :                   :         :           :                
 VCCIO6                       : N24       : power  :                   : 2.5V    : 6         :                
-ENTRADA_ULA2[4]              : N25       : output : 2.5 V             :         : 6         : N              
-ENTRADA_ULA1[14]             : N26       : output : 2.5 V             :         : 6         : N              
+RESULTADO[8]                 : N25       : output : 2.5 V             :         : 6         : N              
+ENTRADA_ULA1[23]             : N26       : output : 2.5 V             :         : 6         : N              
 GND                          : N27       : gnd    :                   :         :           :                
 VCCIO6                       : N28       : power  :                   : 2.5V    : 6         :                
-JumpSinal                    : P1        : output : 2.5 V             :         : 1         : N              
-RESULTADO[25]                : P2        : output : 2.5 V             :         : 1         : N              
+ENTRADA_ULA2[29]             : P1        : output : 2.5 V             :         : 1         : N              
+ENTRADA_ULA1[17]             : P2        : output : 2.5 V             :         : 1         : N              
 ~ALTERA_DCLK~                : P3        : output : 2.5 V             :         : 1         : N              
 nCONFIG                      : P4        :        :                   :         : 1         :                
 TCK                          : P5        : input  :                   :         : 1         :                
@@ -672,21 +672,21 @@ VCCINT                       : P17       : power  :                   : 1.2V    
 GND                          : P18       : gnd    :                   :         :           :                
 VCCINT                       : P19       : power  :                   : 1.2V    :           :                
 GND                          : P20       : gnd    :                   :         :           :                
-ENTRADA_ULA2[14]             : P21       : output : 2.5 V             :         : 5         : N              
+SAIDA_SHIFT2L[31]            : P21       : output : 2.5 V             :         : 5         : N              
 MSEL3                        : P22       :        :                   :         : 6         :                
 MSEL1                        : P23       :        :                   :         : 6         :                
 CONF_DONE                    : P24       :        :                   :         : 6         :                
-INSTR[28]                    : P25       : output : 2.5 V             :         : 6         : N              
-INSTR[24]                    : P26       : output : 2.5 V             :         : 6         : N              
-RESET                        : P27       : input  : 2.5 V             :         : 6         : N              
+RESULTADO[14]                : P25       : output : 2.5 V             :         : 6         : N              
+ENTRADA_SHIFT_LEFT[25]       : P26       : output : 2.5 V             :         : 6         : N              
+RESULTADO[13]                : P27       : output : 2.5 V             :         : 6         : N              
 ~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : P28       : output : 2.5 V             :         : 6         : N              
-ENTRADA_ULA2[31]             : R1        : output : 2.5 V             :         : 2         : N              
-ENTRADA_ULA2[26]             : R2        : output : 2.5 V             :         : 2         : N              
-ENTRADA_ULA1[1]              : R3        : output : 2.5 V             :         : 2         : N              
-SAIDA_EXTENSOR[19]           : R4        : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : R1        :        :                   :         : 2         :                
+ENTRADA_SHIFT_LEFT[14]       : R2        : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : R3        :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R4        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R5        :        :                   :         : 2         :                
-ENTRADA_ULA2[20]             : R6        : output : 2.5 V             :         : 2         : N              
-PC[6]                        : R7        : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : R6        :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R7        :        :                   :         : 2         :                
 nCE                          : R8        :        :                   :         : 1         :                
 GND                          : R9        : gnd    :                   :         :           :                
 VCCINT                       : R10       : power  :                   : 1.2V    :           :                
@@ -700,18 +700,18 @@ GND                          : R17       : gnd    :                   :         
 VCCINT                       : R18       : power  :                   : 1.2V    :           :                
 GND                          : R19       : gnd    :                   :         :           :                
 VCCINT                       : R20       : power  :                   : 1.2V    :           :                
-ENTRADA_ULA2[7]              : R21       : output : 2.5 V             :         : 5         : N              
-ENTRADA_ULA1[7]              : R22       : output : 2.5 V             :         : 5         : N              
-ENTRADA_ULA1[26]             : R23       : output : 2.5 V             :         : 5         : N              
-ENTRADA_ULA2[25]             : R24       : output : 2.5 V             :         : 5         : N              
-ENTRADA_SHIFT_LEFT[3]        : R25       : output : 2.5 V             :         : 5         : N              
-PC[16]                       : R26       : output : 2.5 V             :         : 5         : N              
-PC[18]                       : R27       : output : 2.5 V             :         : 5         : N              
-ENTRADA_ULA1[30]             : R28       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : R21       :        :                   :         : 5         :                
+SAIDA_EXTENSOR[18]           : R22       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : R23       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R24       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R25       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R26       :        :                   :         : 5         :                
+SAIDA_EXTENSOR[31]           : R27       : output : 2.5 V             :         : 5         : N              
+ENTRADA_SHIFT_LEFT[28]       : R28       : output : 2.5 V             :         : 5         : N              
 VCCIO2                       : T1        : power  :                   : 2.5V    : 2         :                
 GND                          : T2        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : T3        :        :                   :         : 2         :                
-SAIDA_EXTENSOR[8]            : T4        : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : T4        :        :                   :         : 2         :                
 VCCIO2                       : T5        : power  :                   : 2.5V    : 2         :                
 GND                          : T6        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : T7        :        :                   :         : 2         :                
@@ -728,22 +728,22 @@ VCCINT                       : T17       : power  :                   : 1.2V    
 GND                          : T18       : gnd    :                   :         :           :                
 VCCINT                       : T19       : power  :                   : 1.2V    :           :                
 GND                          : T20       : gnd    :                   :         :           :                
-SAIDA_SHIFT2L[7]             : T21       : output : 2.5 V             :         : 5         : N              
-ENTRADA_SHIFT_LEFT[5]        : T22       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : T21       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T22       :        :                   :         : 5         :                
 GND                          : T23       : gnd    :                   :         :           :                
 VCCIO5                       : T24       : power  :                   : 2.5V    : 5         :                
-ENTRADA_EXTENSOR[5]          : T25       : output : 2.5 V             :         : 5         : N              
-INSTR[5]                     : T26       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : T25       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T26       :        :                   :         : 5         :                
 GND                          : T27       : gnd    :                   :         :           :                
 VCCIO5                       : T28       : power  :                   : 2.5V    : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U1        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U2        :        :                   :         : 2         :                
-PC[24]                       : U3        : output : 2.5 V             :         : 2         : N              
-PC[31]                       : U4        : output : 2.5 V             :         : 2         : N              
-ENTRADA_SHIFT_LEFT[21]       : U5        : output : 2.5 V             :         : 2         : N              
+SAIDA_EXTENSOR[14]           : U3        : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : U4        :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : U5        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U6        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U7        :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : U8        :        :                   :         : 2         :                
+SAIDA_SHIFT2L[9]             : U8        : output : 2.5 V             :         : 2         : N              
 GND                          : U9        : gnd    :                   :         :           :                
 VCCINT                       : U10       : power  :                   : 1.2V    :           :                
 GND                          : U11       : gnd    :                   :         :           :                
@@ -756,20 +756,20 @@ GND                          : U17       : gnd    :                   :         
 VCCINT                       : U18       : power  :                   : 1.2V    :           :                
 GND                          : U19       : gnd    :                   :         :           :                
 VCCINT                       : U20       : power  :                   : 1.2V    :           :                
-ENTRADA_SHIFT_LEFT[27]       : U21       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : U21       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U22       :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : U23       :        :                   :         : 5         :                
-PC[26]                       : U24       : output : 2.5 V             :         : 5         : N              
+SAIDA_SHIFT2L[15]            : U23       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : U24       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U25       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U26       :        :                   :         : 5         :                
-SAIDA_SHIFT2L[31]            : U27       : output : 2.5 V             :         : 5         : N              
-SAIDA_SHIFT2L[5]             : U28       : output : 2.5 V             :         : 5         : N              
-SAIDA_EXTENSOR[25]           : V1        : output : 2.5 V             :         : 2         : N              
-SAIDA_SHIFT2L[29]            : V2        : output : 2.5 V             :         : 2         : N              
-INSTR[9]                     : V3        : output : 2.5 V             :         : 2         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : V4        :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : U27       :        :                   :         : 5         :                
+INSTR[9]                     : U28       : output : 2.5 V             :         : 5         : N              
+ENTRADA_SHIFT_LEFT[27]       : V1        : output : 2.5 V             :         : 2         : N              
+SAIDA_SHIFT2L[0]             : V2        : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : V3        :        :                   :         : 2         :                
+SAIDA_SHIFT2L[28]            : V4        : output : 2.5 V             :         : 2         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : V5        :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : V6        :        :                   :         : 2         :                
+SAIDA_EXTENSOR[13]           : V6        : output : 2.5 V             :         : 2         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : V7        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V8        :        :                   :         : 2         :                
 VCCINT                       : V9        : power  :                   : 1.2V    :           :                
@@ -784,16 +784,16 @@ VCCINT                       : V17       : power  :                   : 1.2V    
 GND                          : V18       : gnd    :                   :         :           :                
 VCCINT                       : V19       : power  :                   : 1.2V    :           :                
 GND                          : V20       : gnd    :                   :         :           :                
-SAIDA_EXTENSOR[5]            : V21       : output : 2.5 V             :         : 5         : N              
-ENTRADA_EXTENSOR[3]          : V22       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : V21       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : V22       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V23       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V24       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V25       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V26       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V27       :        :                   :         : 5         :                
-ENTRADA_EXTENSOR[13]         : V28       : output : 2.5 V             :         : 5         : N              
+SAIDA_SHIFT2L[23]            : V28       : output : 2.5 V             :         : 5         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : W1        :        :                   :         : 2         :                
-SAIDA_SHIFT2L[20]            : W2        : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : W2        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : W3        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : W4        :        :                   :         : 2         :                
 VCCIO2                       : W5        : power  :                   : 2.5V    : 2         :                
@@ -813,16 +813,16 @@ VCCINT                       : W18       : power  :                   : 1.2V    
 GND                          : W19       : gnd    :                   :         :           :                
 VCCINT                       : W20       : power  :                   : 1.2V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : W21       :        :                   :         : 5         :                
-SAIDA_EXTENSOR[3]            : W22       : output : 2.5 V             :         : 5         : N              
+INSTR[22]                    : W22       : output : 2.5 V             :         : 5         : N              
 GND                          : W23       : gnd    :                   :         :           :                
 VCCIO5                       : W24       : power  :                   : 2.5V    : 5         :                
-SAIDA_EXTENSOR[24]           : W25       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : W25       :        :                   :         : 5         :                
 INSTR[7]                     : W26       : output : 2.5 V             :         : 5         : N              
-SAIDA_SHIFT2L[28]            : W27       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : W27       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : W28       :        :                   :         : 5         :                
 GND+                         : Y1        :        :                   :         : 2         :                
-GND+                         : Y2        :        :                   :         : 2         :                
-SAIDA_SHIFT2L[26]            : Y3        : output : 2.5 V             :         : 2         : N              
+RESET                        : Y2        : input  : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y3        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y4        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y5        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y6        :        :                   :         : 2         :                
@@ -831,17 +831,17 @@ VCCA1                        : Y8        : power  :                   : 2.5V    
 VCCD_PLL1                    : Y9        : power  :                   : 1.2V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y10       :        :                   :         : 3         :                
 GND                          : Y11       : gnd    :                   :         :           :                
-PC[11]                       : Y12       : output : 2.5 V             :         : 3         : N              
-PC[30]                       : Y13       : output : 2.5 V             :         : 3         : N              
-RESULTADO[31]                : Y14       : output : 2.5 V             :         : 3         : N              
-ENTRADA_ULA2[27]             : Y15       : output : 2.5 V             :         : 3         : N              
+RESULTADO[28]                : Y12       : output : 2.5 V             :         : 3         : N              
+RESULTADO[23]                : Y13       : output : 2.5 V             :         : 3         : N              
+JumpSinal                    : Y14       : output : 2.5 V             :         : 3         : N              
+ENTRADA_ULA2[2]              : Y15       : output : 2.5 V             :         : 3         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y16       :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y17       :        :                   :         : 4         :                
 GND                          : Y18       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y19       :        :                   :         : 4         :                
 VCCD_PLL4                    : Y20       : power  :                   : 1.2V    :           :                
 VCCA4                        : Y21       : power  :                   : 2.5V    :           :                
-INSTR[3]                     : Y22       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y22       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y23       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y24       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y25       :        :                   :         : 5         :                

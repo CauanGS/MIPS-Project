@@ -197,25 +197,9 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1312 784 1536 800)
+	(rect 1384 784 1608 800)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "SAIDA_EXTENSOR[31..0]" (rect 90 0 218 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-)
-(pin
-	(output)
-	(rect 1016 776 1259 792)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "ENTRADA_EXTENSOR[15..0]" (rect 90 0 237 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -1762,68 +1746,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1360 712)
-	(pt 1360 768)
-	(bus)
-)
-(connector
-	(pt 1336 712)
-	(pt 1360 712)
-	(bus)
-)
-(connector
-	(pt 1360 768)
-	(pt 1288 768)
-	(bus)
-)
-(connector
-	(pt 1288 768)
-	(pt 1288 792)
-	(bus)
-)
-(connector
-	(pt 1288 792)
-	(pt 1312 792)
-	(bus)
-)
-(connector
-	(pt 1064 712)
-	(pt 1064 760)
-	(bus)
-)
-(connector
-	(pt 1064 760)
-	(pt 1000 760)
-	(bus)
-)
-(connector
-	(text "inst[15..0]" (rect 994 696 1043 708)(font "Arial" ))
-	(pt 984 712)
-	(pt 1064 712)
-	(bus)
-)
-(connector
-	(pt 1064 712)
-	(pt 1136 712)
-	(bus)
-)
-(connector
-	(pt 1000 760)
-	(pt 1000 784)
-	(bus)
-)
-(connector
-	(text "inst[15..0]" (rect 1000 768 1049 780)(font "Arial" ))
-	(pt 1000 784)
-	(pt 1016 784)
-	(bus)
-)
-(connector
-	(pt 1360 712)
-	(pt 1576 712)
-	(bus)
-)
-(connector
 	(pt 1616 712)
 	(pt 1616 784)
 	(bus)
@@ -1841,6 +1763,32 @@ applicable agreement for further details.
 (connector
 	(pt 1616 712)
 	(pt 1664 712)
+	(bus)
+)
+(connector
+	(pt 1360 792)
+	(pt 1360 712)
+	(bus)
+)
+(connector
+	(pt 1360 792)
+	(pt 1384 792)
+	(bus)
+)
+(connector
+	(pt 1336 712)
+	(pt 1360 712)
+	(bus)
+)
+(connector
+	(pt 1360 712)
+	(pt 1576 712)
+	(bus)
+)
+(connector
+	(text "inst[15..0]" (rect 994 696 1043 708)(font "Arial" ))
+	(pt 984 712)
+	(pt 1136 712)
 	(bus)
 )
 (junction (pt 984 136))
@@ -1868,5 +1816,4 @@ applicable agreement for further details.
 (junction (pt 1952 712))
 (junction (pt 944 312))
 (junction (pt 1360 712))
-(junction (pt 1064 712))
 (junction (pt 1616 712))

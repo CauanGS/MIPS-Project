@@ -4,7 +4,6 @@ entity processador_mips_vlg_check_tst is
     port(
         BranchResult    : in     vl_logic;
         BranchSinal     : in     vl_logic;
-        ENTRADA_EXTENSOR: in     vl_logic_vector(15 downto 0);
         ENTRADA_SHIFT_LEFT: in     vl_logic_vector(31 downto 0);
         ENTRADA_ULA1    : in     vl_logic_vector(31 downto 0);
         ENTRADA_ULA2    : in     vl_logic_vector(31 downto 0);

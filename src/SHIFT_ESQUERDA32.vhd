@@ -11,5 +11,5 @@ end entity;
 
 architecture behave of SHIFT_ESQUERDA32 is
 begin
-    SAIDA <= ENTRADA(29 downto 0) & "00";
+    SAIDA <= ENTRADA(29 downto 0) & "00"; -- seleciona apenas os 29 bits mais significativos e então adicona dois bits ao final "Deslocando" dois bits para esquerda
 end behave;
