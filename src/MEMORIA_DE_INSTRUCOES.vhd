@@ -14,12 +14,12 @@ architecture behave of MEMORIA_DE_INSTRUCAO is
     signal MEMORIA : TIPORAM := (
         -- Endereço de Palavra (índice do array)
         -- Inicialização
-        0 => x"20100000",  -- 0x00: addi $s0, $zero, 0     			(soma = 0)
-        1 => x"20110001",  -- 0x04: addi $s1, $zero, 1     			(i = 1)
+        0 => x"20100000",  -- 0x00: addi $s0, $zero, 0     			($s0 = soma = 0)
+        1 => x"20110001",  -- 0x04: addi $s1, $zero, 1     			($s1 = i = 1)
         2 => x"20080004",  -- 0x08: addi $t0, $zero, 4   			(limite = 4)
 
         -- Início do Loop
-        3 => x"0228482A",  -- 0x0C: loop: slt  $t1, $s1, $t0 		($t1 = 1 se i < 4, senão $t1 = 0)
+        3 => x"0228482A",  -- 0x0C: loop: slt  $t1, $s1, $t0 		($t1 = 1 se i($s1) < 4, senão $t1 = 0)
         4 => x"11200003",  -- 0x10: beq  $t1, $zero, end_loop		(+3 instruções = 0x20)
         
         -- Corpo do Loop
