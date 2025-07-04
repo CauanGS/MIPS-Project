@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect 256 192 424 208)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "OPcode[5..0]" (rect 5 0 70 12)(font "Arial" ))
+	(text "OPcode[5..0]" (rect 5 0 69 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -39,7 +39,7 @@ applicable agreement for further details.
 	(input)
 	(rect 248 416 424 432)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "FUNCcode[5..0]" (rect 5 0 87 12)(font "Arial" ))
+	(text "FUNCcode[5..0]" (rect 5 0 86 12)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12))
@@ -165,23 +165,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 736 400 912 416)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "ControleULA" (rect 90 0 153 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-)
-(pin
-	(output)
-	(rect 736 400 920 416)
+	(rect 752 400 936 416)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "ControleULA[2..0]" (rect 90 0 178 12)(font "Arial" ))
 	(pt 0 8)
@@ -318,5 +302,10 @@ applicable agreement for further details.
 (connector
 	(pt 400 408)
 	(pt 424 408)
+	(bus)
+)
+(connector
+	(pt 736 408)
+	(pt 752 408)
 	(bus)
 )

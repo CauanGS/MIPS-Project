@@ -89,16 +89,9 @@ applicable agreement for further details.
 	(port
 		(pt 240 144)
 		(output)
-		(text "ControleULA" (rect 0 0 71 14)(font "Arial" (font_size 8)))
-		(text "ControleULA" (rect 148 139 219 153)(font "Arial" (font_size 8)))
-		(line (pt 240 144)(pt 224 144))
-	)
-	(port
-		(pt 240 160)
-		(output)
 		(text "ControleULA[2..0]" (rect 0 0 100 14)(font "Arial" (font_size 8)))
-		(text "ControleULA[2..0]" (rect 119 155 219 169)(font "Arial" (font_size 8)))
-		(line (pt 240 160)(pt 224 160)(line_width 3))
+		(text "ControleULA[2..0]" (rect 119 139 219 153)(font "Arial" (font_size 8)))
+		(line (pt 240 144)(pt 224 144)(line_width 3))
 	)
 	(drawing
 		(rectangle (rect 16 16 224 176))

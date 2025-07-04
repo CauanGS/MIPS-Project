@@ -1,6 +1,6 @@
 Analysis & Synthesis report for processador_mips
-Fri Jul 04 11:57:15 2025
-Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Fri Jul 04 14:51:59 2025
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -40,24 +40,24 @@ applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                    ;
-+------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Jul 04 11:57:15 2025      ;
-; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
-; Revision Name                      ; processador_mips                           ;
-; Top-level Entity Name              ; processador_mips                           ;
-; Family                             ; Cyclone IV E                               ;
-; Total logic elements               ; 4,673                                      ;
-;     Total combinational functions  ; 2,305                                      ;
-;     Dedicated logic registers      ; 2,462                                      ;
-; Total registers                    ; 2462                                       ;
-; Total pins                         ; 325                                        ;
-; Total virtual pins                 ; 0                                          ;
-; Total memory bits                  ; 0                                          ;
-; Embedded Multiplier 9-bit elements ; 0                                          ;
-; Total PLLs                         ; 0                                          ;
-+------------------------------------+--------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri Jul 04 14:51:59 2025           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; processador_mips                                ;
+; Top-level Entity Name              ; processador_mips                                ;
+; Family                             ; Cyclone IV E                                    ;
+; Total logic elements               ; 4,672                                           ;
+;     Total combinational functions  ; 2,304                                           ;
+;     Dedicated logic registers      ; 2,462                                           ;
+; Total registers                    ; 2462                                            ;
+; Total pins                         ; 325                                             ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -154,34 +154,35 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 6      ;
+; Number detected on machine ; 12     ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                         ;
-+----------------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path       ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                                                         ; Library ;
-+----------------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; src/BANCO_DE_REGISTRADORES.vhd         ; yes             ; User VHDL File                     ; C:/Users/gabri/backupSSD/AreaDeTrabalhoAntiga/Unesp/5semestre/LaboratorioCircuitosDigitais/Projeto/ProjetoGit/src/BANCO_DE_REGISTRADORES.vhd         ;         ;
-; src/CONTADOR_DE_PROGRAMA_COM_RESET.vhd ; yes             ; User VHDL File                     ; C:/Users/gabri/backupSSD/AreaDeTrabalhoAntiga/Unesp/5semestre/LaboratorioCircuitosDigitais/Projeto/ProjetoGit/src/CONTADOR_DE_PROGRAMA_COM_RESET.vhd ;         ;
-; src/EXTENSOR_DE_SINAL.vhd              ; yes             ; User VHDL File                     ; C:/Users/gabri/backupSSD/AreaDeTrabalhoAntiga/Unesp/5semestre/LaboratorioCircuitosDigitais/Projeto/ProjetoGit/src/EXTENSOR_DE_SINAL.vhd              ;         ;
-; src/SOMADOR.vhd                        ; yes             ; User VHDL File                     ; C:/Users/gabri/backupSSD/AreaDeTrabalhoAntiga/Unesp/5semestre/LaboratorioCircuitosDigitais/Projeto/ProjetoGit/src/SOMADOR.vhd                        ;         ;
-; src/processador_mips.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gabri/backupSSD/AreaDeTrabalhoAntiga/Unesp/5semestre/LaboratorioCircuitosDigitais/Projeto/ProjetoGit/src/processador_mips.bdf               ;         ;
-; src/SOMADOR_MAIS_QUATRO.vhd            ; yes             ; User VHDL File                     ; C:/Users/gabri/backupSSD/AreaDeTrabalhoAntiga/Unesp/5semestre/LaboratorioCircuitosDigitais/Projeto/ProjetoGit/src/SOMADOR_MAIS_QUATRO.vhd            ;         ;
-; src/MULTIPLEXADOR_DOIS.vhd             ; yes             ; User VHDL File                     ; C:/Users/gabri/backupSSD/AreaDeTrabalhoAntiga/Unesp/5semestre/LaboratorioCircuitosDigitais/Projeto/ProjetoGit/src/MULTIPLEXADOR_DOIS.vhd             ;         ;
-; src/MULTIPLEXADOR_CINCO.vhd            ; yes             ; User VHDL File                     ; C:/Users/gabri/backupSSD/AreaDeTrabalhoAntiga/Unesp/5semestre/LaboratorioCircuitosDigitais/Projeto/ProjetoGit/src/MULTIPLEXADOR_CINCO.vhd            ;         ;
-; src/ULA_DECODIFICADOR.vhd              ; yes             ; User VHDL File                     ; C:/Users/gabri/backupSSD/AreaDeTrabalhoAntiga/Unesp/5semestre/LaboratorioCircuitosDigitais/Projeto/ProjetoGit/src/ULA_DECODIFICADOR.vhd              ;         ;
-; src/CONCATENAR_ENTRADAS.vhd            ; yes             ; User VHDL File                     ; C:/Users/gabri/backupSSD/AreaDeTrabalhoAntiga/Unesp/5semestre/LaboratorioCircuitosDigitais/Projeto/ProjetoGit/src/CONCATENAR_ENTRADAS.vhd            ;         ;
-; src/MEMORIA_DE_DADOS.vhd               ; yes             ; User VHDL File                     ; C:/Users/gabri/backupSSD/AreaDeTrabalhoAntiga/Unesp/5semestre/LaboratorioCircuitosDigitais/Projeto/ProjetoGit/src/MEMORIA_DE_DADOS.vhd               ;         ;
-; src/DISPLAY_SETE_SEGMENTOS.vhd         ; yes             ; User VHDL File                     ; C:/Users/gabri/backupSSD/AreaDeTrabalhoAntiga/Unesp/5semestre/LaboratorioCircuitosDigitais/Projeto/ProjetoGit/src/DISPLAY_SETE_SEGMENTOS.vhd         ;         ;
-; src/MEMORIA_DE_INSTRUCOES.vhd          ; yes             ; User VHDL File                     ; C:/Users/gabri/backupSSD/AreaDeTrabalhoAntiga/Unesp/5semestre/LaboratorioCircuitosDigitais/Projeto/ProjetoGit/src/MEMORIA_DE_INSTRUCOES.vhd          ;         ;
-; src/DECODIFICADOR_PRINCIPAL.vhd        ; yes             ; User VHDL File                     ; C:/Users/gabri/backupSSD/AreaDeTrabalhoAntiga/Unesp/5semestre/LaboratorioCircuitosDigitais/Projeto/ProjetoGit/src/DECODIFICADOR_PRINCIPAL.vhd        ;         ;
-; src/SHIFT_ESQUERDA.vhd                 ; yes             ; User VHDL File                     ; C:/Users/gabri/backupSSD/AreaDeTrabalhoAntiga/Unesp/5semestre/LaboratorioCircuitosDigitais/Projeto/ProjetoGit/src/SHIFT_ESQUERDA.vhd                 ;         ;
-; src/ULA.vhd                            ; yes             ; User VHDL File                     ; C:/Users/gabri/backupSSD/AreaDeTrabalhoAntiga/Unesp/5semestre/LaboratorioCircuitosDigitais/Projeto/ProjetoGit/src/ULA.vhd                            ;         ;
-; src/SHIFT_ESQUERDA32.vhd               ; yes             ; User VHDL File                     ; C:/Users/gabri/backupSSD/AreaDeTrabalhoAntiga/Unesp/5semestre/LaboratorioCircuitosDigitais/Projeto/ProjetoGit/src/SHIFT_ESQUERDA32.vhd               ;         ;
-+----------------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                       ;
++----------------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path       ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                       ; Library ;
++----------------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------+---------+
+; src/BANCO_DE_REGISTRADORES.vhd         ; yes             ; User VHDL File                     ; C:/Users/aluno/Documents/CAUAN/MIPS-Project/src/BANCO_DE_REGISTRADORES.vhd         ;         ;
+; src/CONTADOR_DE_PROGRAMA_COM_RESET.vhd ; yes             ; User VHDL File                     ; C:/Users/aluno/Documents/CAUAN/MIPS-Project/src/CONTADOR_DE_PROGRAMA_COM_RESET.vhd ;         ;
+; src/EXTENSOR_DE_SINAL.vhd              ; yes             ; User VHDL File                     ; C:/Users/aluno/Documents/CAUAN/MIPS-Project/src/EXTENSOR_DE_SINAL.vhd              ;         ;
+; src/SOMADOR.vhd                        ; yes             ; User VHDL File                     ; C:/Users/aluno/Documents/CAUAN/MIPS-Project/src/SOMADOR.vhd                        ;         ;
+; src/processador_mips.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/CAUAN/MIPS-Project/src/processador_mips.bdf               ;         ;
+; src/SOMADOR_MAIS_QUATRO.vhd            ; yes             ; User VHDL File                     ; C:/Users/aluno/Documents/CAUAN/MIPS-Project/src/SOMADOR_MAIS_QUATRO.vhd            ;         ;
+; src/MULTIPLEXADOR_DOIS.vhd             ; yes             ; User VHDL File                     ; C:/Users/aluno/Documents/CAUAN/MIPS-Project/src/MULTIPLEXADOR_DOIS.vhd             ;         ;
+; src/MULTIPLEXADOR_CINCO.vhd            ; yes             ; User VHDL File                     ; C:/Users/aluno/Documents/CAUAN/MIPS-Project/src/MULTIPLEXADOR_CINCO.vhd            ;         ;
+; src/ULA_DECODIFICADOR.vhd              ; yes             ; User VHDL File                     ; C:/Users/aluno/Documents/CAUAN/MIPS-Project/src/ULA_DECODIFICADOR.vhd              ;         ;
+; src/CONCATENAR_ENTRADAS.vhd            ; yes             ; User VHDL File                     ; C:/Users/aluno/Documents/CAUAN/MIPS-Project/src/CONCATENAR_ENTRADAS.vhd            ;         ;
+; src/MEMORIA_DE_DADOS.vhd               ; yes             ; User VHDL File                     ; C:/Users/aluno/Documents/CAUAN/MIPS-Project/src/MEMORIA_DE_DADOS.vhd               ;         ;
+; src/DISPLAY_SETE_SEGMENTOS.vhd         ; yes             ; User VHDL File                     ; C:/Users/aluno/Documents/CAUAN/MIPS-Project/src/DISPLAY_SETE_SEGMENTOS.vhd         ;         ;
+; src/MEMORIA_DE_INSTRUCOES.vhd          ; yes             ; User VHDL File                     ; C:/Users/aluno/Documents/CAUAN/MIPS-Project/src/MEMORIA_DE_INSTRUCOES.vhd          ;         ;
+; src/DECODIFICADOR_PRINCIPAL.vhd        ; yes             ; User VHDL File                     ; C:/Users/aluno/Documents/CAUAN/MIPS-Project/src/DECODIFICADOR_PRINCIPAL.vhd        ;         ;
+; src/SHIFT_ESQUERDA.vhd                 ; yes             ; User VHDL File                     ; C:/Users/aluno/Documents/CAUAN/MIPS-Project/src/SHIFT_ESQUERDA.vhd                 ;         ;
+; src/ULA.vhd                            ; yes             ; User VHDL File                     ; C:/Users/aluno/Documents/CAUAN/MIPS-Project/src/ULA.vhd                            ;         ;
+; src/SHIFT_ESQUERDA32.vhd               ; yes             ; User VHDL File                     ; C:/Users/aluno/Documents/CAUAN/MIPS-Project/src/SHIFT_ESQUERDA32.vhd               ;         ;
+; UNIDADE_DE_CONTROLE.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Documents/CAUAN/MIPS-Project/UNIDADE_DE_CONTROLE.bdf                ;         ;
++----------------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -189,16 +190,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 4,673     ;
+; Estimated Total logic elements              ; 4,672     ;
 ;                                             ;           ;
-; Total combinational functions               ; 2305      ;
+; Total combinational functions               ; 2304      ;
 ; Logic element usage by number of LUT inputs ;           ;
 ;     -- 4 input functions                    ; 2036      ;
 ;     -- 3 input functions                    ; 167       ;
-;     -- <=2 input functions                  ; 102       ;
+;     -- <=2 input functions                  ; 101       ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 2154      ;
+;     -- normal mode                          ; 2153      ;
 ;     -- arithmetic mode                      ; 151       ;
 ;                                             ;           ;
 ; Total registers                             ; 2462      ;
@@ -209,30 +210,31 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ; Maximum fan-out node                        ; CLK~input ;
 ; Maximum fan-out                             ; 2462      ;
-; Total fan-out                               ; 16867     ;
+; Total fan-out                               ; 16866     ;
 ; Average fan-out                             ; 3.11      ;
 +---------------------------------------------+-----------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                             ;
-+--------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------+--------------+
-; Compilation Hierarchy Node                 ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                     ; Library Name ;
-+--------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------+--------------+
-; |processador_mips                          ; 2305 (19)         ; 2462 (0)     ; 0           ; 0            ; 0       ; 0         ; 325  ; 0            ; |processador_mips                                       ; work         ;
-;    |BANCO_DE_REGISTRADORES:inst3|          ; 469 (469)         ; 384 (384)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|BANCO_DE_REGISTRADORES:inst3          ; work         ;
-;    |CONTADOR_DE_PROGRAMA_COM_RESET:inst21| ; 39 (39)           ; 30 (30)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|CONTADOR_DE_PROGRAMA_COM_RESET:inst21 ; work         ;
-;    |DECODIFICADOR_PRINCIPAL:inst13|        ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|DECODIFICADOR_PRINCIPAL:inst13        ; work         ;
-;    |MEMORIA_DE_DADOS:inst11|               ; 73 (73)           ; 2048 (2048)  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|MEMORIA_DE_DADOS:inst11               ; work         ;
-;    |MEMORIA_DE_INSTRUCAO:inst22|           ; 29 (29)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|MEMORIA_DE_INSTRUCAO:inst22           ; work         ;
-;    |MULTIPLEXADOR_CINCO:inst4|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|MULTIPLEXADOR_CINCO:inst4             ; work         ;
-;    |MULTIPLEXADOR_DOIS:inst12|             ; 1376 (1376)       ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|MULTIPLEXADOR_DOIS:inst12             ; work         ;
-;    |MULTIPLEXADOR_DOIS:inst9|              ; 32 (32)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|MULTIPLEXADOR_DOIS:inst9              ; work         ;
-;    |SOMADOR:inst6|                         ; 30 (30)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|SOMADOR:inst6                         ; work         ;
-;    |SOMADOR_MAIS_QUATRO:inst23|            ; 30 (30)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|SOMADOR_MAIS_QUATRO:inst23            ; work         ;
-;    |ULA:inst10|                            ; 197 (197)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|ULA:inst10                            ; work         ;
-;    |ULA_DECODIFICADOR:inst14|              ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|ULA_DECODIFICADOR:inst14              ; work         ;
-+--------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                               ;
++--------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                 ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                       ; Library Name ;
++--------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------+--------------+
+; |processador_mips                          ; 2304 (19)         ; 2462 (0)     ; 0           ; 0            ; 0       ; 0         ; 325  ; 0            ; |processador_mips                                                         ; work         ;
+;    |BANCO_DE_REGISTRADORES:inst3|          ; 469 (469)         ; 384 (384)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|BANCO_DE_REGISTRADORES:inst3                            ; work         ;
+;    |CONTADOR_DE_PROGRAMA_COM_RESET:inst21| ; 39 (39)           ; 30 (30)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|CONTADOR_DE_PROGRAMA_COM_RESET:inst21                   ; work         ;
+;    |MEMORIA_DE_DADOS:inst11|               ; 73 (73)           ; 2048 (2048)  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|MEMORIA_DE_DADOS:inst11                                 ; work         ;
+;    |MEMORIA_DE_INSTRUCAO:inst22|           ; 28 (28)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|MEMORIA_DE_INSTRUCAO:inst22                             ; work         ;
+;    |MULTIPLEXADOR_CINCO:inst4|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|MULTIPLEXADOR_CINCO:inst4                               ; work         ;
+;    |MULTIPLEXADOR_DOIS:inst12|             ; 1376 (1376)       ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|MULTIPLEXADOR_DOIS:inst12                               ; work         ;
+;    |MULTIPLEXADOR_DOIS:inst9|              ; 32 (32)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|MULTIPLEXADOR_DOIS:inst9                                ; work         ;
+;    |SOMADOR:inst6|                         ; 30 (30)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|SOMADOR:inst6                                           ; work         ;
+;    |SOMADOR_MAIS_QUATRO:inst23|            ; 30 (30)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|SOMADOR_MAIS_QUATRO:inst23                              ; work         ;
+;    |ULA:inst10|                            ; 197 (197)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|ULA:inst10                                              ; work         ;
+;    |UNIDADE_DE_CONTROLE:inst13|            ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|UNIDADE_DE_CONTROLE:inst13                              ; work         ;
+;       |DECODIFICADOR_PRINCIPAL:inst|       ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|UNIDADE_DE_CONTROLE:inst13|DECODIFICADOR_PRINCIPAL:inst ; work         ;
+;       |ULA_DECODIFICADOR:inst1|            ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|UNIDADE_DE_CONTROLE:inst13|ULA_DECODIFICADOR:inst1      ; work         ;
++--------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -922,7 +924,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:07     ;
+; Top            ; 00:00:04     ;
 +----------------+--------------+
 
 
@@ -931,8 +933,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
-    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Fri Jul 04 11:57:04 2025
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Fri Jul 04 14:51:52 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off processador_mips -c processador_mips
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file src/banco_de_registradores.vhd
@@ -990,7 +992,9 @@ Info (12021): Found 1 design units, including 1 entities, in source file simulat
 Info (12021): Found 1 design units, including 1 entities, in source file unidade_de_controle.bdf
     Info (12023): Found entity 1: UNIDADE_DE_CONTROLE
 Info (12127): Elaborating entity "processador_mips" for the top level hierarchy
-Info (12128): Elaborating entity "DECODIFICADOR_PRINCIPAL" for hierarchy "DECODIFICADOR_PRINCIPAL:inst13"
+Info (12128): Elaborating entity "UNIDADE_DE_CONTROLE" for hierarchy "UNIDADE_DE_CONTROLE:inst13"
+Info (12128): Elaborating entity "DECODIFICADOR_PRINCIPAL" for hierarchy "UNIDADE_DE_CONTROLE:inst13|DECODIFICADOR_PRINCIPAL:inst"
+Info (12128): Elaborating entity "ULA_DECODIFICADOR" for hierarchy "UNIDADE_DE_CONTROLE:inst13|ULA_DECODIFICADOR:inst1"
 Info (12128): Elaborating entity "MEMORIA_DE_INSTRUCAO" for hierarchy "MEMORIA_DE_INSTRUCAO:inst22"
 Info (12128): Elaborating entity "CONTADOR_DE_PROGRAMA_COM_RESET" for hierarchy "CONTADOR_DE_PROGRAMA_COM_RESET:inst21"
 Info (12128): Elaborating entity "MULTIPLEXADOR_DOIS" for hierarchy "MULTIPLEXADOR_DOIS:inst16"
@@ -1046,7 +1050,6 @@ Info (10041): Inferred latch for "SAIDA[1]" at MULTIPLEXADOR_CINCO.vhd(12)
 Info (10041): Inferred latch for "SAIDA[2]" at MULTIPLEXADOR_CINCO.vhd(12)
 Info (10041): Inferred latch for "SAIDA[3]" at MULTIPLEXADOR_CINCO.vhd(12)
 Info (10041): Inferred latch for "SAIDA[4]" at MULTIPLEXADOR_CINCO.vhd(12)
-Info (12128): Elaborating entity "ULA_DECODIFICADOR" for hierarchy "ULA_DECODIFICADOR:inst14"
 Info (12128): Elaborating entity "DISPLAY_SETE_SEGMENTOS" for hierarchy "DISPLAY_SETE_SEGMENTOS:inst56"
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "ENTRADA_SHIFT_LEFT[13]" is stuck at GND
@@ -1089,14 +1092,14 @@ Info (286030): Timing-Driven Synthesis is running
 Info (17049): 512 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 5062 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 5061 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 323 output pins
-    Info (21061): Implemented 4737 logic cells
+    Info (21061): Implemented 4736 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 43 warnings
-    Info: Peak virtual memory: 4678 megabytes
-    Info: Processing ended: Fri Jul 04 11:57:15 2025
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:10
+    Info: Peak virtual memory: 4648 megabytes
+    Info: Processing ended: Fri Jul 04 14:51:59 2025
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:06
 
 
