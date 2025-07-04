@@ -1,5 +1,5 @@
 Analysis & Synthesis report for processador_mips
-Fri Jul 04 14:51:59 2025
+Fri Jul 04 18:03:53 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -43,16 +43,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Jul 04 14:51:59 2025           ;
+; Analysis & Synthesis Status        ; Successful - Fri Jul 04 18:03:53 2025           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; processador_mips                                ;
 ; Top-level Entity Name              ; processador_mips                                ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 4,672                                           ;
-;     Total combinational functions  ; 2,304                                           ;
-;     Dedicated logic registers      ; 2,462                                           ;
-; Total registers                    ; 2462                                            ;
-; Total pins                         ; 325                                             ;
+; Total logic elements               ; 4,750                                           ;
+;     Total combinational functions  ; 2,385                                           ;
+;     Dedicated logic registers      ; 2,459                                           ;
+; Total registers                    ; 2459                                            ;
+; Total pins                         ; 234                                             ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -185,34 +185,34 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 4,672     ;
-;                                             ;           ;
-; Total combinational functions               ; 2304      ;
-; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 2036      ;
-;     -- 3 input functions                    ; 167       ;
-;     -- <=2 input functions                  ; 101       ;
-;                                             ;           ;
-; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 2153      ;
-;     -- arithmetic mode                      ; 151       ;
-;                                             ;           ;
-; Total registers                             ; 2462      ;
-;     -- Dedicated logic registers            ; 2462      ;
-;     -- I/O registers                        ; 0         ;
-;                                             ;           ;
-; I/O pins                                    ; 325       ;
-; Embedded Multiplier 9-bit elements          ; 0         ;
-; Maximum fan-out node                        ; CLK~input ;
-; Maximum fan-out                             ; 2462      ;
-; Total fan-out                               ; 16866     ;
-; Average fan-out                             ; 3.11      ;
-+---------------------------------------------+-----------+
++----------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                    ;
++---------------------------------------------+------------------+
+; Resource                                    ; Usage            ;
++---------------------------------------------+------------------+
+; Estimated Total logic elements              ; 4,750            ;
+;                                             ;                  ;
+; Total combinational functions               ; 2385             ;
+; Logic element usage by number of LUT inputs ;                  ;
+;     -- 4 input functions                    ; 2025             ;
+;     -- 3 input functions                    ; 260              ;
+;     -- <=2 input functions                  ; 100              ;
+;                                             ;                  ;
+; Logic elements by mode                      ;                  ;
+;     -- normal mode                          ; 2234             ;
+;     -- arithmetic mode                      ; 151              ;
+;                                             ;                  ;
+; Total registers                             ; 2459             ;
+;     -- Dedicated logic registers            ; 2459             ;
+;     -- I/O registers                        ; 0                ;
+;                                             ;                  ;
+; I/O pins                                    ; 234              ;
+; Embedded Multiplier 9-bit elements          ; 0                ;
+; Maximum fan-out node                        ; CLK_MANUAL~input ;
+; Maximum fan-out                             ; 2459             ;
+; Total fan-out                               ; 16931            ;
+; Average fan-out                             ; 3.19             ;
++---------------------------------------------+------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -220,19 +220,19 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                 ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                       ; Library Name ;
 +--------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------+--------------+
-; |processador_mips                          ; 2304 (19)         ; 2462 (0)     ; 0           ; 0            ; 0       ; 0         ; 325  ; 0            ; |processador_mips                                                         ; work         ;
-;    |BANCO_DE_REGISTRADORES:inst3|          ; 469 (469)         ; 384 (384)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|BANCO_DE_REGISTRADORES:inst3                            ; work         ;
-;    |CONTADOR_DE_PROGRAMA_COM_RESET:inst21| ; 39 (39)           ; 30 (30)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|CONTADOR_DE_PROGRAMA_COM_RESET:inst21                   ; work         ;
-;    |MEMORIA_DE_DADOS:inst11|               ; 73 (73)           ; 2048 (2048)  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|MEMORIA_DE_DADOS:inst11                                 ; work         ;
+; |processador_mips                          ; 2385 (13)         ; 2459 (0)     ; 0           ; 0            ; 0       ; 0         ; 234  ; 0            ; |processador_mips                                                         ; work         ;
+;    |BANCO_DE_REGISTRADORES:inst3|          ; 507 (507)         ; 381 (381)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|BANCO_DE_REGISTRADORES:inst3                            ; work         ;
+;    |CONTADOR_DE_PROGRAMA_COM_RESET:inst21| ; 48 (48)           ; 30 (30)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|CONTADOR_DE_PROGRAMA_COM_RESET:inst21                   ; work         ;
+;    |MEMORIA_DE_DADOS:inst11|               ; 116 (116)         ; 2048 (2048)  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|MEMORIA_DE_DADOS:inst11                                 ; work         ;
 ;    |MEMORIA_DE_INSTRUCAO:inst22|           ; 28 (28)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|MEMORIA_DE_INSTRUCAO:inst22                             ; work         ;
-;    |MULTIPLEXADOR_CINCO:inst4|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|MULTIPLEXADOR_CINCO:inst4                               ; work         ;
+;    |MULTIPLEXADOR_CINCO:inst4|             ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|MULTIPLEXADOR_CINCO:inst4                               ; work         ;
 ;    |MULTIPLEXADOR_DOIS:inst12|             ; 1376 (1376)       ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|MULTIPLEXADOR_DOIS:inst12                               ; work         ;
 ;    |MULTIPLEXADOR_DOIS:inst9|              ; 32 (32)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|MULTIPLEXADOR_DOIS:inst9                                ; work         ;
 ;    |SOMADOR:inst6|                         ; 30 (30)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|SOMADOR:inst6                                           ; work         ;
 ;    |SOMADOR_MAIS_QUATRO:inst23|            ; 30 (30)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|SOMADOR_MAIS_QUATRO:inst23                              ; work         ;
-;    |ULA:inst10|                            ; 197 (197)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|ULA:inst10                                              ; work         ;
-;    |UNIDADE_DE_CONTROLE:inst13|            ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|UNIDADE_DE_CONTROLE:inst13                              ; work         ;
-;       |DECODIFICADOR_PRINCIPAL:inst|       ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|UNIDADE_DE_CONTROLE:inst13|DECODIFICADOR_PRINCIPAL:inst ; work         ;
+;    |ULA:inst10|                            ; 192 (192)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|ULA:inst10                                              ; work         ;
+;    |UNIDADE_DE_CONTROLE:inst13|            ; 10 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|UNIDADE_DE_CONTROLE:inst13                              ; work         ;
+;       |DECODIFICADOR_PRINCIPAL:inst|       ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|UNIDADE_DE_CONTROLE:inst13|DECODIFICADOR_PRINCIPAL:inst ; work         ;
 ;       |ULA_DECODIFICADOR:inst1|            ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|UNIDADE_DE_CONTROLE:inst13|ULA_DECODIFICADOR:inst1      ; work         ;
 +--------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -757,135 +757,138 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[29][0]       ; Lost fanout                                                         ;
 ; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[30][0]       ; Lost fanout                                                         ;
 ; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[31][0]       ; Lost fanout                                                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][0]       ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][0]       ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][0]       ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][0]       ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][31]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][31]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][31]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][31]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][30]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][30]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][30]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][30]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][29]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][29]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][29]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][29]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][28]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][28]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][28]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][28]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][27]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][27]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][27]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][27]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][26]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][26]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][26]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][26]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][25]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][25]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][25]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][25]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][24]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][24]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][24]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][24]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][23]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][23]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][23]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][23]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][22]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][22]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][22]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][22]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][21]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][21]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][21]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][21]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][20]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][20]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][20]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][20]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][19]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][19]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][19]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][19]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][18]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][18]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][18]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][18]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][17]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][17]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][17]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][17]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][16]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][16]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][16]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][16]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][15]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][15]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][15]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][15]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][14]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][14]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][14]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][14]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][13]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][13]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][13]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][13]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][12]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][12]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][12]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][12]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][11]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][11]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][11]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][11]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][10]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][10]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][10]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][10]      ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][9]       ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][9]       ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][9]       ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][9]       ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][8]       ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][8]       ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][8]       ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][8]       ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][7]       ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][7]       ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][7]       ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][7]       ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][6]       ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][6]       ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][6]       ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][6]       ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][5]       ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][5]       ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][5]       ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][5]       ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][4]       ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][4]       ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][4]       ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][4]       ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][3]       ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][3]       ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][3]       ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][3]       ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][2]       ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][2]       ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][2]       ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][2]       ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][1]       ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][1]       ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][1]       ; Stuck at GND due to stuck port clock_enable                         ;
-; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][1]       ; Stuck at GND due to stuck port clock_enable                         ;
-; Total Number of Removed Registers = 642                 ;                                                                     ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][0]       ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][0]       ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][0]       ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][0]       ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][31]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][31]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][31]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][31]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][30]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][30]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][30]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][30]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][29]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][29]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][29]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][29]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][28]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][28]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][28]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][28]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][27]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][27]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][27]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][27]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][26]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][26]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][26]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][26]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][25]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][25]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][25]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][25]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][24]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][24]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][24]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][24]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][23]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][23]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][23]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][23]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][22]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][22]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][22]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][22]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][21]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][21]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][21]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][21]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][20]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][20]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][20]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][20]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][19]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][19]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][19]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][19]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][18]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][18]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][18]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][18]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][17]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][17]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][17]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][17]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][16]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][16]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][16]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][16]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][15]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][15]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][15]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][15]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][14]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][14]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][14]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][14]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][13]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][13]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][13]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][13]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][12]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][12]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][12]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][12]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][11]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][11]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][11]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][11]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][10]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][10]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][10]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][10]      ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][9]       ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][9]       ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][9]       ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][9]       ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][8]       ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][8]       ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][8]       ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][8]       ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][7]       ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][7]       ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][7]       ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][7]       ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][6]       ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][6]       ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][6]       ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][6]       ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][5]       ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][5]       ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][5]       ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][5]       ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][4]       ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][4]       ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][4]       ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][4]       ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][3]       ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][3]       ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][3]       ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][3]       ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][2]       ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][2]       ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][2]       ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][2]       ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][1]       ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][1]       ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][1]       ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][1]       ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[3][6]        ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[19][6]       ; Lost fanout                                                         ;
+; BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[2][6]        ; Lost fanout                                                         ;
+; Total Number of Removed Registers = 645                 ;                                                                     ;
 +---------------------------------------------------------+---------------------------------------------------------------------+
 
 
@@ -894,12 +897,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 2462  ;
+; Total registers                              ; 2459  ;
 ; Number of registers using Synchronous Clear  ; 20    ;
 ; Number of registers using Synchronous Load   ; 16    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 2432  ;
+; Number of registers using Clock Enable       ; 2429  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -909,12 +912,92 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
-; 4:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |processador_mips|CONTADOR_DE_PROGRAMA_COM_RESET:inst21|ENDERECO_SAIDA[15] ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |processador_mips|CONTADOR_DE_PROGRAMA_COM_RESET:inst21|ENDERECO_SAIDA[30] ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |processador_mips|CONTADOR_DE_PROGRAMA_COM_RESET:inst21|ENDERECO_SAIDA[19] ;
-; 8:1                ; 31 bits   ; 155 LEs       ; 124 LEs              ; 31 LEs                 ; No         ; |processador_mips|ULA:inst10|Mux11                                         ;
-; 9:1                ; 32 bits   ; 192 LEs       ; 192 LEs              ; 0 LEs                  ; No         ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|DADO_LIDO1[25]              ;
-; 17:1               ; 32 bits   ; 352 LEs       ; 352 LEs              ; 0 LEs                  ; No         ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|DADO_LIDO2[26]              ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[63][31]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[62][12]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[61][11]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[60][6]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[59][21]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[58][24]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[57][8]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[56][16]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[55][6]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[54][8]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[53][20]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[52][27]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[51][23]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[50][5]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[49][2]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[48][7]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[47][2]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[46][13]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[45][27]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[44][8]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[43][13]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[42][19]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[41][31]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[40][15]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[39][15]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[38][22]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[37][12]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[36][7]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[35][3]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[34][3]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[33][3]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[32][10]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[31][15]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[30][26]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[29][16]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[28][11]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[27][20]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[26][25]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[25][25]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[24][10]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[23][25]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[22][25]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[21][29]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[20][25]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[19][25]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[18][25]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[17][6]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[16][27]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[15][26]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[14][31]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[13][10]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[12][11]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[11][20]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[10][2]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[9][5]                    ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[8][28]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[7][22]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[6][30]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[5][19]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[4][11]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[3][8]                    ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[2][13]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[1][6]                    ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[0][14]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[2][3]         ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[18][7]        ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][12]       ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][28]       ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[3][12]        ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[19][0]        ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][0]        ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][0]        ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[0][5]         ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[16][21]       ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[8][21]        ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[24][6]        ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[1][13]        ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[17][31]       ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[9][19]        ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[25][10]       ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |processador_mips|CONTADOR_DE_PROGRAMA_COM_RESET:inst21|ENDERECO_SAIDA[6]  ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |processador_mips|CONTADOR_DE_PROGRAMA_COM_RESET:inst21|ENDERECO_SAIDA[28] ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |processador_mips|CONTADOR_DE_PROGRAMA_COM_RESET:inst21|ENDERECO_SAIDA[2]  ;
+; 8:1                ; 31 bits   ; 155 LEs       ; 124 LEs              ; 31 LEs                 ; No         ; |processador_mips|ULA:inst10|Mux28                                         ;
+; 9:1                ; 32 bits   ; 192 LEs       ; 192 LEs              ; 0 LEs                  ; No         ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|DADO_LIDO1[27]              ;
+; 17:1               ; 32 bits   ; 352 LEs       ; 352 LEs              ; 0 LEs                  ; No         ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|DADO_LIDO2[24]              ;
 ; 65:1               ; 32 bits   ; 1376 LEs      ; 1376 LEs             ; 0 LEs                  ; No         ; |processador_mips|MULTIPLEXADOR_DOIS:inst12|SAIDA[25]                      ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
 
@@ -924,7 +1007,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:04     ;
+; Top            ; 00:00:14     ;
 +----------------+--------------+
 
 
@@ -934,7 +1017,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Jul 04 14:51:52 2025
+    Info: Processing started: Fri Jul 04 18:03:37 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off processador_mips -c processador_mips
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file src/banco_de_registradores.vhd
@@ -1052,13 +1135,6 @@ Info (10041): Inferred latch for "SAIDA[3]" at MULTIPLEXADOR_CINCO.vhd(12)
 Info (10041): Inferred latch for "SAIDA[4]" at MULTIPLEXADOR_CINCO.vhd(12)
 Info (12128): Elaborating entity "DISPLAY_SETE_SEGMENTOS" for hierarchy "DISPLAY_SETE_SEGMENTOS:inst56"
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "ENTRADA_SHIFT_LEFT[13]" is stuck at GND
-    Warning (13410): Pin "ENTRADA_SHIFT_LEFT[12]" is stuck at GND
-    Warning (13410): Pin "ENTRADA_SHIFT_LEFT[10]" is stuck at GND
-    Warning (13410): Pin "ENTRADA_SHIFT_LEFT[9]" is stuck at GND
-    Warning (13410): Pin "ENTRADA_SHIFT_LEFT[8]" is stuck at GND
-    Warning (13410): Pin "ENTRADA_SHIFT_LEFT[7]" is stuck at GND
-    Warning (13410): Pin "ENTRADA_SHIFT_LEFT[4]" is stuck at GND
     Warning (13410): Pin "INSTR[30]" is stuck at GND
     Warning (13410): Pin "INSTR[23]" is stuck at GND
     Warning (13410): Pin "INSTR[22]" is stuck at GND
@@ -1072,34 +1148,18 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "INSTR[4]" is stuck at GND
     Warning (13410): Pin "PC[1]" is stuck at GND
     Warning (13410): Pin "PC[0]" is stuck at GND
-    Warning (13410): Pin "SAIDA_EXTENSOR[13]" is stuck at GND
-    Warning (13410): Pin "SAIDA_EXTENSOR[12]" is stuck at GND
-    Warning (13410): Pin "SAIDA_EXTENSOR[10]" is stuck at GND
-    Warning (13410): Pin "SAIDA_EXTENSOR[9]" is stuck at GND
-    Warning (13410): Pin "SAIDA_EXTENSOR[8]" is stuck at GND
-    Warning (13410): Pin "SAIDA_EXTENSOR[7]" is stuck at GND
-    Warning (13410): Pin "SAIDA_EXTENSOR[4]" is stuck at GND
-    Warning (13410): Pin "SAIDA_SHIFT2L[15]" is stuck at GND
-    Warning (13410): Pin "SAIDA_SHIFT2L[14]" is stuck at GND
-    Warning (13410): Pin "SAIDA_SHIFT2L[12]" is stuck at GND
-    Warning (13410): Pin "SAIDA_SHIFT2L[11]" is stuck at GND
-    Warning (13410): Pin "SAIDA_SHIFT2L[10]" is stuck at GND
-    Warning (13410): Pin "SAIDA_SHIFT2L[9]" is stuck at GND
-    Warning (13410): Pin "SAIDA_SHIFT2L[6]" is stuck at GND
-    Warning (13410): Pin "SAIDA_SHIFT2L[1]" is stuck at GND
-    Warning (13410): Pin "SAIDA_SHIFT2L[0]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 512 registers lost all their fanouts during netlist optimizations.
+Info (17049): 643 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 5061 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 5048 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 323 output pins
-    Info (21061): Implemented 4736 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 43 warnings
-    Info: Peak virtual memory: 4648 megabytes
-    Info: Processing ended: Fri Jul 04 14:51:59 2025
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:06
+    Info (21059): Implemented 232 output pins
+    Info (21061): Implemented 4814 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 20 warnings
+    Info: Peak virtual memory: 4664 megabytes
+    Info: Processing ended: Fri Jul 04 18:03:53 2025
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:16
 
 

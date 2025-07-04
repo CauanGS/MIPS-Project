@@ -25,43 +25,37 @@
 # Loading altera_ver.dffeas
 # Loading work.processador_mips_vlg_sample_tst
 # Loading work.processador_mips_vlg_check_tst
-# ** Error: (vsim-3389) processador_mips.vt(6088): Port 'BranchResult' not found in the connected module (1st connection).
+# ** Error: (vsim-3389) processador_mips.vt(4330): Port 'BranchResult' not found in the connected module (1st connection).
 # 
 #         Region: /processador_mips_vlg_vec_tst/i1
-# ** Error: (vsim-3389) processador_mips.vt(6088): Port 'BranchSinal' not found in the connected module (2nd connection).
+# ** Error: (vsim-3389) processador_mips.vt(4330): Port 'BranchSinal' not found in the connected module (2nd connection).
 # 
 #         Region: /processador_mips_vlg_vec_tst/i1
-# ** Error: (vsim-3389) processador_mips.vt(6088): Port 'ENTRADA_SHIFT_LEFT' not found in the connected module (4th connection).
+# ** Error: (vsim-3389) processador_mips.vt(4330): Port 'CLK_MANUAL' not found in the connected module (3rd connection).
 # 
 #         Region: /processador_mips_vlg_vec_tst/i1
-# ** Error: (vsim-3389) processador_mips.vt(6088): Port 'ENTRADA_ULA1' not found in the connected module (5th connection).
+# ** Error: (vsim-3389) processador_mips.vt(4330): Port 'ENTRADA_ULA1' not found in the connected module (4th connection).
 # 
 #         Region: /processador_mips_vlg_vec_tst/i1
-# ** Error: (vsim-3389) processador_mips.vt(6088): Port 'ENTRADA_ULA2' not found in the connected module (6th connection).
+# ** Error: (vsim-3389) processador_mips.vt(4330): Port 'ENTRADA_ULA2' not found in the connected module (5th connection).
 # 
 #         Region: /processador_mips_vlg_vec_tst/i1
-# ** Error: (vsim-3389) processador_mips.vt(6088): Port 'INSTR' not found in the connected module (7th connection).
+# ** Error: (vsim-3389) processador_mips.vt(4330): Port 'INSTR' not found in the connected module (6th connection).
 # 
 #         Region: /processador_mips_vlg_vec_tst/i1
-# ** Error: (vsim-3389) processador_mips.vt(6088): Port 'JumpSinal' not found in the connected module (8th connection).
+# ** Error: (vsim-3389) processador_mips.vt(4330): Port 'JumpSinal' not found in the connected module (7th connection).
 # 
 #         Region: /processador_mips_vlg_vec_tst/i1
-# ** Error: (vsim-3389) processador_mips.vt(6088): Port 'RD1' not found in the connected module (10th connection).
+# ** Error: (vsim-3389) processador_mips.vt(4330): Port 'RD1' not found in the connected module (9th connection).
 # 
 #         Region: /processador_mips_vlg_vec_tst/i1
-# ** Error: (vsim-3389) processador_mips.vt(6088): Port 'RD2' not found in the connected module (11th connection).
+# ** Error: (vsim-3389) processador_mips.vt(4330): Port 'RD2' not found in the connected module (10th connection).
 # 
 #         Region: /processador_mips_vlg_vec_tst/i1
-# ** Error: (vsim-3389) processador_mips.vt(6088): Port 'RESET' not found in the connected module (12th connection).
+# ** Error: (vsim-3389) processador_mips.vt(4330): Port 'RESET' not found in the connected module (11th connection).
 # 
 #         Region: /processador_mips_vlg_vec_tst/i1
-# ** Error: (vsim-3389) processador_mips.vt(6088): Port 'SAIDA_EXTENSOR' not found in the connected module (14th connection).
-# 
-#         Region: /processador_mips_vlg_vec_tst/i1
-# ** Error: (vsim-3389) processador_mips.vt(6088): Port 'SAIDA_SHIFT2L' not found in the connected module (15th connection).
-# 
-#         Region: /processador_mips_vlg_vec_tst/i1
-# ** Fatal: (vsim-3365) processador_mips.vt(6088): Too many port connections. Expected 11, found 15.
+# ** Fatal: (vsim-3365) processador_mips.vt(4330): Too many port connections. Expected 11, found 12.
 #    Time: 0 ps  Iteration: 0  Instance: /processador_mips_vlg_vec_tst/i1 File: processador_mips.vo
 # FATAL ERROR while loading design
 # Error loading design
