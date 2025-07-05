@@ -4,11 +4,11 @@ K3
 cModel Technology
 Z0 dC:\Users\gabri\backupSSD\AreaDeTrabalhoAntiga\Unesp\5°semestre\LaboratorioCircuitosDigitais\Projeto\ProjetoGit\simulation\qsim
 vprocessador_mips
-Z1 !s100 hQP6<bTB?db>@[:WC2PBT2
-Z2 I]jC`>WUBzlAf19b9EnM^_2
-Z3 VXDYR?z`kFCOPR11J6@m7L3
-Z4 dC:\Users\aluno\Documents\CAUAN\MIPS-Project\simulation\qsim
-Z5 w1751650547
+Z1 !s100 6WJg^0SHR3J`7ISz`3<hD1
+Z2 IPKLUmf71C]62=NI93D:Y=2
+Z3 VOA3jnk146Y41PzLScJgHj1
+Z4 dC:\Users\gabri\backupSSD\AreaDeTrabalhoAntiga\Unesp\5semestre\LaboratorioCircuitosDigitais\Projeto\ProjetoGit\simulation\qsim
+Z5 w1751748376
 Z6 8processador_mips.vo
 Z7 Fprocessador_mips.vo
 L0 31
@@ -19,63 +19,63 @@ Z9 !s90 -work|work|processador_mips.vo|
 Z10 o-work work -O0
 !i10b 1
 !s85 0
-Z11 !s108 1751674457.555000
+Z11 !s108 1751748377.407000
 Z12 !s107 processador_mips.vo|
 !s101 -O0
 vprocessador_mips_vlg_check_tst
 !i10b 1
-!s100 5Q?G371^7CS;;^iCGl[<O0
-IWS9GPDcA?meFm4;dkU:mj1
-VhGB4PVJOWT7D<d=i]F;f41
+!s100 ]zeaHU==F6MZ[DgEXE<>m3
+IZ@g5g^XH9_VH7eGNj9:fZ0
+Z13 VhGB4PVJOWT7D<d=i]F;f41
 R4
-Z13 w1751674456
-Z14 8processador_mips.vt
-Z15 Fprocessador_mips.vt
+Z14 w1751748374
+Z15 8Waveform4.vwf.vt
+Z16 FWaveform4.vwf.vt
 L0 59
 R8
 r1
 !s85 0
 31
-Z16 !s108 1751674458.555000
-Z17 !s107 processador_mips.vt|
-Z18 !s90 -work|work|processador_mips.vt|
+Z17 !s108 1751748377.966000
+Z18 !s107 Waveform4.vwf.vt|
+Z19 !s90 -work|work|Waveform4.vwf.vt|
 !s101 -O0
 R10
 vprocessador_mips_vlg_sample_tst
 !i10b 1
-Z19 !s100 [0>:c7ZQh_S75IGZDodZ23
-Z20 I6d1W>THICAk8[jB0FkZ4G0
-Z21 V17;9h16jVn60e1;WmLmm71
+Z20 !s100 nM<k3Cke`adod1nNZIbU`0
+Z21 InU5LT3PD:?Da[:Zi45DD`2
+Z22 V17;9h16jVn60e1;WmLmm71
 R4
-R13
 R14
 R15
+R16
 L0 29
 R8
 r1
 !s85 0
 31
-R16
 R17
 R18
+R19
 !s101 -O0
 R10
 vprocessador_mips_vlg_vec_tst
 !i10b 1
-!s100 CE:Gh^C=`_MMd7KjPfVE`0
-ITlZTnH1?89jb7<R`d3?3a2
-Z22 V`X9IMV<I2Df3B=El=H>SM0
+!s100 2;>AR8?<7c725>A@SG<9S0
+Ig83BoSWHYzh34Q2AdeK[C1
+Z23 V`X9IMV<I2Df3B=El=H>SM0
 R4
-R13
 R14
 R15
-L0 3167
+R16
+L0 2009
 R8
 r1
 !s85 0
 31
-R16
 R17
 R18
+R19
 !s101 -O0
 R10
