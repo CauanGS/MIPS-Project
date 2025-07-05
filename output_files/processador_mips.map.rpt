@@ -1,5 +1,5 @@
 Analysis & Synthesis report for processador_mips
-Fri Jul 04 19:48:41 2025
+Fri Jul 04 20:49:12 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -44,16 +44,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Jul 04 19:48:41 2025           ;
+; Analysis & Synthesis Status        ; Successful - Fri Jul 04 20:49:12 2025           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; processador_mips                                ;
 ; Top-level Entity Name              ; processador_mips                                ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 4,661                                           ;
-;     Total combinational functions  ; 2,293                                           ;
+; Total logic elements               ; 4,670                                           ;
+;     Total combinational functions  ; 2,302                                           ;
 ;     Dedicated logic registers      ; 2,438                                           ;
 ; Total registers                    ; 2438                                            ;
-; Total pins                         ; 191                                             ;
+; Total pins                         ; 162                                             ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -191,28 +191,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+------------------+
 ; Resource                                    ; Usage            ;
 +---------------------------------------------+------------------+
-; Estimated Total logic elements              ; 4,661            ;
+; Estimated Total logic elements              ; 4,670            ;
 ;                                             ;                  ;
-; Total combinational functions               ; 2293             ;
+; Total combinational functions               ; 2302             ;
 ; Logic element usage by number of LUT inputs ;                  ;
-;     -- 4 input functions                    ; 1976             ;
+;     -- 4 input functions                    ; 2012             ;
 ;     -- 3 input functions                    ; 245              ;
-;     -- <=2 input functions                  ; 72               ;
+;     -- <=2 input functions                  ; 45               ;
 ;                                             ;                  ;
 ; Logic elements by mode                      ;                  ;
-;     -- normal mode                          ; 2190             ;
+;     -- normal mode                          ; 2199             ;
 ;     -- arithmetic mode                      ; 103              ;
 ;                                             ;                  ;
 ; Total registers                             ; 2438             ;
 ;     -- Dedicated logic registers            ; 2438             ;
 ;     -- I/O registers                        ; 0                ;
 ;                                             ;                  ;
-; I/O pins                                    ; 191              ;
+; I/O pins                                    ; 162              ;
 ; Embedded Multiplier 9-bit elements          ; 0                ;
 ; Maximum fan-out node                        ; CLK_MANUAL~input ;
 ; Maximum fan-out                             ; 2438             ;
-; Total fan-out                               ; 16473            ;
-; Average fan-out                             ; 3.22             ;
+; Total fan-out                               ; 16505            ;
+; Average fan-out                             ; 3.26             ;
 +---------------------------------------------+------------------+
 
 
@@ -221,17 +221,22 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                 ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                       ; Library Name ;
 +--------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------+--------------+
-; |processador_mips                          ; 2293 (13)         ; 2438 (0)     ; 0           ; 0            ; 0       ; 0         ; 191  ; 0            ; |processador_mips                                                         ; work         ;
-;    |BANCO_DE_REGISTRADORES:inst3|          ; 508 (508)         ; 384 (384)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|BANCO_DE_REGISTRADORES:inst3                            ; work         ;
+; |processador_mips                          ; 2302 (13)         ; 2438 (0)     ; 0           ; 0            ; 0       ; 0         ; 162  ; 0            ; |processador_mips                                                         ; work         ;
+;    |BANCO_DE_REGISTRADORES:inst3|          ; 480 (480)         ; 384 (384)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|BANCO_DE_REGISTRADORES:inst3                            ; work         ;
 ;    |CONTADOR_DE_PROGRAMA_COM_RESET:inst21| ; 13 (13)           ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|CONTADOR_DE_PROGRAMA_COM_RESET:inst21                   ; work         ;
 ;    |DISPLAY_SETE_SEGMENTOS:inst26|         ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|DISPLAY_SETE_SEGMENTOS:inst26                           ; work         ;
 ;    |DISPLAY_SETE_SEGMENTOS:inst27|         ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|DISPLAY_SETE_SEGMENTOS:inst27                           ; work         ;
 ;    |DISPLAY_SETE_SEGMENTOS:inst28|         ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|DISPLAY_SETE_SEGMENTOS:inst28                           ; work         ;
+;    |DISPLAY_SETE_SEGMENTOS:inst29|         ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|DISPLAY_SETE_SEGMENTOS:inst29                           ; work         ;
+;    |DISPLAY_SETE_SEGMENTOS:inst31|         ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|DISPLAY_SETE_SEGMENTOS:inst31                           ; work         ;
+;    |DISPLAY_SETE_SEGMENTOS:inst32|         ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|DISPLAY_SETE_SEGMENTOS:inst32                           ; work         ;
+;    |DISPLAY_SETE_SEGMENTOS:inst33|         ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|DISPLAY_SETE_SEGMENTOS:inst33                           ; work         ;
+;    |DISPLAY_SETE_SEGMENTOS:inst34|         ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|DISPLAY_SETE_SEGMENTOS:inst34                           ; work         ;
 ;    |MEMORIA_DE_DADOS:inst11|               ; 116 (116)         ; 2048 (2048)  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|MEMORIA_DE_DADOS:inst11                                 ; work         ;
 ;    |MEMORIA_DE_INSTRUCAO:inst22|           ; 29 (29)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|MEMORIA_DE_INSTRUCAO:inst22                             ; work         ;
 ;    |MULTIPLEXADOR_CINCO:inst4|             ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|MULTIPLEXADOR_CINCO:inst4                               ; work         ;
-;    |MULTIPLEXADOR_DOIS:inst12|             ; 1345 (1345)       ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|MULTIPLEXADOR_DOIS:inst12                               ; work         ;
-;    |MULTIPLEXADOR_DOIS:inst9|              ; 32 (32)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|MULTIPLEXADOR_DOIS:inst9                                ; work         ;
+;    |MULTIPLEXADOR_DOIS:inst12|             ; 1349 (1349)       ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|MULTIPLEXADOR_DOIS:inst12                               ; work         ;
+;    |MULTIPLEXADOR_DOIS:inst9|              ; 33 (33)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|MULTIPLEXADOR_DOIS:inst9                                ; work         ;
 ;    |SOMADOR:inst6|                         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|SOMADOR:inst6                                           ; work         ;
 ;    |SOMADOR_MAIS_QUATRO:inst23|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|SOMADOR_MAIS_QUATRO:inst23                              ; work         ;
 ;    |ULA:inst10|                            ; 195 (195)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_mips|ULA:inst10                                              ; work         ;
@@ -939,93 +944,93 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[63][7]                   ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[62][30]                  ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[61][29]                  ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[60][2]                   ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[59][28]                  ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[58][18]                  ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[57][18]                  ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[56][0]                   ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[55][9]                   ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[54][18]                  ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[53][18]                  ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[52][18]                  ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[51][18]                  ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[50][18]                  ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[49][18]                  ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[48][18]                  ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[47][18]                  ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[46][2]                   ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[45][17]                  ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[44][31]                  ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[43][31]                  ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[42][31]                  ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[41][11]                  ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[40][29]                  ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[39][8]                   ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[38][26]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[63][6]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[62][28]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[61][22]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[60][18]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[59][29]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[58][14]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[57][22]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[56][25]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[55][7]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[54][1]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[53][25]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[52][1]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[51][13]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[50][13]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[49][13]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[48][24]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[47][31]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[46][27]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[45][19]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[44][26]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[43][9]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[42][17]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[41][15]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[40][31]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[39][3]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[38][30]                  ;
 ; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[37][30]                  ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[36][6]                   ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[35][20]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[36][20]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[35][13]                  ;
 ; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[34][1]                   ;
 ; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[33][1]                   ;
 ; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[32][1]                   ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[31][27]                  ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[30][2]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[31][0]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[30][5]                   ;
 ; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[29][1]                   ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[28][11]                  ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[27][6]                   ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[26][27]                  ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[25][14]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[28][7]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[27][10]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[26][31]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[25][18]                  ;
 ; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[24][2]                   ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[23][11]                  ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[22][4]                   ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[21][9]                   ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[20][9]                   ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[19][9]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[23][24]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[22][8]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[21][4]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[20][4]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[19][4]                   ;
 ; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[18][9]                   ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[17][2]                   ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[16][24]                  ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[15][19]                  ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[14][29]                  ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[13][14]                  ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[12][19]                  ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[11][15]                  ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[10][9]                   ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[9][18]                   ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[8][18]                   ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[7][18]                   ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[6][1]                    ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[5][16]                   ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[4][22]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[17][4]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[16][14]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[15][5]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[14][10]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[13][16]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[12][27]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[11][27]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[10][30]                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[9][22]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[8][22]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[7][22]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[6][14]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[5][20]                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[4][16]                   ;
 ; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[3][3]                    ;
 ; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[2][0]                    ;
 ; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[1][0]                    ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[0][2]                    ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[2][18]        ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|MEMORIA_DE_DADOS:inst11|MEMORIA[0][0]                    ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[2][12]        ;
 ; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[18][18]       ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][17]       ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][18]       ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[10][11]       ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[26][0]        ;
 ; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[3][17]        ;
 ; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[19][25]       ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][18]       ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][24]       ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[0][8]         ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[16][27]       ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[11][7]        ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[27][3]        ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[0][11]        ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[16][2]        ;
 ; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[8][26]        ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[24][28]       ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[1][23]        ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[17][3]        ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[24][6]        ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[1][21]        ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[17][9]        ;
 ; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[9][30]        ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[25][12]       ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |processador_mips|CONTADOR_DE_PROGRAMA_COM_RESET:inst21|ENDERECO_SAIDA[10] ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|REGISTRADORES[25][26]       ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |processador_mips|CONTADOR_DE_PROGRAMA_COM_RESET:inst21|ENDERECO_SAIDA[12] ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |processador_mips|CONTADOR_DE_PROGRAMA_COM_RESET:inst21|ENDERECO_SAIDA[29] ;
 ; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |processador_mips|CONTADOR_DE_PROGRAMA_COM_RESET:inst21|ENDERECO_SAIDA[13] ;
 ; 8:1                ; 31 bits   ; 155 LEs       ; 124 LEs              ; 31 LEs                 ; No         ; |processador_mips|ULA:inst10|Mux8                                          ;
 ; 9:1                ; 32 bits   ; 192 LEs       ; 192 LEs              ; 0 LEs                  ; No         ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|DADO_LIDO1[20]              ;
 ; 17:1               ; 32 bits   ; 352 LEs       ; 352 LEs              ; 0 LEs                  ; No         ; |processador_mips|BANCO_DE_REGISTRADORES:inst3|DADO_LIDO2[15]              ;
-; 65:1               ; 32 bits   ; 1376 LEs      ; 1376 LEs             ; 0 LEs                  ; No         ; |processador_mips|MULTIPLEXADOR_DOIS:inst12|SAIDA[21]                      ;
+; 65:1               ; 32 bits   ; 1376 LEs      ; 1376 LEs             ; 0 LEs                  ; No         ; |processador_mips|MULTIPLEXADOR_DOIS:inst12|SAIDA[25]                      ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
 
 
@@ -1044,7 +1049,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Jul 04 19:48:25 2025
+    Info: Processing started: Fri Jul 04 20:48:56 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off processador_mips -c processador_mips
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file src/banco_de_registradores.vhd
@@ -1178,13 +1183,13 @@ Info (286030): Timing-Driven Synthesis is running
 Info (17049): 664 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 4916 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 4896 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 189 output pins
-    Info (21061): Implemented 4725 logic cells
+    Info (21059): Implemented 160 output pins
+    Info (21061): Implemented 4734 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 19 warnings
     Info: Peak virtual memory: 4660 megabytes
-    Info: Processing ended: Fri Jul 04 19:48:41 2025
+    Info: Processing ended: Fri Jul 04 20:49:12 2025
     Info: Elapsed time: 00:00:16
     Info: Total CPU time (on all processors): 00:00:16
 

@@ -19,63 +19,63 @@ Z9 !s90 -work|work|processador_mips.vo|
 Z10 o-work work -O0
 !i10b 1
 !s85 0
-Z11 !s108 1751659347.913000
+Z11 !s108 1751674457.555000
 Z12 !s107 processador_mips.vo|
 !s101 -O0
 vprocessador_mips_vlg_check_tst
 !i10b 1
-Z13 !s100 n8Ki7]=:2GamGI3C52c?M3
-Z14 IEKjd8HTnRiQ^HlPi`OCHV2
-Z15 V8TRa47fd;a]bo;CWLk;SG3
+!s100 5Q?G371^7CS;;^iCGl[<O0
+IWS9GPDcA?meFm4;dkU:mj1
+VhGB4PVJOWT7D<d=i]F;f41
 R4
-Z16 w1751659346
-Z17 8processador_mips.vt
-Z18 Fprocessador_mips.vt
+Z13 w1751674456
+Z14 8processador_mips.vt
+Z15 Fprocessador_mips.vt
 L0 59
 R8
 r1
 !s85 0
 31
-Z19 !s108 1751659348.929000
-Z20 !s107 processador_mips.vt|
-Z21 !s90 -work|work|processador_mips.vt|
+Z16 !s108 1751674458.555000
+Z17 !s107 processador_mips.vt|
+Z18 !s90 -work|work|processador_mips.vt|
 !s101 -O0
 R10
 vprocessador_mips_vlg_sample_tst
 !i10b 1
-Z22 !s100 [0>:c7ZQh_S75IGZDodZ23
-Z23 I6d1W>THICAk8[jB0FkZ4G0
-Z24 V17;9h16jVn60e1;WmLmm71
+Z19 !s100 [0>:c7ZQh_S75IGZDodZ23
+Z20 I6d1W>THICAk8[jB0FkZ4G0
+Z21 V17;9h16jVn60e1;WmLmm71
 R4
-R16
-R17
-R18
+R13
+R14
+R15
 L0 29
 R8
 r1
 !s85 0
 31
-R19
-R20
-R21
+R16
+R17
+R18
 !s101 -O0
 R10
 vprocessador_mips_vlg_vec_tst
 !i10b 1
-Z25 !s100 cTjgmn62EhzBmBzei[Hak0
-Z26 I=6>S[:T_@_hTTN9HL[nDh2
-Z27 V`X9IMV<I2Df3B=El=H>SM0
+!s100 CE:Gh^C=`_MMd7KjPfVE`0
+ITlZTnH1?89jb7<R`d3?3a2
+Z22 V`X9IMV<I2Df3B=El=H>SM0
 R4
-R16
-R17
-R18
-Z28 L0 4296
+R13
+R14
+R15
+L0 3167
 R8
 r1
 !s85 0
 31
-R19
-R20
-R21
+R16
+R17
+R18
 !s101 -O0
 R10
