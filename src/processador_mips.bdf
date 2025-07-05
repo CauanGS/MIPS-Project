@@ -303,7 +303,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 3544 200 3600 216))
+	(annotation_block (location)(rect 3480 176 3536 192))
 )
 (pin
 	(output)
@@ -1250,7 +1250,7 @@ applicable agreement for further details.
 		(pt 32 0)
 		(output)
 		(text "SAIDA[31..0]" (rect 0 0 64 12)(font "Arial" ))
-		(text "SAIDA[31..0]" (rect 27 21 39 75)(font "Arial" )(vertical))
+		(text "SAIDA[31..0]" (rect 27 21 39 85)(font "Arial" )(vertical))
 		(line (pt 32 0)(pt 32 16)(line_width 3))
 	)
 	(drawing

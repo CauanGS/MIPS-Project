@@ -4,7 +4,7 @@ use IEEE.STD_LOGIC_1164.all;
 entity DISPLAY_SETE_SEGMENTOS is
     port(
         ENTRADA_EM_HEXA  : in  STD_LOGIC_VECTOR(3 downto 0);
-        SEG_SAIDA : out STD_LOGIC_VECTOR(6 downto 0) -- SEG_SAIDA(6 downto 0) -> gfedcba
+        SEG_SAIDA : out STD_LOGIC_VECTOR(6 downto 0) -- cada bit controla seu respectivo segmento: g(6) f(5) e(4) d(3) c(2) b(1) a(0)
     );
 end entity;
 
@@ -13,7 +13,7 @@ begin
     process(ENTRADA_EM_HEXA) --process para poder usar o case
     begin
         case ENTRADA_EM_HEXA is
-            -- Padrões ativos em baixo (0=ON, 1=OFF) para gfedcba
+            -- Padrões ativos em baixo (0=segmento acesso, 1=segmento apagado para gfedcba)
             when "0000" => SEG_SAIDA <= "1000000"; -- 0
             when "0001" => SEG_SAIDA <= "1111001"; -- 1
             when "0010" => SEG_SAIDA <= "0100100"; -- 2
