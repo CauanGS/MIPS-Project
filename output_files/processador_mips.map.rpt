@@ -1,5 +1,5 @@
 Analysis & Synthesis report for processador_mips
-Sat Jul 05 17:24:44 2025
+Sat Jul 05 18:18:30 2025
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -44,7 +44,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Jul 05 17:24:44 2025      ;
+; Analysis & Synthesis Status        ; Successful - Sat Jul 05 18:18:30 2025      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; processador_mips                           ;
 ; Top-level Entity Name              ; processador_mips                           ;
@@ -1039,7 +1039,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:24     ;
+; Top            ; 00:00:23     ;
 +----------------+--------------+
 
 
@@ -1049,7 +1049,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Sat Jul 05 17:24:17 2025
+    Info: Processing started: Sat Jul 05 18:18:04 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off processador_mips -c processador_mips
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file src/banco_de_registradores.vhd
@@ -1188,9 +1188,9 @@ Info (21057): Implemented 4896 device resources after synthesis - the final reso
     Info (21059): Implemented 160 output pins
     Info (21061): Implemented 4734 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 19 warnings
-    Info: Peak virtual memory: 4694 megabytes
-    Info: Processing ended: Sat Jul 05 17:24:44 2025
-    Info: Elapsed time: 00:00:27
-    Info: Total CPU time (on all processors): 00:00:27
+    Info: Peak virtual memory: 4682 megabytes
+    Info: Processing ended: Sat Jul 05 18:18:30 2025
+    Info: Elapsed time: 00:00:26
+    Info: Total CPU time (on all processors): 00:00:26
 
 
