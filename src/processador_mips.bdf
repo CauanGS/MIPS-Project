@@ -823,36 +823,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect -112 600 -32 840)
-	(text "CONCATENAR_ENTRADAS" (rect 0 94 12 235)(font "Arial" )(vertical))
-	(text "inst18" (rect 64 203 76 232)(font "Arial" )(vertical))
-	(port
-		(pt 32 240)
-		(input)
-		(text "ENTRADA_1[27..0]" (rect 0 0 95 12)(font "Arial" ))
-		(text "ENTRADA_1[27..0]" (rect 27 124 39 219)(font "Arial" )(vertical))
-		(line (pt 32 240)(pt 32 224)(line_width 3))
-	)
-	(port
-		(pt 48 240)
-		(input)
-		(text "ENTRADA_2[3..0]" (rect 0 0 89 12)(font "Arial" ))
-		(text "ENTRADA_2[3..0]" (rect 43 130 55 219)(font "Arial" )(vertical))
-		(line (pt 48 240)(pt 48 224)(line_width 3))
-	)
-	(port
-		(pt 32 0)
-		(output)
-		(text "SAIDA[31..0]" (rect 0 0 64 12)(font "Arial" ))
-		(text "SAIDA[31..0]" (rect 27 11 39 75)(font "Arial" )(vertical))
-		(line (pt 32 0)(pt 32 16)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 64 224))
-	)
-	(rotate90)
-)
-(symbol
 	(rect 208 280 568 392)
 	(text "CONTADOR_DE_PROGRAMA_COM_RESET" (rect 5 0 229 12)(font "Arial" ))
 	(text "inst21" (rect 8 96 37 108)(font "Arial" ))
@@ -1257,6 +1227,36 @@ applicable agreement for further details.
 	(drawing
 		(rectangle (rect 16 16 288 64))
 	)
+)
+(symbol
+	(rect -112 600 -32 840)
+	(text "CONCATENAR_ENTRADAS" (rect 0 94 12 235)(font "Arial" )(vertical))
+	(text "inst18" (rect 64 203 76 232)(font "Arial" )(vertical))
+	(port
+		(pt 32 240)
+		(input)
+		(text "ENTRADA_1[27..0]" (rect 0 0 95 12)(font "Arial" ))
+		(text "ENTRADA_1[27..0]" (rect 27 124 39 219)(font "Arial" )(vertical))
+		(line (pt 32 240)(pt 32 224)(line_width 3))
+	)
+	(port
+		(pt 48 240)
+		(input)
+		(text "ENTRADA_2[3..0]" (rect 0 0 89 12)(font "Arial" ))
+		(text "ENTRADA_2[3..0]" (rect 43 130 55 219)(font "Arial" )(vertical))
+		(line (pt 48 240)(pt 48 224)(line_width 3))
+	)
+	(port
+		(pt 32 0)
+		(output)
+		(text "SAIDA[31..0]" (rect 0 0 64 12)(font "Arial" ))
+		(text "SAIDA[31..0]" (rect 27 21 39 75)(font "Arial" )(vertical))
+		(line (pt 32 0)(pt 32 16)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 64 224))
+	)
+	(rotate90)
 )
 (connector
 	(pt 984 368)
