@@ -21,7 +21,7 @@ architecture behave of BANCO_DE_REGISTRADORES is
 		-- inicialmente todos os valores em todos os registradores são 0
 begin
 
-    -- Process: aqui dentro usa lógica sequencial para a escrita -- a escrita é assíncrona 
+    -- Process: aqui dentro usa lógica sequencial para a escrita -- a escrita é síncrona 
     process(CLK)
     begin
         if rising_edge(CLK) then

@@ -859,28 +859,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 664 280 920 360)
-	(text "MEMORIA_DE_INSTRUCAO" (rect 5 0 147 12)(font "Arial" ))
-	(text "inst22" (rect 8 64 37 76)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "ENTRADA[31..0]" (rect 0 0 83 12)(font "Arial" ))
-		(text "ENTRADA[31..0]" (rect 21 27 104 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 256 32)
-		(output)
-		(text "INSTRUCAO[31..0]" (rect 0 0 96 12)(font "Arial" ))
-		(text "INSTRUCAO[31..0]" (rect 154 27 250 39)(font "Arial" ))
-		(line (pt 256 32)(pt 240 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 240 64))
-	)
-)
-(symbol
 	(rect 608 744 840 824)
 	(text "SOMADOR_MAIS_QUATRO" (rect 5 0 144 12)(font "Arial" ))
 	(text "inst23" (rect 8 64 37 76)(font "Arial" ))
@@ -1257,6 +1235,28 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 64 224))
 	)
 	(rotate90)
+)
+(symbol
+	(rect 664 280 920 360)
+	(text "MEMORIA_DE_INSTRUCAO_BYTE" (rect 5 0 182 12)(font "Arial" ))
+	(text "inst99" (rect 8 64 37 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "ENTRADA[31..0]" (rect 0 0 83 12)(font "Arial" ))
+		(text "ENTRADA[31..0]" (rect 21 27 104 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 256 32)
+		(output)
+		(text "INSTRUCAO[31..0]" (rect 0 0 96 12)(font "Arial" ))
+		(text "INSTRUCAO[31..0]" (rect 154 27 250 39)(font "Arial" ))
+		(line (pt 256 32)(pt 240 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 240 64))
+	)
 )
 (connector
 	(pt 984 368)
